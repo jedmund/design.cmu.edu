@@ -1,0 +1,73 @@
+	html {}
+	
+	body {
+		font: 14px Helvetica, Arial, sans-serif;
+		
+		}
+	
+	header {
+		background-color: #F36235;
+		color: #FFFFFF;
+		height: 110px;
+		width: 100%;
+		}
+		
+	header a {
+		color: #FFFFFF;
+		}
+		
+	h1 {
+		background: url('../img/logo.png');
+		text-indent: -9999px;
+		margin-top: 20px;
+		height: 55px;
+		width: 110px;
+		}
+		
+	nav#global {
+		float: right;
+		}
+		
+	nav#global ul li {
+		margin: 40px 30px 0 0;
+		float: left;
+		}
+		
+	nav#global ul li:last-child {
+		margin-right: 0;
+		}
+		
+	#hero {
+		margin-bottom: 30px;
+		margin-top: -30px;
+		}
+		
+	h2 {
+		font: 24px Georgia, serif;
+		}
+		
+	h4 {
+		margin-bottom: 5px;
+		}
+		
+	hr {
+		margin: 30px 0 30px 10px;
+		width: 940px;
+		float: left;
+		clear: both;
+		}
+		
+	article {
+		margin-top: 30px;
+		clear: both;
+		float: left;		
+		}
+		
+	a {
+		text-decoration: none;
+		color: #000000;
+		}
+		
+	a:hover {
+		text-decoration: underline;
+		}

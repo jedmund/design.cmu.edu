@@ -16,6 +16,18 @@
 		color: #FFFFFF;
 		}
 		
+	footer {
+		background: #DEDEDE;
+		min-height: 110px;
+		width: 100%;
+		float: left;
+		}
+		
+	#news {
+		margin-top: 40px;
+		float: left;
+		}
+		
 	h1 {
 		background: url('../img/logo.png');
 		text-indent: -9999px;
@@ -29,8 +41,28 @@
 		}
 		
 	nav#global ul li {
-		margin: 40px 30px 0 0;
+		-webkit-transition: background 0.2s ease-in-out;
+		border-left: 1px solid #F2A919;
+		padding: 40px 10px 5px 10px;
+		height: 100%;
+		width: 70px;
 		float: left;
+		}
+		
+	nav#global ul li.long {
+		width: 100px;
+		}
+		
+	nav#global ul li:hover {
+		background: #F49308;
+		}
+		
+	nav#global ul a:hover {
+		color: #FFFFFF;
+		}
+		
+	nav#global ul li:first-child {
+		border-left: 1px solid #F2A919 !important;
 		}
 		
 	nav#global ul li:last-child {
@@ -39,8 +71,8 @@
 		
 	nav#sub ul li {
 		list-style-image: url('../img/arrow_bullet.png');
-		margin-bottom: 10px;
 		font-size: 16px !important;
+		margin-bottom: 10px;
 		}
 		
 	#hero {
@@ -53,15 +85,28 @@
 		}
 		
 	h3 {
+		border-bottom: 1px solid #CCCCCC;
+		padding-bottom: 10px;
 		font-weight: normal;
-		margin-bottom: 10px;
-		font-size: 16px;
+		margin-bottom: 20px;
+		font-size: 14px;
+		width: 100%;
 		}
 		
 	h4 {
 		font-weight: normal;
 		margin-bottom: 5px;
+		font-size: 16px;
+		}
+		
+	h4 a,
+	h5 a {
 		color: #F36235;
+		}
+		
+	h4 a:hover,
+	h5 a:hover {
+		color: #B94929;
 		}
 		
 	h5 {
@@ -91,10 +136,11 @@
 		}
 		
 	a {
+		-webkit-transition: color 0.2s ease-in-out;
 		text-decoration: none;
 		color: #333333;
 		}
 		
 	a:hover {
-		text-decoration: underline;
+		color: #000000; 
 		}

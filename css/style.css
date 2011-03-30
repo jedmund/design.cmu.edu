@@ -57,6 +57,10 @@
 		background: #F49308;
 		}
 		
+	nav#global ul a {
+		float: left;
+		}
+		
 	nav#global ul a:hover {
 		color: #FFFFFF;
 		}

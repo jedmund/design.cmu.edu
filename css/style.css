@@ -12,6 +12,10 @@
 		width: 100%;
 		}
 		
+	header#intranet {
+		background-color: #ffc928;
+		}
+		
 	header a {
 		color: #FFFFFF;
 		}

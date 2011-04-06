@@ -39,10 +39,12 @@
 		height: 55px;
 		width: 110px;
 		}
+		
 	#intranet h1{
 		background: url('../img/intranet_logo.png');
 		width: 250px;
 		}	
+		
 	nav#global {
 		float: right;
 		}
@@ -126,7 +128,7 @@
 	   border-radius: 2px;
 	   width: 350px;
 	   margin-bottom: 10px;
-	}
+		}
 	
 	#profile form textarea{
 		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
@@ -147,12 +149,12 @@
 		float:left;
 		position: relative;
 		top:6px;
-	}
+		}
 	
 	#profile form a#add{
 		float:left;
 		display: inline-table;
-	}
+		}
 	
 	#hero {
 		margin-bottom: 30px;
@@ -333,6 +335,7 @@
 		}
 		
 	section#classes ul li span.class {
+		margin: 6px 0 2px;
 		color: #F36235;
 		}
 		

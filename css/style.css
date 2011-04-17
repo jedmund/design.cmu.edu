@@ -82,6 +82,10 @@
 		border: 2px solid white;
 		}
 		
+	nav#sub ul {
+		margin-top: 10px;
+		}
+	
 	nav#sub ul li {
 		list-style-image: url('../img/arrow_bullet.png');
 		font-size: 16px !important;
@@ -160,7 +164,7 @@
 		}
 		
 	h2 {
-		font: 24px "warnock-pro-1","warnock-pro-2", serif;
+		font: 28px "warnock-pro-1","warnock-pro-2", serif;
 		}
 		
 	h2.intranet{
@@ -229,6 +233,10 @@
 		color: #000000; 
 		}
 		
+	a.intranet{
+		color: #F36235 !important;
+		}
+		
 /* Intranet */
 	header#intranet {
 		background-color: #ffc928;
@@ -236,7 +244,7 @@
 		}
 		
 	#top {
-		margin-top: 20px;
+		margin-top: 60px;
 		}
 		
 	#top h3 {

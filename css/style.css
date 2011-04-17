@@ -32,6 +32,11 @@
 		float: left;
 		}
 		
+	ul.inline li {
+		list-style: none;
+		display: inline;
+		}
+		
 	h1 {
 		background: url('../img/logo.png');
 		text-indent: -9999px;
@@ -342,4 +347,17 @@
 	section#classes ul li span.professor {
 		font-size: 12px;
 		color: #666666;
+		}
+		
+/* Exhibition */
+	#exhibition ul li {
+		margin-bottom: 20px;
+		}
+
+	div#filter_tab {
+		background-color: #F36235;
+		padding: 2px 0 5px 5px;
+		margin-top: -33px;
+		font-size: 12px;
+		color: #FFFFFF;
 		}

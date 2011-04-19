@@ -2,12 +2,14 @@
 <html>
 	<head>
 		<title>Pit Prototype</title>
-		<link href="css/reset.css" rel="stylesheet" type="text/css">
-		<link href="css/960.css" rel="stylesheet" type="text/css">
-		<link href="css/style.css" rel="stylesheet" type="text/css">
-		<script type="text/javascript" src="js/jquery-1.5.min.js"></script> 
-		<script type="text/javascript" src="js/jquery.cycle.all.min.js"></script>
-		<script>
+
+		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/960.css" rel="stylesheet" type="text/css">
+		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="assets/js/jquery-1.5.min.js"></script> 
+		<script type="text/javascript" src="assets/js/jquery.cycle.all.min.js"></script>
+		<script type="text/javascript">
 		$(document).ready(function() {
 			$('#hero .slideshow').cycle({
 				fx: 'scrollHorz',
@@ -21,12 +23,13 @@
 			});
 		});
 		</script>
+		
 		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 	</head>
 	
 	<body>
-			<div id="contentwrapper">
+			<div id="wrapper">
 				<header>
 					<div class="container_12">
 						<div class="grid_2 suffix_2">
@@ -40,12 +43,12 @@
 							<!-- i can has spritesheet -->
 							<nav id="global">
 								<ul>
-									<a href="about.index.htm"><li>School</li></a>
-									<a href="#"><li>Programs</li></a>
-									<a href="#"><li>Community</li></a>
-									<a href="exhibition.index.htm"><li>Exhibition</li></a>
-									<a href="#"><li>Apply</li></a>
-									<a href="#"><li>Support</li></a>
+									<a href="school"><li>School</li></a>
+									<a href="programs"><li>Programs</li></a>
+									<a href="community"><li>Community</li></a>
+									<a href="exhibition"><li>Exhibition</li></a>
+									<a href="apply"><li>Apply</li></a>
+									<a href="support"><li>Support</li></a>
 								</ul>
 							</nav>
 						</div>
@@ -53,15 +56,22 @@
 				</header>
 				
 				<div class="container_12">
-							<div id="hero" class="grid_12">
-								<div class="slideshow">
-									<img class="img_border" src="img/content/piecesshow.jpg" alt="Seniors show final projects at Clearstory Creative.">
-									<img class="img_border" src="img/content/colorcommunication.jpg" alt="Undergraduate students learn communication fundamentals.">
-								</div>
-								<a href="#"><h2 class="caption">
-									
-								</h2></a><span id="pager"><img src="img/left_arrow.jpg" id="pager_prev"> &nbsp;<img src="img/right_arrow.jpg" id="pager_next"></span>
-							</div>
+					<div id="hero" class="grid_12">
+						<div class="slideshow">
+							<img class="img_border" src="img/content/piecesshow.jpg" alt="Seniors show final projects at Clearstory Creative.">
+							<img class="img_border" src="img/content/colorcommunication.jpg" alt="Undergraduate students learn communication fundamentals.">
+						</div>
+						
+						<a href="#">
+							<h2 class="caption"></h2>
+						</a>
+						
+						<span id="pager">
+							<img src="img/left_arrow.jpg" id="pager_prev">
+							&nbsp;
+							<img src="img/right_arrow.jpg" id="pager_next">
+						</span>
+					</div>
 							
 					<div id="news">
 						<div class="grid_7 suffix_1">
@@ -71,7 +81,7 @@
 								<h4 class="grid_5 omega"><a href="#">The Future of eBooks</a></h4>
 								<p class="grid_5 omega">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit ipsum non felis sodales scelerisque. Nunc tincidunt eros erat, eu ultrices tortor. Donec eu arcu bibendum mi lobortis placerat.</p>
 							</article>
-							
+
 							<article>
 								<img class="grid_2 alpha" src="http://placehold.it/120x90">
 								<h4 class="grid_5 omega"><a href="#">School of Design Lecture Series</a></h4>

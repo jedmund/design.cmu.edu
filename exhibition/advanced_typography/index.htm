@@ -1,0 +1,176 @@
+<!-- 
+ | TODO
+ |
+ | ✓ Break images down into 4 per row
+ | ✓ Format filters
+ | ✓ Overlays with class name, major, and professors
+ | • Add graduate students
+ | • Hero byline (switch to project image)
+ |
+ -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>Pit Prototype</title>
+		<link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="../../assets/css/960.css" rel="stylesheet" type="text/css">
+		<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			var majors = [];
+			var years = [];
+			var removeBtn = '<span class="remove_btn">&times;</span>';
+			function selectFilter(elem) {
+				$(elem).addClass('selected');
+				$(elem).append(removeBtn);
+			}
+			
+			function unselectFilter(elem) {
+				$(elem).removeClass('selected');
+				$(elem).children().remove();
+			}
+			
+			$('document').ready(function() {
+				$('#filter a').click(function(e) {
+					e.preventDefault();
+				});
+				
+				$('#filter .option').click(function() {
+					if ($(this).hasClass('selected')) {
+						unselectFilter(this);
+					} else {
+						selectFilter(this);
+					}
+				});
+			});
+		</script>
+	</head>
+	
+	<body>
+			<div id="wrapper">
+				<header>
+					<div class="container_12">
+						<div class="grid_2 suffix_2">
+							<!-- logo is still slightly too big-->
+							<a href="../../index.htm">
+								<h1 id="logo">Carnegie Mellon Design</h1>
+							</a>
+						</div>
+						
+						<div class="grid_8">
+							<!-- i can has spritesheet -->
+							<nav id="global">
+								<ul>
+									<a href="school"><li>School</li></a>
+									<a href="programs"><li>Programs</li></a>
+									<a href="community"><li>Community</li></a>
+									<a href="exhibition"><li>Exhibition</li></a>
+									<a href="apply"><li>Apply</li></a>
+									<a href="support"><li>Support</li></a>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				
+				<div id="exhibition">
+					<div class="container_12">
+						<div id="hero" class="grid_12">
+							<img src="../../assets/img/content/piecesshow.jpg">
+						</div>
+					</div>
+															
+					<section class="container_12">
+						<div class="grid_12">
+							<h3>
+								<span class="left">Advanced Typography</span>
+								<span class="right">Fall 2010</span>	
+							</h3>
+						</div>
+						
+						<figure class="grid_3">
+							<img src="http://placehold.it/220x220">
+							<figcaption class="professor">
+								<a href="../../community/faculty/kh">Professor Kristin Hughes</a>
+							</figcaption>
+						</figure>
+						
+						<div class="grid_6">
+							<p class="course_description">This course develops advanced skills in typography and communication design, including the study of type and motion. Students learn to conceptualize and visualize more complex bodies of information for a variety of communicative purposes.</p>
+							
+							<p class="course_description">Advanced Typography should encourage students to develop a deeper understanding of the expressive potential of type and image and to develop critical and creative thinking skills with which to assess the effectiveness of their own work and that of their peers.</p>
+						</div>
+					</section>
+					
+					<section class="container_12">
+						<div class="grid_12" id="projects">
+							<h3>Projects</h3>
+							<ul>
+								<li class="grid_9 alpha">
+									<a href="#">
+										<img class="grid_3 alpha" src="http://placehold.it/220x140">
+									</a>
+									<div class="grid_6 omega">
+										<h4>
+											<a href="#">Museum of Modern Art</a>
+										</h4>
+											<p>Sed ut elit id leo dictum aliquet. Morbi ullamcorper, justo vitae mattis pharetra, turpis turpis auctor velit, eu venenatis mauris lacus sollicitudin lorem. Sed ac rutrum lorem. Nulla et erat odio.</p>
+									</div>
+								</li>
+								
+								<li class="grid_9 alpha">
+									<a href="#">
+										<img class="grid_3 alpha" src="http://placehold.it/220x140">
+									</a>
+									<div class="grid_6 omega">
+										<h4>
+											<a href="#">Punto y Raya Animation Festival</a>
+										</h4>
+											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis massa orci. Quisque est massa, ultrices ac aliquam bibendum, molestie id tellus. Vestibulum in mi tortor, sed feugiat lorem. Etiam adipiscing semper lorem, ac aliquam urna luctus at.</p>
+									</div>
+								</li>
+								
+								<li class="grid_9 alpha">
+									<a href="#">
+										<img class="grid_3 alpha" src="http://placehold.it/220x140">
+									</a>
+									<div class="grid_6 omega">
+										<h4>
+											<a href="#">The 6th Extinction</a>
+										</h4>
+										<p>In a joint project with <a href="#">The 6th Extinction Documentary</a> project, students were asked to tackle the problem of trying to create empathy for endangered animals.</p>
+									</div>
+								</li>
+								
+								<li class="grid_9 alpha">
+									<a href="#">
+										<img class="grid_3 alpha" src="http://placehold.it/220x140">
+									</a>
+									<div class="grid_6 omega">
+										<h4>
+											<a href="#">Aline Skirts</a>
+										</h4>
+										<p>A-Line skirts, a brand under Kelly Lane Design, are skirts made from refurbished fabrics. The customer can customize the fabric choices for her skirt which is also reversible.</p>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</section>
+				</div>
+			</div>
+			<div id="push"></div>
+		</div>
+		<footer>
+			<div class="container_12">
+				<div class="grid_4"></div>
+				<div class="grid_4"></div>
+				<div class="grid_4"></div>
+			</div>
+		</footer>
+	</body>
+</html>

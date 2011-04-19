@@ -18,6 +18,36 @@
 		
 		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		<script type="text/javascript">
+			var majors = [];
+			var years = [];
+			var removeBtn = '<span class="removeBtn">&times;</span>';
+			function selectFilter(elem) {
+				$(elem).addClass('selected');
+				$(elem).append(removeBtn);
+			}
+			
+			function unselectFilter(elem) {
+				$(elem).removeClass('selected');
+				$(elem).children().remove();
+			}
+			
+			$('document').ready(function() {
+				$('#filter a').click(function(e) {
+					e.preventDefault();
+				});
+				
+				$('#filter .option').click(function() {
+					if ($(this).hasClass('selected')) {
+						unselectFilter(this);
+					} else {
+						selectFilter(this);
+					}
+				});
+			});
+		</script>
 	</head>
 	
 	<body>
@@ -58,100 +88,204 @@
 						<div class="grid_9">
 							<h3>Senior Exhibition</h3>
 							<ul class="inline">
-								<li class="alpha grid_3">
+								<li class="alpha grid_3 class">
+									<div class="overlay">
+										<h4>Pieces</h4>
+										<span class="professor">Dylan Vitone</span>
+									</div>
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3">
+								<li class="grid_3 class">
+									<div class="overlay">
+										<h4>Design Cause You Want To</h4>
+										<span class="professor">Jason DePerro</span>
+									</div>
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3 omega">
+								<li class="grid_3 class omega">
+									<div class="overlay">
+										<h4>Design for Social Change</h4>
+										<span class="professor">Bruce Hanington</span>
+									</div>
 									<img src="http://placehold.it/220x140">
 								</li>
 							</ul>
 						</div>
 						
-						<div class="grid_3" id="filter">
+						<nav class="grid_3 class" id="filter">
 							<h3>Filter</h3>
-							<span class="major">Communication Design</span>
-							<span class="major">Industrial Design</span>
 							
-							<span class="year">Senior</span>
-							<span class="year">Junior</span>
-							<span class="year">Sophomore</span>
-							<span class="year">Freshman</span>
-						</div>
+							<section>
+								<h6>Undergraduate Majors</h6>
+								
+								
+								<a href="#">
+									<span class="option major">Communication Design</span>
+								</a>
+								
+								<a href="#">
+									<span class="option major">Industrial Design</span>
+								</a>
+							</section>
+							
+							<section>
+								<h6>Graduate Strands</h6>
+								
+								<a href="#">
+									<span class="option major">Comm. Planning and Info Design</span>
+								</a>
+								
+								<a href="#">
+									<span class="option major">Interaction Design</span>
+								</a>
+								
+								<a href="#">
+									<span class="option major">Masters of Product Development</span>
+								</a>
+							</section>
+							
+							<section>
+							<h6>Class Year</h6>
+								
+								<a href="#">
+									<span class="option year">Graduate</span>
+								</a>
+
+								<a href="#">								
+									<span class="option year">Senior</span>
+								</a>
+								
+								<a href="#">								
+									<span class="option year">Junior</span>
+								</a>
+								
+								<a href="#">
+									<span class="option year">Sophomore</span>
+								</a>
+								
+								<a href="#">
+									<span class="option year">Freshman</span>
+								</a>
+							</section>
+						</nav>
 						
 						<div class="grid_9">
-							<h3>Graduate Work</h3>
+							<h3>Graduate Exhibition</h3>
 							<ul class="inline">
-								<li class="alpha grid_3">
+								<li class="alpha grid_3 class">
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3">
+								<li class="grid_3 class">
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3 omega">
+								<li class="grid_3 class omega">
+									<img src="http://placehold.it/220x140">
+								</li>
+							</ul>
+						</div>
+						
+						<div class="grid_12">
+							<h3>Junior Studios</h3>
+							<ul class="inline">
+								<li class="alpha grid_3 class">
+									<div class="overlay">
+										<h4>Advanced Typography</h4>
+										<span class="professor">Kristin Hughes</span>
+									</div>
+									<img src="http://placehold.it/220x140">
+								</li>
+								
+								<li class="grid_3 class omega">
+									<div class="overlay">
+										<h4>Product Design</h4>
+										<span class="professor">Eric Anderson</span>
+									</div>
+									<img src="http://placehold.it/220x140">
+								</li>
+							</ul>
+						</div>
+						
+						<div class="grid_12">
+							<h3>Sophomore Studios</h3>
+							<ul class="inline">
+								<li class="alpha grid_3 class">
+									<div class="overlay">
+										<h4>Beginning Typography</h4>
+										<span class="professor">Dan Boyarski</span>
+									</div>									
+									<img src="http://placehold.it/220x140">
+								</li>
+								
+								<li class="grid_3 class">
+									<div class="overlay">
+										<h4>Generation of Form</h4>
+										<span class="professor">Mark Baskinger</span>
+										<span class="professor">Tom Merriman</span>
+									</div>
+									<img src="http://placehold.it/220x140">
+								</li>
+								
+								<li class="grid_3 class omega">
+									<div class="overlay">
+										<h4>Digital Photographic Imaging</h4>
+										<span class="professor">Dylan Vitone</span>
+									</div>									
 									<img src="http://placehold.it/220x140">
 								</li>
 							</ul>
 						</div>
 						
 						<div class="grid_6">
-							<h3>Junior Work</h3>
+							<h3>Freshman Studios</h3>
 							<ul class="inline">
-								<li class="alpha grid_3">
+								<li class="alpha grid_3 class">
+									<div class="overlay">
+										<h4>Design Drawing I</h4>
+										<span class="professor">Mark Mentzer</span>
+										<span class="professor">Mark Baskinger</span>
+									</div>									
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3 omega">
+								<li class="grid_3 class omega">
+									<div class="overlay">
+										<h4>Design Studio I</h4>
+										<span class="professor">Stacie Rohrbach</span>
+										<span class="professor">Bruce Hanington</span>
+									</div>
 									<img src="http://placehold.it/220x140">
 								</li>
 							</ul>
 						</div>
-						
-						<div class="grid_6">
-							<h3>Sophomore Work</h3>
-							<ul class="inline">
-								<li class="alpha grid_3">
-									<img src="http://placehold.it/220x140">
-								</li>
-								
-								<li class="grid_3 omega">
-									<img src="http://placehold.it/220x140">
-								</li>
-							</ul>
-						</div>
-						
-						
 						
 						<div class="grid_12">
 							<h3>Elective Courses</h3>
 							<ul class="inline">
-								<li class="alpha grid_3">
+								<li class="alpha grid_3 class">
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3">
+								<li class="grid_3 class">
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3">
+								<li class="grid_3 class">
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3 omega">
+								<li class="grid_3 class omega">
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="alpha grid_3">
+								<li class="alpha grid_3 class">
 									<img src="http://placehold.it/220x140">
 								</li>
 								
-								<li class="grid_3 omega">
+								<li class="grid_3 class omega">
 									<img src="http://placehold.it/220x140">
 								</li>
 							</ul>

@@ -353,11 +353,78 @@
 	#exhibition ul li {
 		margin-bottom: 20px;
 		}
-
-	div#filter_tab {
-		background-color: #F36235;
-		padding: 2px 0 5px 5px;
-		margin-top: -33px;
+		
+	nav#filter {
 		font-size: 12px;
+		}
+		
+	nav#filter section {
+		margin-bottom: 10px;
+		}
+
+	nav#filter h6 {
+		background: #DDDDDD;
+		font-weight: normal;
+		padding: 2px 0 6px 8px;
+		}
+		
+	nav#filter span {
+		-webkit-transition: all 0.2s ease-in-out;
+		padding: 4px 0 4px 8px;
+		width: 212px;
+		}
+
+	nav#filter a {
+		-webkit-transition: all 0.01s ease-in-out;
+		}		
+		
+	nav#filter a:hover span:not(.removeBtn),
+	nav#filter span.selected {
+		background: #F36235;
 		color: #FFFFFF;
+		cursor: pointer;
+		}
+		
+	.removeBtn {
+		width: auto !important;
+		margin-right: 10px;
+		line-height: 0.2;
+		font-size: 18px;
+		color: #B94929;
+		float: right;
+		}
+		
+	.class {
+		position: relative;
+		height: 140px;
+		width: 220px;
+		}
+		
+	.overlay {
+		background: #FFFFFF;
+		position: absolute;
+		padding: 10px;
+		display: none;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		}
+		
+	.class:hover .overlay {
+		cursor: pointer;
+		display: block;
+		opacity: 0.7;
+		}
+		
+	.professor {
+		float: left;
+		clear: both;
+		}
+		
+	span.major {
+		display: block;
+		}
+		
+	span.year {
+		display: block;
 		}

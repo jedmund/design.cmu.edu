@@ -359,7 +359,7 @@
 		}
 		
 	nav#filter section {
-		margin-bottom: 10px;
+		margin-bottom: 13px;
 		}
 
 	nav#filter h6 {
@@ -423,6 +423,26 @@
 		
 	span.major {
 		display: block;
+		}
+		
+	.overlay h4 {
+		float: left;
+		}
+		
+	span.major_tag {
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		-o-border-radius: 1px;
+		border-radius: 1px;
+		
+		padding: 1px 4px 3px 4px;
+		margin: 2px 0 0 5px;
+		background: #888888;
+		text-align: center;
+		font-size: 10px;
+		color: #FFFFFF;
+		float: left;
+		width: 20px;
 		}
 		
 	span.year {

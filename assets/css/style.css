@@ -268,7 +268,18 @@
 		
 	#side_nav ul {
 		list-style: none;
-		padding: 20px;
+		font-size: 12px;
+		}
+		
+	#side_nav ul li {
+		-webkit-transition: all 0.2s ease-in-out;
+		padding: 4px 0 4px 8px;
+		color: #666666;
+		}
+		
+	#side_nav ul li:hover {
+		background-color: #F36235;
+		color: #FFFFFF;
 		}
 
 /**

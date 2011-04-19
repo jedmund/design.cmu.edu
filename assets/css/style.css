@@ -11,29 +11,24 @@
  * Page Structure
  *
  */
- 
+
 	html {
 		height: 100%;
 		}
-	
+
 	body {
 		font: 14px/1.3 "ff-meta-web-pro-1","ff-meta-web-pro-2", sans-serif;
 		color: #333333;
 		height: 100%;
 		}
-	
+
 	header {
 		background-color: #F36235;
 		color: #FFFFFF;
 		height: 110px;
 		width: 100%;
 		}
-		
-	#hero {
-		margin-bottom: 30px;
-		margin-top: -30px;
-		}
-		
+
 	footer {
 		background: #DEDEDE;
 		position: relative;
@@ -41,19 +36,56 @@
 		float: left;
 		bottom: 0px;
 		}
-		
+
 	/* Sticky Footer */
 	#wrapper {
 		height: auto !important;
 		margin: 0 auto -6em;
 		min-height: 100%;
 		height: 100%;
+
+	#news {
+		margin-top: 10px;
+		float: left;
 		}
 		
 	footer, #push {
 		height: 6em;
 		}
-	
+		
+	#news {
+		margin-top: 40px;
+		float: left;
+		}
+
+/**
+ * Hero
+ *
+ */
+
+	#hero {
+		margin-bottom: 30px;
+		margin-top: -30px;
+		}
+		
+ .slideshow {
+		height: 325px;
+		}
+		
+	.img_border {
+		border: 2px solid #F36235;
+		}
+		
+	.caption {
+		float: left;
+		}
+		
+	#pager {
+		margin-top: 15px;
+		cursor: pointer;
+		float: right;
+		}
+		
 /**
  * Top-level Visuals
  *
@@ -72,15 +104,17 @@
 	h1.intranet {
 		background: url('../img/intranet_logo.png');
 		width: 250px;
-		}
+		}	
 		
 	h2 {
-		font: 24px "warnock-pro-1","warnock-pro-2", serif;
+		margin-bottom: 20px;
+		font: 32px "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
 		}
 		
-	h2.intranet{
-		margin-top: 50px;
+	h2.intranet {
 		font: 24px "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
+		margin-bottom: 0px;
+		margin-top: 50px;
 		}
 	
 	h3 {
@@ -119,40 +153,47 @@
 		float: left;
 		clear: both;
 		}
-		
+
 	article,
 	aside {
 		margin-bottom: 30px;
 		clear: both;
 		float: left;		
 		}
-		
+
 	aside img {
 		margin-bottom: 5px;
 		}
-		
+
 	aside p {
 		font-size: 12px;
 		}
-		
+
 	a {
 		-webkit-transition: color 0.2s ease-in-out;
 		text-decoration: none;
 		color: #333333;
 		}
-		
+
 	a:hover {
 		color: #000000; 
 		}
-		
+
 	header a {
 		color: #FFFFFF;
 		}
-			
-	#news {
-		margin-top: 40px;
-		float: left;
+		
+	#section_header {
+		border-bottom: 1px solid #cdcdcd;
+		padding-bottom: 0px;
+		margin-bottom: 0px;
 		}
+		
+	#section_header h2 {
+		margin-bottom: 5px;
+		margin-top: 10px;
+		}
+
 	
 	/* If you ever need a semantically generic inline list, use this. */
 	ul.inline li {
@@ -222,6 +263,20 @@
 		}
 		
 /**
+ * Content Page Side-Navigation
+ *
+ */	
+ 
+	#side_nav {
+		background-color: #f2f2f2;
+		}
+		
+	#side_nav ul {
+		list-style: none;
+		padding: 20px;
+		}
+
+/**
  * Intranet
  * Edit Profile
  *
@@ -281,7 +336,6 @@
 	#profile form a#add {
 		display: inline-table;
 		float: left;
-		}
 		
 /* Intranet */
 	header#intranet {
@@ -289,8 +343,12 @@
 		height: 90px;
 		}
 		
+	a.intranet{
+		color: #F36235 !important;
+		}
+		
 	#top {
-		margin-top: 20px;
+		margin-top: 60px;
 		}
 		
 	#top h3 {

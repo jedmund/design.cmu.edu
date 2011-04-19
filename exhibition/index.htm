@@ -13,9 +13,9 @@
 <html>
 	<head>
 		<title>Pit Prototype</title>
-		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/960.css" rel="stylesheet" type="text/css">
-		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/960.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 		
 		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -24,7 +24,7 @@
 		<script type="text/javascript">
 			var majors = [];
 			var years = [];
-			var removeBtn = '<span class="removeBtn">&times;</span>';
+			var removeBtn = '<span class="remove_btn">&times;</span>';
 			function selectFilter(elem) {
 				$(elem).addClass('selected');
 				$(elem).append(removeBtn);
@@ -52,12 +52,12 @@
 	</head>
 	
 	<body>
-			<div id="contentwrapper">
+			<div id="wrapper">
 				<header>
 					<div class="container_12">
 						<div class="grid_2 suffix_2">
 							<!-- logo is still slightly too big-->
-							<a href="index.htm">
+							<a href="../index.htm">
 								<h1 id="logo">Carnegie Mellon Design</h1>
 							</a>
 						</div>
@@ -81,7 +81,7 @@
 				<div id="exhibition">
 					<div class="container_12">
 						<div id="hero" class="grid_12">
-							<img src="assets/img/content/piecesshow.jpg">
+							<img src="../assets/img/content/piecesshow.jpg">
 						</div>
 					</div>
 															
@@ -176,14 +176,16 @@
 							<h3>Junior Studios</h3>
 							<ul class="inline">
 								<li class="alpha grid_3 studio">
-									<div class="overlay">
-										<h4>Advanced Typography</h4>
-										<span class="major_tag">CD</span>
-										<span class="professor">Kristin Hughes</span>
-									</div>
-									<img src="http://placehold.it/220x140">
+									<a href="advanced_typography">
+										<div class="overlay">
+											<h4>Advanced Typography</h4>
+											<span class="major_tag">CD</span>
+											<span class="professor">Kristin Hughes</span>
+										</div>
+										<img src="http://placehold.it/220x140">
+									</a>
 								</li>
-								
+																
 								<li class="grid_3 studio omega">
 									<div class="overlay">
 										<h4>Product Design</h4>

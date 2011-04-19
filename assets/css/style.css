@@ -89,6 +89,7 @@
 		font-weight: normal;
 		margin-bottom: 20px;
 		font-size: 14px;
+		height: 14px; /* This makes it so we can have floated elements inside the h3 */
 		width: 100%;
 		}
 		
@@ -157,6 +158,16 @@
 	ul.inline li {
 		list-style: none;
 		display: inline;
+		}
+		
+	/* If you ever need to just float an element left or right without 
+		 semantic meaning, use this on the element. */
+	.left {
+		float: left;
+		}
+		
+	.right {
+		float: right;
 		}
 		
 /**
@@ -421,7 +432,7 @@
 		cursor: pointer;
 		}
 		
-	.removeBtn {
+	.remove_btn {
 		width: auto !important;
 		margin-right: 10px;
 		line-height: 0.2;
@@ -483,4 +494,24 @@
 		
 	span.year {
 		display: block;
+		}
+		
+	p.course_description:not(:last-child) {
+		margin-bottom: 20px;
+		}
+		
+	figcaption.professor {
+		font-size: 12px;
+		}
+		
+	* a {
+		color: #F36235;
+		}
+		
+	* a:hover {
+		color: #B94929;
+		}
+		
+	#projects {
+		margin-top: 30px;
 		}

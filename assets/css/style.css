@@ -53,11 +53,6 @@
 	footer, #push {
 		height: 6em;
 		}
-		
-	#news {
-		margin-top: 40px;
-		float: left;
-		}
 
 /**
  * Hero
@@ -194,7 +189,6 @@
 		margin-bottom: 5px;
 		margin-top: 10px;
 		}
-
 	
 	/* If you ever need a semantically generic inline list, use this. */
 	ul.inline li {
@@ -337,6 +331,7 @@
 	#profile form a#add {
 		display: inline-table;
 		float: left;
+		}
 		
 /* Intranet */
 	header#intranet {
@@ -570,8 +565,10 @@
 	* a:hover {
 		color: #B94929;
 		}
+		
 	#side_nav ul li{
 		line-height: 160%;
+		}
 		
 	#projects {
 		margin-top: 30px;

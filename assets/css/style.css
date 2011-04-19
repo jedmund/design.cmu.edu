@@ -43,7 +43,8 @@
 		margin: 0 auto -6em;
 		min-height: 100%;
 		height: 100%;
-
+		}
+		
 	#news {
 		margin-top: 10px;
 		float: left;
@@ -92,7 +93,7 @@
  */
  
   /* School of Design Logo */
-	h1 {
+	h1#logo	 {
 		background: url('../img/logo.png');
 		text-indent: -9999px;
 		margin-top: 20px;

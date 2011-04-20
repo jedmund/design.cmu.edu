@@ -81,7 +81,9 @@
 		cursor: pointer;
 		float: right;
 		}
-		
+	#hero h2.caption{
+		color: #333;
+		}	
 /**
  * Top-level Visuals
  *

@@ -70,9 +70,14 @@
 		margin-bottom: 60px;
 		height: 324px;
 		}
+		
 	#sidekick {
 		margin-bottom: 10px;
 		height: 179px;
+		}
+	
+	#sidekick figure figcaption {
+		margin-bottom: 50px;
 		}
 
 	#hero a {
@@ -731,8 +736,7 @@
 		margin-top: 30px;
 		clear: both;
 		}
-<<<<<<< HEAD
-		
+
 /**
  * Animations
  *
@@ -746,7 +750,7 @@
  		margin-top: -1px;
  		}
  }
-=======
+
 /* Apply */
 	ul.dates{
 		list-style: none;
@@ -756,4 +760,4 @@
 	ul.dates li{
 		border-bottom: 1px dotted #CCC;
 	}
->>>>>>> 4beb4764d3dd72f405322041f97269e9b698b34f
+

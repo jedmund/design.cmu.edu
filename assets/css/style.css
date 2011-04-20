@@ -60,11 +60,10 @@
  */
 
 	#hero {
-		margin-bottom: 30px;
 		margin-top: -30px;
 		}
 		
- .slideshow {
+ 	.slideshow {
 		height: 325px;
 		}
 		
@@ -77,11 +76,12 @@
 		}
 		
 	#pager {
-		margin-top: 15px;
+		margin-top: 10px;
 		cursor: pointer;
 		float: right;
 		}
 	#hero h2.caption{
+	margin-top: 5px;
 		color: #333;
 		}	
 /**
@@ -106,11 +106,10 @@
 		
 	h2 {
 		margin-bottom: 20px;
-		font: 32px "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
+		font: 24px "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
 		}
 		
 	h2.intranet {
-		font: 24px "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
 		margin-bottom: 0px;
 		margin-top: 50px;
 		}
@@ -183,8 +182,8 @@
 		
 	#section_header {
 		border-bottom: 1px solid #cdcdcd;
-		padding-bottom: 0px;
-		margin-bottom: 0px;
+		padding-bottom: 5px;
+		margin-top: 10px;
 		}
 		
 	#section_header h2 {

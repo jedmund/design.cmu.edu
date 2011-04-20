@@ -60,15 +60,52 @@
  */
 
 	#hero {
+		background: #F36235;
+		margin-bottom: 60px;
 		margin-top: -30px;
+		height: 324px;
+		width: 936px;
+		}
+		
+	#hero a {
+		-webkit-transition: margin 0.2s ease-in-out;
+		color: #FFFFFF;
+		float: left;
+		}
+		
+	#hero a:hover {
+		margin-left: 5px;
+		}
+		
+	#hero figcaption.byline {
+		padding: 2px 0 6px 8px;
+		background: #F36235;
+		margin-top: -1px;
+		font-size: 12px;
+		color: #FFFFFF;
+		float: left;
+		width: 928px;
+		}
+		
+	#hero figcaption.byline span.arrow {
+		margin: 1px 0 0 5px;
+		float: left;
+		}
+		
+	/* Center the image in the background */
+	#hero img {
+		margin-left: 2px;
+		margin-top: 2px;
 		}
 		
  	.slideshow {
 		height: 325px;
 		}
 		
-	.img_border {
-		border: 2px solid #F36235;
+	.hero_container.sidekick {
+		padding-bottom: 20px;
+		margin-bottom: 0;
+		height: 179px;
 		}
 		
 	.caption {
@@ -80,8 +117,8 @@
 		cursor: pointer;
 		float: right;
 		}
-	#hero h2.caption{
-	margin-top: 5px;
+	#hero h2.caption {
+		margin-top: 5px;
 		color: #333;
 		}	
 /**
@@ -128,6 +165,7 @@
 		font-weight: normal;
 		margin-bottom: 5px;
 		font-size: 16px;
+		color: #F36235;
 		}
 		
 	h4 a,
@@ -434,7 +472,7 @@
 		
 	section#classes ul li span {
 		-webkit-transition: color 0.3s ease-in-out;
-		}
+		}margin-bottom: 30px;
 		
 	section#classes ul a li:hover span.studio {
 		color: #B94929;
@@ -541,7 +579,7 @@
 	.studio:hover .overlay {
 		cursor: pointer;
 		display: block;
-		opacity: 0.8;
+		opacity: 0.9;
 		}
 		
 	.professor {

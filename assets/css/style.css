@@ -62,14 +62,16 @@
 	#hero, 
 	#sidekick {
 		background: #F36235;
-		margin-bottom: 60px;
 		margin-top: -30px;
-		height: 324px;
 		width: 940px;
 		}
 		
+	#hero{
+		margin-bottom: 60px;
+		height: 324px;
+		}
 	#sidekick {
-		margin-bottom: 30px;
+		margin-bottom: 10px;
 		height: 179px;
 		}
 
@@ -368,8 +370,13 @@
 		margin-top: 10px;
 		margin-bottom: 0px;
 		}
+	h3.inside{
+		font-size: 16px;
+		margin-bottom: 10px;
+		}
 	h4.inside{
 		margin-bottom: 10px;
+		color: #333;
 		}
 	span.pull_quote{
 		float: left;
@@ -709,3 +716,12 @@
 		margin-top: 30px;
 		clear: both;
 		}
+/* Apply */
+	ul.dates{
+		list-style: none;
+		line-height: 160%;
+		width: 300px;
+		}
+	ul.dates li{
+		border-bottom: 1px dotted #CCC;
+	}

@@ -512,12 +512,22 @@
 		height: 140px;
 		width: 220px;
 		}
-		
-	.overlay {
-		background: #FFFFFF;
+	
+	.studio .info {
+		-webkit-transition: all 0.2s ease-in-out;
 		position: absolute;
 		padding: 10px;
-		display: none;
+		opacity: 0;
+		}
+		
+	.studio:hover .info {
+		opacity: 1;
+		}
+	
+	.studio .overlay {
+		-webkit-transition: all 0.2s ease-in-out;
+		background: #FFFFFF;
+		position: absolute;
 		height: 100%;
 		width: 100%;
 		opacity: 0;
@@ -530,7 +540,7 @@
 	.studio:hover .overlay {
 		cursor: pointer;
 		display: block;
-		opacity: 0.7;
+		opacity: 0.8;
 		}
 		
 	.professor {
@@ -547,7 +557,7 @@
 		display: block;
 		}
 		
-	.overlay h4 {
+	.info h4 {
 		float: left;
 		}
 		

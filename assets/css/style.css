@@ -83,7 +83,8 @@
 		margin-left: 5px;
 		}
 		
-	#hero figcaption.byline {
+	figcaption.byline {
+		-webkit-animation: red-byline 1s 1;
 		padding: 2px 0 6px 8px;
 		background: #F36235;
 		margin-top: -1px;
@@ -93,7 +94,7 @@
 		width: 932px;
 		}
 		
-	#hero figcaption.byline span.arrow {
+	figcaption.byline span.arrow {
 		margin: 1px 0 0 5px;
 		float: left;
 		}
@@ -344,6 +345,11 @@
 		color: #FFFFFF;
 		}	
 		
+	#side_nav ul.selected_subnav li:hover {
+		background: transparent;
+		color: #F36235;
+		}
+		
 	#side_nav ul li:hover {
 		background-color: #F49308;
 		color: #FFFFFF;
@@ -359,28 +365,31 @@
  * Content Page Misc.
  *
  */
-	a.video img{
-		-moz-box-shadow: 		0px 0px 3px #cccccc;
-		-webkit-box-shadow: 	0px 0px 3px #cccccc;
-		box-shadow: 			0px 0px 3px #cccccc;
+	a.video img {
+		-webkit-box-shadow: 0px 0px 3px #cccccc;
+		-moz-box-shadow: 0px 0px 3px #cccccc;
+		box-shadow: 0px 0px 3px #cccccc;
 		}
-	h2.inside{
-		margin-top: 10px;
+		
+	h2.inside {
 		margin-bottom: 0px;
+		margin-top: 10px;
 		}
-	h4.inside{
+		
+	h4.inside {
 		margin-bottom: 10px;
 		}
-	span.pull_quote{
-		float: left;
+		
+	span.pull_quote {
+		padding-bottom: 0px;
 		font-style: italic;
+		padding-top: 20px;
+		font-size: 18px;
+		display: block;
 		width: 200px;
 		color: #999;
-		font-size: 18px;
-		padding-top: 20px;
-		padding-bottom: 0px;
-		display: block;
-	}
+		float: left;
+		}
 
 /**
  * Intranet
@@ -709,3 +718,17 @@
 		margin-top: 30px;
 		clear: both;
 		}
+		
+/**
+ * Animations
+ *
+ */
+ @-webkit-keyframes red-byline {
+ 	0% {
+ 		margin-top: -25px;
+ 		} 
+ 		
+ 	100% {
+ 		margin-top: -1px;
+ 		}
+ }

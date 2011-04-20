@@ -18,7 +18,7 @@
 				next:'#hero .slideshow, #pager_next',
 				prev:'#pager_prev',
 				after: function() {
-					$('#hero .caption').text(this.alt);
+					$('#byline .caption').text(this.alt);
 				}
 			});
 		});
@@ -56,12 +56,14 @@
 				</header>
 				
 				<div class="container_12">
-					<div id="hero" class="grid_12">
+					<figure class="grid_12" id="hero">
 						<div class="slideshow">
-							<img class="img_border" src="assets/img/content/piecesshow.jpg" alt="Seniors show final projects at Clearstory Creative.">
-							<img class="img_border" src="assets/img/content/colorcommunication.jpg" alt="Undergraduate students learn communication fundamentals.">
+							<img src="assets/img/content/piecesshow.jpg" alt="Seniors show final projects at Clearstory Creative.">
+							<img src="assets/img/content/colorcommunication.jpg" alt="Undergraduate students learn communication fundamentals.">
 						</div>
-						
+					</figure>
+					
+					<div class="grid_12" id="byline">
 						<a href="#">
 							<h2 class="caption"></h2>
 						</a>

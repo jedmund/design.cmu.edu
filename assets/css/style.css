@@ -55,18 +55,24 @@
 		}
 
 /**
- * Hero
+ * Superheroes
  *
  */
 
-	#hero {
+	#hero, 
+	#sidekick {
 		background: #F36235;
 		margin-bottom: 60px;
 		margin-top: -30px;
 		height: 324px;
-		width: 936px;
+		width: 940px;
 		}
 		
+	#sidekick {
+		margin-bottom: 30px;
+		height: 179px;
+		}
+
 	#hero a {
 		-webkit-transition: margin 0.2s ease-in-out;
 		color: #FFFFFF;
@@ -84,7 +90,7 @@
 		font-size: 12px;
 		color: #FFFFFF;
 		float: left;
-		width: 928px;
+		width: 932px;
 		}
 		
 	#hero figcaption.byline span.arrow {
@@ -93,7 +99,8 @@
 		}
 		
 	/* Center the image in the background */
-	#hero img {
+	#hero img,
+	#sidekick img {
 		margin-left: 2px;
 		margin-top: 2px;
 		}
@@ -108,6 +115,10 @@
 		height: 179px;
 		}
 		
+	#byline {
+		margin-top: -50px;
+		}
+		
 	.caption {
 		float: left;
 		}
@@ -117,10 +128,12 @@
 		cursor: pointer;
 		float: right;
 		}
+		
 	#hero h2.caption {
 		margin-top: 5px;
 		color: #333;
-		}	
+		}
+		
 /**
  * Top-level Visuals
  *
@@ -319,6 +332,7 @@
 		padding: 4px 0 4px 8px;
 		color: #666666;
 		}
+		
 	#side_nav ul li.selected{
 		background-color: #F36235;
 		color: #FFFFFF;
@@ -328,6 +342,7 @@
 		background-color: #F49308;
 		color: #FFFFFF;
 		}
+		
 /**
  * Content Page Misc.
  *
@@ -560,11 +575,16 @@
 		-webkit-transition: all 0.01s ease-in-out;
 		}		
 		
-	nav#filter a:hover span:not(.removeBtn),
+	nav#filter a:hover span:not(.removeBtn) {
+		background: #F49308;
+		cursor: pointer;
+		color: #FFFFFF;
+		}
+		
 	nav#filter span.selected {
 		background: #F36235;
-		color: #FFFFFF;
 		cursor: pointer;
+		color: #FFFFFF;
 		}
 		
 	.remove_btn {

@@ -187,8 +187,11 @@
 		}
 		
 	#section_header h2 {
-		margin-bottom: 5px;
-		margin-top: 10px;
+		margin-bottom: 0px;
+		}
+		
+	span.breadcrumb{
+		font-size: 12px;
 		}
 	
 	/* If you ever need a semantically generic inline list, use this. */
@@ -278,11 +281,38 @@
 		padding: 4px 0 4px 8px;
 		color: #666666;
 		}
-		
-	#side_nav ul li:hover {
+	#side_nav ul li.selected{
 		background-color: #F36235;
 		color: #FFFFFF;
+		}	
+		
+	#side_nav ul li:hover {
+		background-color: #F49308;
+		color: #FFFFFF;
 		}
+/**
+ * Content Page Misc.
+ *
+ */
+	a.video img{
+		-moz-box-shadow: 		0px 0px 3px #cccccc;
+		-webkit-box-shadow: 	0px 0px 3px #cccccc;
+		box-shadow: 			0px 0px 3px #cccccc;
+		}
+	h2.inside{
+		margin-top: 10px;
+		margin-bottom: 0px;
+		}
+	span.pull_quote{
+		float: left;
+		font-style: italic;
+		width: 200px;
+		color: #999;
+		font-size: 18px;
+		padding-top: 20px;
+		padding-bottom: 0px;
+		display: block;
+	}
 
 /**
  * Intranet

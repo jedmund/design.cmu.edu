@@ -55,20 +55,68 @@
 		}
 
 /**
- * Hero
+ * Superheroes
  *
  */
 
-	#hero {
+	#hero, 
+	#sidekick {
+		background: #F36235;
+		margin-bottom: 60px;
 		margin-top: -30px;
+		height: 324px;
+		width: 940px;
+		}
+		
+	#sidekick {
+		margin-bottom: 30px;
+		height: 179px;
+		}
+
+	#hero a {
+		-webkit-transition: margin 0.2s ease-in-out;
+		color: #FFFFFF;
+		float: left;
+		}
+		
+	#hero a:hover {
+		margin-left: 5px;
+		}
+		
+	#hero figcaption.byline {
+		padding: 2px 0 6px 8px;
+		background: #F36235;
+		margin-top: -1px;
+		font-size: 12px;
+		color: #FFFFFF;
+		float: left;
+		width: 932px;
+		}
+		
+	#hero figcaption.byline span.arrow {
+		margin: 1px 0 0 5px;
+		float: left;
+		}
+		
+	/* Center the image in the background */
+	#hero img,
+	#sidekick img {
+		margin-left: 2px;
+		margin-top: 2px;
 		}
 		
  	.slideshow {
 		height: 325px;
 		}
 		
-	.img_border {
-		border: 2px solid #F36235;
+	.hero_container.sidekick {
+		padding-bottom: 20px;
+		margin-bottom: 0;
+		height: 179px;
+		}
+		
+	#byline {
+		margin-top: -50px;
 		}
 		
 	.caption {
@@ -80,10 +128,12 @@
 		cursor: pointer;
 		float: right;
 		}
-	#hero h2.caption{
-	margin-top: 5px;
+		
+	#hero h2.caption {
+		margin-top: 5px;
 		color: #333;
-		}	
+		}
+		
 /**
  * Top-level Visuals
  *
@@ -128,6 +178,7 @@
 		font-weight: normal;
 		margin-bottom: 5px;
 		font-size: 16px;
+		color: #F36235;
 		}
 		
 	h4 a,
@@ -287,6 +338,7 @@
 		padding: 4px 0 4px 8px;
 		color: #666666;
 		}
+		
 	#side_nav ul li.selected{
 		background-color: #F36235;
 		color: #FFFFFF;
@@ -480,7 +532,7 @@
 		
 	section#classes ul li span {
 		-webkit-transition: color 0.3s ease-in-out;
-		}
+		}margin-bottom: 30px;
 		
 	section#classes ul a li:hover span.studio {
 		color: #B94929;
@@ -538,11 +590,16 @@
 		-webkit-transition: all 0.01s ease-in-out;
 		}		
 		
-	nav#filter a:hover span:not(.removeBtn),
+	nav#filter a:hover span:not(.removeBtn) {
+		background: #F49308;
+		cursor: pointer;
+		color: #FFFFFF;
+		}
+		
 	nav#filter span.selected {
 		background: #F36235;
-		color: #FFFFFF;
 		cursor: pointer;
+		color: #FFFFFF;
 		}
 		
 	.remove_btn {
@@ -559,12 +616,22 @@
 		height: 140px;
 		width: 220px;
 		}
-		
-	.overlay {
-		background: #FFFFFF;
+	
+	.studio .info {
+		-webkit-transition: all 0.2s ease-in-out;
 		position: absolute;
 		padding: 10px;
-		display: none;
+		opacity: 0;
+		}
+		
+	.studio:hover .info {
+		opacity: 1;
+		}
+	
+	.studio .overlay {
+		-webkit-transition: all 0.2s ease-in-out;
+		background: #FFFFFF;
+		position: absolute;
 		height: 100%;
 		width: 100%;
 		opacity: 0;
@@ -577,7 +644,7 @@
 	.studio:hover .overlay {
 		cursor: pointer;
 		display: block;
-		opacity: 0.7;
+		opacity: 0.9;
 		}
 		
 	.professor {
@@ -594,7 +661,7 @@
 		display: block;
 		}
 		
-	.overlay h4 {
+	.info h4 {
 		float: left;
 		}
 		

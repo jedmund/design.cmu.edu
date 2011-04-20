@@ -218,22 +218,24 @@
 	nav#global {
 		float: right;
 		}
-	
-	nav#global ul a {
+	nav#global>ul{
+		position: relative;
+		}
+	nav#global>ul>a {
 		float: left;
 		}
 		
-	nav#global ul a:hover {
+	nav#global>ul>a:hover {
 		color: #FFFFFF;
 		}
 		
-	nav#global ul img {
+	nav#global>ul img {
 		border: 2px solid white;
 		margin-right: 5px;
 		float: left;
 		}
 		
-	nav#global ul li {
+	nav#global>ul>a>li {
 		/* width: 70px; */ /* why is this commented? */
 		-webkit-transition: background 0.2s ease-in-out;
 		border-left: 1px solid #F2A919;
@@ -242,16 +244,20 @@
 		float: left;
 		}
 		
-	nav#global ul li:hover {
+	nav#global>ul>a>li:hover {
 		background: #F49308;
 		}
 		
-	nav#global ul li:first-child {
+	nav#global>ul>a>li:first-child {
 		border-left: 1px solid #F2A919 !important;
 		}
 		
-	nav#global ul li:last-child {
+	nav#global>ul>a>li:last-child {
 		margin-right: 0;
+		}
+	nav#global ul.hover_nav{
+		position: absolute;
+		top:100px;
 		}
 		
 	/* Post-hero sub-navigation options on Index */
@@ -290,6 +296,13 @@
 		background-color: #F49308;
 		color: #FFFFFF;
 		}
+	#side_nav ul.selected_subnav{
+		padding-left: 20px;
+		}
+	#side_nav ul.selected_subnav li.selected{
+		background-color: transparent;
+		color: #F36235;
+		}
 /**
  * Content Page Misc.
  *
@@ -302,6 +315,9 @@
 	h2.inside{
 		margin-top: 10px;
 		margin-bottom: 0px;
+		}
+	h4.inside{
+		margin-bottom: 10px;
 		}
 	span.pull_quote{
 		float: left;

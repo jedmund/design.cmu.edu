@@ -369,18 +369,34 @@
  * Footer
  *
  */
- footer {
-	 margin-top: 50px;
-	 }
- footer div ul{
- 	margin-top: 20px;
- 	list-style: none;
- 	color: #999;
-	 }
- footer div ul li{
-	 float: left;
-	 padding-right: 50px;
-	 }
+	footer {
+		margin-top: 100px;
+		color: #999;
+		height: auto;
+		}
+	footer div{
+		padding-top: 10px;
+		padding-bottom: 50px;
+		}
+	footer a{
+		color: #999;
+	}
+	footer a:hover{
+		color: #666;
+		}
+	footer a.login{
+		display: inline-block;
+		margin-top: 5px;
+		padding: 3px 10px 5px 10px;
+		-moz-border-radius:		1px; 
+   	-webkit-border-radius:	1px; 
+   	border-radius:			1px;
+		background-color: #F36235;
+/* 		background: 			-webkit-gradient(linear, left top, left bottom, from(#F36235), to(#F49308)); */
+/* 		background: 			-moz-linear-gradient(top,  #F36235,  #F49308); */
+		color: white;
+/* 		font-weight: bold; */
+	}
 		
 /**
  * Content Page Side-Navigation
@@ -789,7 +805,6 @@
 		margin-top: 30px;
 		clear: both;
 		}
-<<<<<<< HEAD
 		
 /**
  * Animations
@@ -804,7 +819,6 @@
  		margin-top: -1px;
  		}
  }
-=======
 /* Apply */
 	ul.dates{
 		list-style: none;
@@ -814,4 +828,3 @@
 	ul.dates li{
 		border-bottom: 1px dotted #CCC;
 	}
->>>>>>> 4beb4764d3dd72f405322041f97269e9b698b34f

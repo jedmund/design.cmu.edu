@@ -133,7 +133,7 @@
 		}
 		
 	#byline h2.caption {
-		margin-top: 5px;
+		margin-top: 0px;
 		color: #333;
 		}
 		
@@ -295,12 +295,22 @@
 		/* width: 70px; */ /* why is this commented? */
 		-webkit-transition: background 0.2s ease-in-out;
 		border-left: 1px solid #F2A919;
-		padding: 40px 30px 5px 10px;
+		padding: 40px 35px 5px 10px;
+		min-width: 50px;
 		height: 100%;
 		float: left;
+		position: relative;
+		}
+	
+	nav#global>ul>:first-child>li{
+		padding-right: 55px;
 		}
 		
 	nav#global>ul>a>li:hover {
+		background: #f47d1c;
+		}
+		
+	nav#global>ul>a>li.selected {
 		background: #F49308;
 		}
 		
@@ -313,8 +323,39 @@
 		}
 		
 	nav#global ul.hover_nav{
+		opacity:0;
+		width: 100%;
+		left:0px;
+		top:0px;
+		z-index: 5;
 		position: absolute;
+		background-color: #f47d1c;
+		visibility: hidden;
+		font-size: 12px;
+		padding-top:5px;
+		padding-bottom: 10px;
+		}
+	nav#global ul.hover_nav li{
+		padding-left: 10px;
+		line-height: 160%;
+		}
+	
+	nav#global>ul>a>li.selected ul.hover_nav{
 		background-color: #F49308;
+		}
+	
+	nav#global>ul>a>li:hover ul.hover_nav{
+		visibility: visible;
+		opacity:1;
+		top:60px;
+		/*
+-webkit-transition: .2s ease;
+		-o-transition: .2s ease;
+		transition: .2s ease;
+*/
+		-webkit-transition: opacity .2s ease, visibility .1s ease, top .15s ease;
+		-o-transition: opacity .2s ease, visibility .1s ease, top .15s ease;
+		transition: opacity .2s ease, visibility .1s ease, top .15s ease;
 		}
 		
 	/* Post-hero sub-navigation options on Index */

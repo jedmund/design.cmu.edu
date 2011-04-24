@@ -85,7 +85,8 @@
 		margin-left: 5px;
 		}
 		
-	#hero figcaption.byline {
+	figcaption.byline {
+		-webkit-animation: red-byline 1s 1;
 		padding: 2px 0 6px 8px;
 		background: #F36235;
 		margin-top: -1px;
@@ -95,7 +96,7 @@
 		width: 932px;
 		}
 		
-	#hero figcaption.byline span.arrow {
+	figcaption.byline span.arrow {
 		margin: 1px 0 0 5px;
 		float: left;
 		}
@@ -271,24 +272,26 @@
 	nav#global {
 		float: right;
 		}
-	nav#global>ul{
+		
+	nav#global > ul {
 		position: relative;
 		}
-	nav#global>ul>a {
+		
+	nav#global > ul > a {
 		float: left;
 		}
 		
-	nav#global>ul>a:hover {
+	nav#global > ul > a:hover {
 		color: #FFFFFF;
 		}
 		
-	nav#global>ul img {
+	nav#global > ul img {
 		border: 2px solid white;
 		margin-right: 5px;
 		float: left;
 		}
 		
-	nav#global>ul>a>li {
+	nav#global > ul > a > li {
 		/* width: 70px; */ /* why is this commented? */
 		-webkit-transition: background 0.2s ease-in-out;
 		border-left: 1px solid #F2A919;
@@ -301,13 +304,14 @@
 		background: #F49308;
 		}
 		
-	nav#global>ul>a>li:first-child {
+	nav#global > ul > a > li:first-child {
 		border-left: 1px solid #F2A919 !important;
 		}
 		
-	nav#global>ul>a>li:last-child {
+	nav#global > ul > a > li:last-child {
 		margin-right: 0;
 		}
+		
 	nav#global ul.hover_nav{
 		position: absolute;
 		background-color: #F49308;
@@ -363,13 +367,20 @@
 		color: #FFFFFF;
 		}	
 		
+	#side_nav ul.selected_subnav li:hover {
+		background: transparent;
+		color: #F36235;
+		}
+		
 	#side_nav ul li:hover {
 		background-color: #F49308;
 		color: #FFFFFF;
 		}
+		
 	#side_nav ul.selected_subnav{
 		padding-left: 20px;
 		}
+		
 	#side_nav ul.selected_subnav li.selected{
 		background-color: transparent;
 		color: #F36235;
@@ -378,33 +389,37 @@
  * Content Page Misc.
  *
  */
-	a.video img{
-		-moz-box-shadow: 		0px 0px 3px #cccccc;
-		-webkit-box-shadow: 	0px 0px 3px #cccccc;
-		box-shadow: 			0px 0px 3px #cccccc;
+	a.video img {
+		-webkit-box-shadow: 0px 0px 3px #cccccc;
+		-moz-box-shadow: 0px 0px 3px #cccccc;
+		box-shadow: 0px 0px 3px #cccccc;
 		}
-	h2.inside{
-		margin-top: 10px;
+		
+	h2.inside {
 		margin-bottom: 0px;
+		margin-top: 10px;
 		}
-	h3.inside{
+		
+	h3.inside {
 		font-size: 16px;
 		margin-bottom: 10px;
 		}
-	h4.inside{
+		
+	h4.inside {
 		margin-bottom: 10px;
 		color: #333;
 		}
-	span.pull_quote{
-		float: left;
+		
+	span.pull_quote {
+		padding-bottom: 0px;
 		font-style: italic;
+		padding-top: 20px;
+		font-size: 18px;
+		display: block;
 		width: 200px;
 		color: #999;
-		font-size: 18px;
-		padding-top: 20px;
-		padding-bottom: 0px;
-		display: block;
-	}
+		float: left;
+		}
 
 /**
  * Intranet
@@ -733,6 +748,22 @@
 		margin-top: 30px;
 		clear: both;
 		}
+<<<<<<< HEAD
+		
+/**
+ * Animations
+ *
+ */
+ @-webkit-keyframes red-byline {
+ 	0% {
+ 		margin-top: -25px;
+ 		} 
+ 		
+ 	100% {
+ 		margin-top: -1px;
+ 		}
+ }
+=======
 /* Apply */
 	ul.dates{
 		list-style: none;
@@ -742,3 +773,4 @@
 	ul.dates li{
 		border-bottom: 1px dotted #CCC;
 	}
+>>>>>>> 4beb4764d3dd72f405322041f97269e9b698b34f

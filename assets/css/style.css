@@ -131,7 +131,7 @@
 		float: right;
 		}
 		
-	#hero h2.caption {
+	#byline h2.caption {
 		margin-top: 5px;
 		color: #333;
 		}
@@ -157,7 +157,7 @@
 		}	
 		
 	h2 {
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 		font: 24px "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
 		}
 		

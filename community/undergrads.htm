@@ -73,7 +73,7 @@
 									<li>Juniors</li>
 								</a>
 								
-								<a href="#">
+								<a href="seniors.htm">
 									<li>Seniors</li>
 								</a>
 							</ul>
@@ -109,11 +109,43 @@
 				</div>
 				<div id="push"></div>
 		</div><!-- end content wrapper -->
+
 		<footer>
-			<div class="container_12">
-				<div class="grid_4"></div>
-				<div class="grid_4"></div>
-				<div class="grid_4"></div>
+			<div class="container_12">			
+				<div class="grid_4" id="intranet_login">
+					<h5>Intranet</h5>
+					<form action="intranet" method="post">
+						<input name="email" placeholder="Andrew ID" type="text">
+						<br>
+						<input name="password" placeholder="Password" type="password">
+						<br>
+						<input type="submit" value="Login">
+					</form>
+				</div>
+				
+				<div class="grid_4 suffix_1" id="recent_tweets">
+					<a href="http://twitter.com/cmudesign">
+						<h5>Recent tweets</h5>
+					</a>
+					
+					<span class="tweet">
+						<p>#Thackara grabbed them deeply last night at CMU design, well challenged to find a restorative economy in PGH</p>
+						<span class="tweets_timestamp">April 22</span><br><br>
+					</span>
+					
+					<span class="tweet">
+						<p>If you missed Arnold Wasserman's lecture, it will be available soon for online viewing. http://bit.ly/hxcl5R #cmudesignthefuture</p>
+						<span class="tweets_timestamp">April 21</span><br><br>
+					</span>
+				</div>
+
+				<div class="grid_3" id="contact_us">
+					<h5>Contact Us</h5>
+					<span>5000 Forbes Avenue, MMCH 110</span>
+					<span>Pittsburgh, PA 15213-3815</span>
+					<span>info@design.cmu.edu</span>
+					<span>(412) 268-2828</span>
+				</div>
 			</div>
 		</footer>
 	</body>

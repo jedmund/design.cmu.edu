@@ -14,7 +14,8 @@
 			$('#hero .slideshow').cycle({
 				fx: 'scrollHorz',
 				speed: '10',
-				timeout:0,
+				timeout:5000,
+				speed: 500,
 				next:'#hero .slideshow, #pager_next',
 				prev:'#pager_prev',
 				after: function() {
@@ -32,39 +33,88 @@
 			<div id="wrapper">
 				<header>
 					<div class="container_12">
-						<div class="grid_2 suffix_2">
+						<div class="grid_2">
 							<!-- logo is still slightly too big-->
 							<a href="index.htm">
 								<h1 id="logo">Carnegie Mellon Design</h1>
 							</a>
 						</div>
 												
-						<div class="grid_8">
+						<div class="grid_10">
 							<!-- i can has spritesheet -->
 							<nav id="global">
 								<ul>
 									<a href="school">
-										<li>School</li>
+										<li>
+											<span>School</span>
+											<ul class="hover_nav">
+												<li>What is Design?</li>
+												<li>Design at CMU</li>
+												<li>Design Institute</li>
+												<li>Features</li>
+												<li>Calendar</li>
+												<li>Environment</li>
+												<li>Contact</li>
+											</ul>
+										</li>
 									</a>
 									
 									<a href="programs">
-										<li>Programs</li>
+										<li>
+											<span>Programs</span>
+											<ul class="hover_nav">
+												<li>Pre-College</li>
+												<li>Undergraduate</li>
+												<li>Graduate</li>
+												<li>PhD</li>
+												<li>Continuing Ed</li>
+											</ul>
+										</li>
 									</a>
 									
 									<a href="community">
-										<li>Community</li>
+										<li>
+											<span>Community</span>
+											<ul class="hover_nav">
+												<li>Undergraduate</li>
+												<li>Graduate</li>
+												<li>PhD</li>
+												<li>Faculty</li>
+												<li>Staff</li>
+												<li>Alumni</li>
+											</ul>
+										</li>
 									</a>
 									
 									<a href="exhibition">
-										<li>Exhibition</li>
+										<li>
+											<span>Exhibition</span>
+											<ul class="hover_nav">
+												<li>Senior</li>
+												<li>Junior </li>
+												<li>Sophomore</li>
+												<li>Freshmen</li>
+												<li>Electives</li>
+											</ul>
+										</li>
 									</a>
 									
 									<a href="apply">
-										<li>Apply</li>
+										<li>
+											<span>Apply</span>
+											<ul class="hover_nav">
+												<li>Applying</li>
+												<li>Visiting</li>
+												<li>Financial Aid</li>
+												<li>FAQ</li>
+											</ul>
+										</li>
 									</a>
 									
 									<a href="support">
-										<li>Support</li>
+										<li>
+											<span>Support</span>
+										</li>
 									</a>
 								</ul>
 							</nav>
@@ -93,56 +143,83 @@
 					</div>
 							
 					<div id="news">
-						<div class="grid_7 suffix_1">
+						<div class="grid_9">
 							<h3>Latest News</h3>
-							<article>
-								<img class="grid_2 alpha" src="http://placehold.it/120x90">
-								<h4 class="grid_5 omega"><a href="#">The Future of eBooks</a></h4>
-								<p class="grid_5 omega">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit ipsum non felis sodales scelerisque. Nunc tincidunt eros erat, eu ultrices tortor. Donec eu arcu bibendum mi lobortis placerat.</p>
-							</article>
-
-							<article>
-								<img class="grid_2 alpha" src="http://placehold.it/120x90">
-								<h4 class="grid_5 omega"><a href="#">School of Design Lecture Series</a></h4>
-								<p class="grid_5 omega">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit ipsum non felis sodales scelerisque. Nunc tincidunt eros erat, eu ultrices tortor. Donec eu arcu bibendum mi lobortis placerat.</p>
-							</article>	
-		
-							<article>
-								<img class="grid_2 alpha" src="http://placehold.it/120x90">
-								<h4 class="grid_5 omega"><a href="#">Sophomores Build Stools Out Of Four Boards</a></h4>
-								<p class="grid_5 omega">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit ipsum non felis sodales scelerisque. Nunc tincidunt eros erat, eu ultrices tortor. Donec eu arcu bibendum mi lobortis placerat.</p>
-							</article>	
+						
+							<div class="alpha grid_9">
+								<article>
+									<div class="alpha grid_4">
+										<img src="http://placehold.it/300x200/EFEFEF/EFEFEF">
+									</div>
+									<h4 class="grid_5 omega">
+										<a href="#">Summer Executive Education Programs</a>
+									</h4>
+									<p class="grid_5 omega">Two of the leading schools in the country in their respective fields&mdash;Carnegie Mellon's School of Design and Tepper School of Business have collaborated to create a groundbreaking program at the intersection of design and business.</p>
+								</article>
+							</div>
 							
-							<article>
-								<img class="grid_2 alpha" src="http://placehold.it/120x90">
-								<h4 class="grid_5 omega"><a href="#">The Future of eBooks</a></h4>
-								<p class="grid_5 omega">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit ipsum non felis sodales scelerisque. Nunc tincidunt eros erat, eu ultrices tortor. Donec eu arcu bibendum mi lobortis placerat.</p>
-							</article>	
-	
-							<article>
-								<img class="grid_2 alpha" src="http://placehold.it/120x90">
-								<h4 class="grid_5 omega"><a href="#">The Future of eBooks</a></h4>
-								<p class="grid_5 omega">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit ipsum non felis sodales scelerisque. Nunc tincidunt eros erat, eu ultrices tortor. Donec eu arcu bibendum mi lobortis placerat.</p>
-							</article>	
+							<div class="older alpha grid_3">
+								<article>
+									<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
+									<a href="#">
+										<h4 class="alpha grid_3 project">Kinetic Visualizers 2011</h4>
+									</a>
+									<p class="alpha grid_3">In this project, students developed kinetic visualizers that recorded movement and created "art."</p>
+								</article>	
+			
+								<article>
+									<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
+									<h4 class="alpha grid_3">
+										<a href="#">Confluence will bring together 40+ Recruiters</a>
+									</h4>
+									<p class="alpha grid_3">Carnegie Mellon University School of Design's 16th Annual Career Days event, also known as "Confluence," will be held on March 24–25, 2011.</p>
+								</article>	
+							</div>
+							
+							<div class="older grid_3">
+								<article>
+									<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
+									<h4 class="alpha grid_3"><a href="#">Spring 2011 Critique Schedule</a></h4>
+									<p class="alpha grid_3">All critiques are open to the public unless otherwise noted.</p>
+								</article>	
 		
-							<article>
-								<img class="grid_2 alpha" src="http://placehold.it/120x90">
-								<h4 class="grid_5 omega"><a href="#">The Future of eBooks</a></h4>
-								<p class="grid_5 omega">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas suscipit ipsum non felis sodales scelerisque. Nunc tincidunt eros erat, eu ultrices tortor. Donec eu arcu bibendum mi lobortis placerat.</p>
-							</article>
+								<article>
+									<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
+									<h4 class="alpha grid_3"><a href="#">Cheryl Heller Speaks on Design Communication</a></h4>
+									<p class="alpha grid_3">Cheryl Heller is a candid, insightful designer, writer, and communicator extraordinaire with a diverse and prolific career.</p>
+								</article>			
+							</div>
+							
+							<div class="older grid_3 omega">
+								<article>
+									<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
+									<h4 class="alpha grid_3">
+										<a href="#">Nassim Jafarinaimi to Defend PhD</a>
+									</h4>
+									<p class="alpha grid_3">Next Friday (4/1), Jafarinaimi will defend her thesis titled, "An Inquiry into the Form of Social Interaction in Contemporary Products"</p>
+								</article>
+			
+								<article>
+									<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
+									<h4 class="alpha grid_3">
+										<a href="#">The Future of eBooks</a>
+									</h4>
+									<p class="alpha grid_3">Guest author, senior Justin Edmund, analyzes the future of eBooks, the iPad, and other tablet devices.</p>
+								</article>	
+							</div>
 						</div>
 					
-						<div class="grid_4 omega">
+						<div class="grid_3 omega">
 							<h3>Features</h3>
 							
 							<aside>
-								<img src="http://placehold.it/300x92">
+								<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
 								<h5><a href="#">Featured Story about Paris</a></h5>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</aside>
 							
 							<aside>
-								<img src="http://placehold.it/300x92">
+								<img src="http://placehold.it/220x120/EFEFEF/EFEFEF">
 								<h5><a href="#">Featured Story about Federico Rios</a></h5>
 								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
 							</aside>
@@ -151,20 +228,42 @@
 				</div>
 				<div id="push"></div>
 		</div><!-- end content wrapper -->
+		
 		<footer>
-			<div class="container_12">
-				<div class="grid_12">
-					<ul>
-					<li>&copy; Copyright 2011 Carnegie Mellon University</li>
+			<div class="container_12">			
+				<div class="grid_4" id="intranet_login">
+					<h5>Intranet</h5>
+					<form action="intranet" method="post">
+						<input name="email" placeholder="Andrew ID" type="text">
+						<br>
+						<input name="password" placeholder="Password" type="password">
+						<br>
+						<input type="submit" value="Login">
+					</form>
+				</div>
+				
+				<div class="grid_4 suffix_1" id="recent_tweets">
+					<a href="http://twitter.com/cmudesign">
+						<h5>Recent tweets</h5>
+					</a>
 					
-					<li>
-						<a href="intranet">Intranet Login</a>
-					</li>
+					<span class="tweet">
+						<p>#Thackara grabbed them deeply last night at CMU design, well challenged to find a restorative economy in PGH</p>
+						<span class="tweets_timestamp">April 22</span><br><br>
+					</span>
 					
-					<li>Contact</li>
-					<li>Campus Map</li>
-					<li>Press</li>
-					</ul>
+					<span class="tweet">
+						<p>If you missed Arnold Wasserman's lecture, it will be available soon for online viewing. http://bit.ly/hxcl5R #cmudesignthefuture</p>
+						<span class="tweets_timestamp">April 21</span><br><br>
+					</span>
+				</div>
+
+				<div class="grid_3" id="contact_us">
+					<h5>Contact Us</h5>
+					<span>5000 Forbes Avenue, MMCH 110</span>
+					<span>Pittsburgh, PA 15213-3815</span>
+					<span>info@design.cmu.edu</span>
+					<span>(412) 268-2828</span>
 				</div>
 			</div>
 		</footer>

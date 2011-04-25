@@ -1,0 +1,203 @@
+<!-- 
+ | TODO
+ |
+ | ✓ Break images down into 4 per row
+ | ✓ Format filters
+ | ✓ Overlays with class name, major, and professors
+ | • Add graduate students
+ | • Hero byline (switch to project image)
+ |
+ -->
+
+<!doctype html>
+<html>
+	<head>
+		<title>Pit Prototype</title>
+		<link href="../../assets/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="../../assets/css/960.css" rel="stylesheet" type="text/css">
+		<link href="../../assets/css/style.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+		</head>
+	
+	<body>
+			<div id="wrapper">
+				<header>
+					<div class="container_12">
+						<div class="grid_2 suffix_2">
+							<!-- logo is still slightly too big-->
+							<a href="../index.htm">
+								<h1 id="logo">Carnegie Mellon Design</h1>
+							</a>
+						</div>
+						
+						<div class="grid_8">
+							<!-- i can has spritesheet -->
+							<nav id="global">
+								<ul>
+									<a href="../../school"><li>School</li></a>
+									<a href="../../programs"><li>Programs</li></a>
+									<a href="../../community"><li>Community</li></a>
+									<a href="../../exhibition"><li>Exhibition</li></a>
+									<a href="../../apply"><li>Apply</li></a>
+									<a href="../../support"><li>Support</li></a>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</header>
+				
+				<div id="exhibition">
+					<div class="container_12">
+						<figure class="grid_12" id="sidekick">
+							<img src="../../assets/img/content/cooptoys_sidekick.png">
+							<!-- 
+							<figcaption class="byline">
+								<p class="left">
+									Industrial Design senior Federico Rios creates a line of stylish, long-lasting ride-on toys for senior thesis.
+								</p>
+							</figcaption>
+							-->
+						</figure>
+					</div>
+															
+					<div class="container_12">
+						<div class="grid_12">
+							<h3 class="project_title">The Coop Toy Line</h3>
+						</div>
+						
+						<blockquote class="grid_8 suffix_1">
+							<span class="mark">&#8220;</span>
+							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero.</p>
+						</blockquote>
+						
+						<div class="grid_3">
+							<div id="side_nav" class="metadata">
+								<ul>
+									<a href="#">
+										<li class="designer left">
+											<figure>
+												<img alt="Photo of Federico Rios" class="small" src="../../assets/img/undergraduates/frios.png">
+												<figcaption>
+													<p class="designer_name">
+														<a href="../../community/undergrads/frios">Federico Rios</a>
+													</p>
+													<p class="designer_stats">Industrial Design 2011</p>
+												</figcaption>
+											</figure>
+											
+											<div class="related">
+												<figure>
+													<img alt="Photo of Federico Rios" class="small" src="http://placehold.it/50x50/dfdfdf/dfdfdf">
+													<figcaption>
+														<p class="designer_name">
+															<a href="#">Flowform Spatula</a>
+														</p>
+														<p class="designer_stats">Industrial Design 2011</p>
+													</figcaption>
+												</figure>
+											
+												<figure>
+													<img alt="Photo of Federico Rios" class="small" src="http://placehold.it/50x50/dfdfdf/dfdfdf">
+													<figcaption>
+														<p class="designer_name">
+															<a href="../../community/undergrads/frios">Federico Rios</a>
+														</p>
+														<p class="designer_stats">Industrial Design 2011</p>
+													</figcaption>
+												</figure>
+											</div>
+										</li>
+									</a>
+									
+									<a href="#">
+										<li class="studio left">
+											<figure>
+												<img alt="Photo of Pieces studio" class="small" src="../../assets/img/courses/others/pieces_sq.png">
+												<figcaption>
+													<p class="studio_title">
+														<a href="../../exhibition/pieces">Pieces</a>
+													</p>
+													<p class="studio_type">Senior Studio, Fall 2010</p>
+													<p class="professor_name">
+														<a href="../../community/faculty/vitone">Professor Dylan Vitone</a>
+													</p>
+												</figcaption>
+											</figure>
+											
+											<div class="related">
+												<figure>
+													<img alt="Photo of Federico Rios" class="small" src="http://placehold.it/50x50/dfdfdf/dfdfdf">
+													<figcaption>
+														<p class="project_name">
+															<a href="#">IVY</a>
+														</p>
+														<p class="designer_name">Paris Lowitz</p>
+													</figcaption>
+												</figure>
+											
+												<figure>
+													<img alt="Photo of Federico Rios" class="small" src="http://placehold.it/50x50/dfdfdf/dfdfdf">
+													<figcaption>
+														<p class="project_name">
+															<a href="../../community/undergrads/frios">Nautilus Bass</a>
+														</p>
+														<p class="designer_name">Jim Toggweiler</p>
+													</figcaption>
+												</figure>
+											</div>
+										</li>
+									</a>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="grid_6 suffix_3">
+							<p class="content">Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+
+							<p class="content">Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+							
+							<p class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
+						</div>
+					</div>
+					
+					<div class="slideshow">
+					</div>
+							
+					<div class="container_12">
+						<div class="grid_4">
+							<p class="content">Sed aliquet risus a tortor. Integer id quam. Morbi mi. Quisque nisl felis, venenatis tristique, dignissim in, ultrices sit amet, augue. Proin sodales libero eget ante. Nulla quam. Aenean laoreet.</p>
+							
+							<p class="content">Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+
+							<p class="content">Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+							
+							<p class="content">Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
+						</div>
+						<div class="grid_4">
+							<p class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
+							
+							<p class="content">Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Morbi lacinia molestie dui. Praesent blandit dolor. Sed non quam. In vel mi sit amet augue congue elementum. Morbi in ipsum sit amet pede facilisis laoreet. Donec lacus nunc, viverra nec, blandit vel, egestas et, augue.</p>
+							
+							<p class="content">Sed in arcu vel odio commodo tempus sed non lacus. In hac habitasse platea dictumst. Phasellus ornare interdum turpis sit amet commodo. Integer bibendum, mauris et consectetur auctor, erat nisl auctor sapien, dictum fringilla urna nisi in tellus.</p>
+						</div>
+						<div class="grid_4">
+							<p class="content">Integer condimentum ante dapibus tellus ullamcorper aliquam. Suspendisse potenti. Ut urna massa, mattis in gravida at, pharetra ultricies velit. Suspendisse rhoncus tortor vel justo laoreet commodo. Suspendisse aliquam, nunc non lacinia aliquam, quam nunc faucibus massa, commodo cursus lorem ante sit amet eros. Cras sollicitudin, urna non pulvinar lobortis, massa tellus convallis mauris, et porta magna orci quis dolor.</p>
+						</div>
+					</div>
+					
+				</div>
+				<div id="push"></div>
+		</div>
+		<footer>
+			<div class="container_12">
+				<div class="grid_4"></div>
+				<div class="grid_4"></div>
+				<div class="grid_4"></div>
+			</div>
+		</footer>
+	</body>
+</html>

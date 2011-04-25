@@ -53,6 +53,12 @@
 	footer, #push {
 		height: 6em;
 		}
+		
+	/* This ID is applied to the first grid_X element in the document
+	   after the superhero */
+	#first {
+		margin-top: 20px;
+		}
 
 /**
  * Superheroes
@@ -66,18 +72,14 @@
 		width: 940px;
 		}
 		
-	#hero{
+	#hero {
 		margin-bottom: 60px;
 		height: 324px;
 		}
 		
 	#sidekick {
-		margin-bottom: 10px;
+		margin-bottom: 20px;
 		height: 179px;
-		}
-	
-	#sidekick figure figcaption {
-		margin-bottom: 50px;
 		}
 
 	#hero a {
@@ -90,6 +92,10 @@
 		margin-left: 5px;
 		}
 		
+	#hotfix {
+		margin-top: 30px;
+		}
+		
 	figcaption.byline {
 		-webkit-animation: red-byline 1s 1;
 		padding: 2px 0 6px 8px;
@@ -97,8 +103,8 @@
 		margin-top: -1px;
 		font-size: 12px;
 		color: #FFFFFF;
-		float: left;
 		width: 932px;
+		float: left;
 		}
 		
 	figcaption.byline span.arrow {
@@ -163,7 +169,6 @@
 		}	
 		
 	h2 {
-		margin-bottom: 20px;
 		font: 24px "ff-meta-web-pro-1","ff-meta-web-pro-2",sans-serif;
 		}
 		
@@ -209,6 +214,12 @@
 		float: left;
 		clear: both;
 		}
+		
+	img.small {
+		height: auto;
+		width: 50px;
+		float: left;
+		}
 
 	article,
 	aside {
@@ -239,6 +250,10 @@
 		color: #FFFFFF;
 		}
 		
+	p.content {
+		margin-bottom: 20px;
+		}
+		
 	#section_header {
 		border-bottom: 1px solid #cdcdcd;
 		padding-bottom: 5px;
@@ -267,6 +282,10 @@
 		
 	.right {
 		float: right;
+		}
+		
+	.clear {
+		clear: both;
 		}
 		
 /**
@@ -367,7 +386,7 @@
 		color: #666666;
 		}
 		
-	#side_nav ul li.selected{
+	#side_nav ul li.selected {
 		background-color: #F36235;
 		color: #FFFFFF;
 		}	
@@ -382,6 +401,11 @@
 		color: #FFFFFF;
 		}
 		
+	#side_nav ul li:hover {
+		background: transparent;
+		color: #666666;
+		}
+		
 	#side_nav ul.selected_subnav{
 		padding-left: 20px;
 		}
@@ -390,6 +414,42 @@
 		background-color: transparent;
 		color: #F36235;
 		}
+		
+	/* Using side navigation for project metadata */
+	/* Absolute breaks this technically grid-wise, so margin-left is fixing it */
+	div.metadata {
+		position: absolute;
+		margin-top: -20px;
+		margin-left: -8px;
+		}
+				
+	div.metadata ul li {
+		margin-bottom: 0 !important;
+		clear: both;
+		}
+		
+	li.studio {
+		height: auto;
+		}
+	
+	li figure {
+		margin-top: 5px;
+		}
+		
+	li.designer figcaption,
+	li.studio figcaption {
+		margin-left: 10px;
+		float: left;
+		}
+		
+	li.studio a {
+		color: #F36235 !important;
+		}
+		
+	li.studio a:hover {
+		color: #B94929 !important;
+		}
+		
 /**
  * Content Page Misc.
  *
@@ -403,6 +463,12 @@
 	h2.inside {
 		margin-bottom: 0px;
 		margin-top: 10px;
+		}
+		
+	h3.project_title {
+		font-size: 18px;
+		height: 20px;
+		color: #F36235;
 		}
 		
 	h3.inside {
@@ -753,6 +819,65 @@
 		margin-top: 30px;
 		clear: both;
 		}
+		
+	img.full_image {
+		border: 2px solid #F36235;
+		margin-bottom: 20px;
+		}
+				
+	/* Relativity Bar */
+	.related {
+		border-bottom: 1px solid #C6C6C6;
+		border-top: 1px solid #C6C6C6;
+		padding: 5px 10px 10px 10px;
+		margin: 10px 0 0 -8px;
+		background: #cccccc;
+		width: 208px;
+		float: left;
+		clear: both;
+		}
+		
+	.related figure:not(:last-child) {
+		margin-bottom: 10px;
+		}
+	
+	/* Blockquotes */
+	blockquote {
+		-webkit-transition: all 0.2s ease-in-out;
+		margin-bottom: 20px;
+		position: relative;
+		font-style: italic;
+		font-size: 24px;
+		color: #666666;
+		}
+		
+	blockquote:hover {
+		color: #333333;
+		}
+		
+	blockquote:hover span.mark {
+		top: -16px;
+		}
+		
+	blockquote span.mark {
+		-webkit-transition: all 0.2s ease-in-out;
+		position: absolute;
+		font-size: 72px;
+		color: #F36325;
+		left: -46px;
+		top: -18px;
+		z-index: -1;
+		}
+		
+	/* Slideshow */
+	div.slideshow {
+		margin-top: 50px; /* Hacking */
+		margin-bottom: 40px;
+		background: #666666;
+		width: 100%;
+		float: left;
+		}
+
 
 /**
  * Animations

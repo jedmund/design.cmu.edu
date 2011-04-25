@@ -30,7 +30,7 @@
 		}
 
 	footer {
-		background: #DEDEDE;
+		background: #f4f4f4;
 		position: relative;
 		width: 100%;
 		float: left;
@@ -273,25 +273,25 @@
 		float: right;
 		}
 		
-	nav#global > ul {
+	nav#global>ul {
 		position: relative;
 		}
 		
-	nav#global > ul > a {
+	nav#global>ul>a {
 		float: left;
 		}
 		
-	nav#global > ul > a:hover {
+	nav#global>ul>a:hover {
 		color: #FFFFFF;
 		}
 		
-	nav#global > ul img {
+	nav#global>ul img {
 		border: 2px solid white;
 		margin-right: 5px;
 		float: left;
 		}
 		
-	nav#global > ul > a > li {
+	nav#global>ul>a>li {
 		/* width: 70px; */ /* why is this commented? */
 		-webkit-transition: background 0.2s ease-in-out;
 		border-left: 1px solid #F2A919;
@@ -314,11 +314,11 @@
 		background: #F49308;
 		}
 		
-	nav#global > ul > a > li:first-child {
+	nav#global>ul>a>li:first-child {
 		border-left: 1px solid #F2A919 !important;
 		}
 		
-	nav#global > ul > a > li:last-child {
+	nav#global>ul>a>li:last-child {
 		margin-right: 0;
 		}
 		
@@ -335,7 +335,7 @@
 		padding-top:5px;
 		padding-bottom: 10px;
 		}
-	nav#global ul.hover_nav li{
+	nav#global ul.hover_nav>li{
 		padding-left: 10px;
 		line-height: 160%;
 		}
@@ -348,14 +348,14 @@
 		visibility: visible;
 		opacity:1;
 		top:60px;
-		/*
--webkit-transition: .2s ease;
-		-o-transition: .2s ease;
-		transition: .2s ease;
-*/
 		-webkit-transition: opacity .2s ease, visibility .1s ease, top .15s ease;
 		-o-transition: opacity .2s ease, visibility .1s ease, top .15s ease;
 		transition: opacity .2s ease, visibility .1s ease, top .15s ease;
+		}
+	nav#global ul.hover_nav a{
+		display: inline;
+/* 		position: relative; */
+		float: none;
 		}
 		
 	/* Post-hero sub-navigation options on Index */
@@ -367,15 +367,13 @@
 		
 /**
  * Footer
- *
+ *	Note: More footer style in the "page structure" section
  */
 	footer {
-		margin-top: 100px;
+		margin-top: 50px;
 		color: #999;
 		height: auto;
-		}
-	footer div{
-		padding-top: 10px;
+		padding-top: 30px;
 		padding-bottom: 50px;
 		}
 	footer a{
@@ -392,11 +390,19 @@
    	-webkit-border-radius:	1px; 
    	border-radius:			1px;
 		background-color: #F36235;
-/* 		background: 			-webkit-gradient(linear, left top, left bottom, from(#F36235), to(#F49308)); */
-/* 		background: 			-moz-linear-gradient(top,  #F36235,  #F49308); */
 		color: white;
-/* 		font-weight: bold; */
-	}
+		}
+	footer>div>div{
+		border-top: 1px dotted #CCC;
+		padding-top: 10px;
+		}
+	footer span.tweets{
+		font-size: 12px;
+		}
+	footer span.tweets_timestamp{
+		font-size: 12px;
+		color:#CCC;
+		}
 		
 /**
  * Content Page Side-Navigation

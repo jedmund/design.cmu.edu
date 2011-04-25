@@ -74,13 +74,13 @@
 		height: 179px;
 		}
 
-	#hero a {
+	a #hero .byline p {
 		-webkit-transition: margin 0.2s ease-in-out;
 		color: #FFFFFF;
 		float: left;
 		}
 		
-	#hero a:hover {
+	a:hover #hero .byline p {
 		margin-left: 5px;
 		}
 		
@@ -383,21 +383,25 @@
 		line-height: 2;
 		}
 		
-	nav#global ul.hover_nav > a:hover {
+	nav#global ul.hover_nav a:hover {
 		color: #FFFFFF;
 		}
 	
 	nav#global > ul > li.selected ul.hover_nav {
-		background-color: #F49308;
+		background: #F49308;
 		}
 	
 	nav#global > ul > li:hover ul.hover_nav {
-		-webkit-transition: opacity .2s ease, visibility .1s ease, top .15s ease;
-		-o-transition: opacity .2s ease, visibility .1s ease, top .15s ease;
-		transition: opacity .2s ease, visibility .1s ease, top .15s ease;
+		-webkit-transition: opacity .3s ease, visibility .1s ease, top .15s ease;
+		-o-transition: opacity .3s ease, visibility .1s ease, top .15s ease;
+		transition: opacity .3s ease, visibility .1s ease, top .15s ease;
 		visibility: visible;
 		opacity: 1;
 		top: 60px;
+		}
+		
+	nav#global ul.hover_nav li {
+		-webkit-transition: all 0.3s ease-in-out;
 		}
 		
 	nav#global ul.hover_nav li:hover {

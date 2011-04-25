@@ -444,7 +444,8 @@
 		}
 		
 	nav#global ul.hover_nav li:hover {
-		color: #CCCCCC;
+/* 		color: #FFF; */
+font-weight: bold;
 		}
 		
 	nav#global ul.hover_nav a {

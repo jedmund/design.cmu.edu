@@ -149,10 +149,11 @@
  		}
  
 	.relativity {
+		border-bottom: 1px dotted #AAAAAA;
 		background: #F2F2F2;
 		position: absolute;
 		margin-top: -20px;
-		padding: 4px 8px;
+		padding: 4px 8px 0;
 		font-size: 12px;
 		width: 204px;
 		float: left;
@@ -163,19 +164,19 @@
 		}
 		
 	.relativity li .sub_related {
+		border-bottom: 1px dotted #AAAAAA;
 		padding: 4px 0 8px 8px;
-		margin: 8px 0 -16px -8px;
-		background: #999999;
+		margin: 0 0 -16px -8px;
 		width: 212px;
 		float: left;
 		}
 		
-	.relativity li .sub_related figure:not(:last-child) {
-		margin-bottom: 4px;
+	.relativity li:last-child .sub_related {
+		border: none;
 		}
 		
-	.relativity li .sub_related figure a {
-		color: #FFC928;
+	.relativity li .sub_related figure:not(:last-child) {
+		margin-bottom: 4px;
 		}
 		
 /**
@@ -184,7 +185,7 @@
  */
  
   /* School of Design Logo */
-	h1#logo	 {
+	h1#logo	{
 		background: url('../img/logo2.png');
 		text-indent: -9999px;
 		margin-top: 25px;
@@ -448,7 +449,7 @@
 		
 	nav#global ul.hover_nav a {
 		display: inline;
-/* 		position: relative; */
+		/* position: relative; */
 		float: none;
 		}
 		
@@ -699,11 +700,19 @@
  		}
  		
  	#news article {
- 		min-height: 220px;
+ 		min-height: 230px;
+ 		}
+ 		
+ 	#news article.first_story h4 {
+ 		font-size: 18px;
+ 		}
+ 		
+ 	#news article.first_story p {
+ 		font-size: 16px;
  		}
  		
 	.older {
-		font-size: 12px;
+		font-size: 14px;
  		}
  		
  	.older h4 {

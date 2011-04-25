@@ -147,11 +147,11 @@
  
   /* School of Design Logo */
 	h1#logo	 {
-		background: url('../img/logo.png');
+		background: url('../img/logo2.png');
 		text-indent: -9999px;
-		margin-top: 20px;
-		height: 55px;
-		width: 110px;
+		margin-top: 25px;
+		height: 50px;
+		width: 100px;
 		}
  
   /* Intranet Logo */

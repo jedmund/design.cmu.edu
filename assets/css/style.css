@@ -141,6 +141,44 @@
 		}
 		
 /**
+ * Related Content Bar
+ *
+ */
+ 	.relativity_wrapper {
+ 		position: relative;
+ 		}
+ 
+	.relativity {
+		background: #F2F2F2;
+		position: absolute;
+		margin-top: -20px;
+		padding: 4px 8px;
+		font-size: 12px;
+		width: 204px;
+		float: left;
+		}
+		
+	.relativity li {
+		list-style: none;
+		}
+		
+	.relativity li .sub_related {
+		padding: 4px 0 8px 8px;
+		margin: 8px 0 -16px -8px;
+		background: #999999;
+		width: 212px;
+		float: left;
+		}
+		
+	.relativity li .sub_related figure:not(:last-child) {
+		margin-bottom: 4px;
+		}
+		
+	.relativity li .sub_related figure a {
+		color: #FFC928;
+		}
+		
+/**
  * Top-level Visuals
  *
  */
@@ -405,7 +443,7 @@
 		}
 		
 	nav#global ul.hover_nav li:hover {
-		background: #F36235;
+		color: #CCCCCC;
 		}
 		
 	nav#global ul.hover_nav a {

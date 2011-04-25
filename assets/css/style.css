@@ -478,6 +478,17 @@
 		line-height: 1.6;
 		}
 		
+	footer ul#social{
+		padding-top: 5px;
+		display: block;
+		list-style: none;
+		clear: both;
+		}
+	footer ul#social li{
+		float: left;
+		padding-right: 5px;
+		}
+		
 	/* Footer Form for Intranet */
 	input {
 		-webkit-transition: background 0.2s ease-in-out;
@@ -487,7 +498,7 @@
 		font-size: 10px;
 		outline: none;
 		padding: 5px;
-		width: 70%;
+		width: 208px;
 		}
 		
 	input:focus {
@@ -498,7 +509,8 @@
 	input[type="submit"] {
 		-webkit-transition: background 0.2s ease-in-out;
 		background: #F36235;
-		margin-right: 78px;
+		margin-right: 0px;
+		padding-right: 0px;
 		font-size: 10px;
 		color: #FFFFFF;
 		float: right;

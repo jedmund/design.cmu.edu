@@ -281,6 +281,10 @@
 		clear: both;
 		}
 		
+	.none {
+		clear: none !important;
+		}
+		
 /**
  * Top-level Navigation
  *
@@ -683,6 +687,7 @@
  		
  	section.major h3 {
  		border-bottom: none;
+ 		margin-bottom: 0;
  		}
  	
   section.major ul li {
@@ -692,19 +697,29 @@
 	 	float: left;
 	 	}
 	 	
-	 section.major ul li img {
+	section.major ul li img {
 	 	float: left;
 	 	}
 	 	
-	 section.major ul li figcaption {
+  section.major ul li figcaption {
 	 	margin-left: 10px;
 	 	float: left;
 	 	}
 	 	
-	 section.major ul li figcaption span {
+  section.major ul li figcaption span {
 	 	float: left;
 	 	clear: both;
 	 	}
+	 	
+	#faculty {
+		margin-top: -5px;
+		}
+		
+	#faculty ul li {
+		margin-bottom: 20px;
+		list-style: none;
+		float: left;
+		}
  
 /**
  * Intranet

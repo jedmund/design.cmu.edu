@@ -796,15 +796,29 @@ font-weight: bold;
 		background: #F2A919;
 		margin-top: 20px;
 		}
+<<<<<<< HEAD
 	
 	#news nav a {
 		color: #FFFFFF;
 		display: block;
+=======
+		
+	#news nav > span {
+		padding: 10px;
+		}
+	
+	#news nav a {
+		color: #FFFFFF;
+>>>>>>> ab31964e6c122cb9d29d96441e952d420a6dc6b8
 		}
 		
 	#news nav span#older {
 		-webkit-transition: background 0.2s ease-in-out;
+<<<<<<< HEAD
 		padding: 10px;
+=======
+		padding-left: 10px;
+>>>>>>> ab31964e6c122cb9d29d96441e952d420a6dc6b8
 		float: right;
 		}
 		

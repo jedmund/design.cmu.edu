@@ -506,7 +506,6 @@ font-weight: bold;
 		background: #f4f4f4;
 		position: relative;
 		padding-top: 30px;
-		margin-top: 50px;
 		color: #666666;
 		height: auto;
 		width: 100%;
@@ -791,34 +790,40 @@ font-weight: bold;
  		opacity: 1;
  		}
  		
-	.older {
-		font-size: 14px;
- 		}
- 		
- 	.older h4 {
- 		font-size: 14px;
- 		}
- 	
- 	.older article {
- 		margin-bottom: 30px;
- 		}
- 		
- 	.older h4.project {
- 		-webkit-transition: background 0.2s ease-in-out;
- 		padding: 0 0 2px 4px;
- 		background: #F36235;
- 		margin-top: -2px;
- 		width: 216px;
- 		}
- 		
- 	.older h4.project:hover {
- 		background: #B94929;
- 		}
- 	
- 	.older a h4.project {
- 		color: #FFFFFF;
- 		}
- 		
+	/* Fallback "View More" styling for if infinite
+		 scroll doesn't work/JS is disabled */
+	#news nav {
+		background: #F2A919;
+		margin-top: 20px;
+		}
+		
+	#news nav > span {
+		padding: 10px;
+		}
+	
+	#news nav a {
+		color: #FFFFFF;
+		}
+		
+	#news nav span#older {
+		-webkit-transition: background 0.2s ease-in-out;
+		padding-left: 10px;
+		float: right;
+		}
+		
+	#news nav span#older:hover {
+		background: #D98B00;
+		}
+		
+	#news nav span#older span {
+		float: left;
+		}
+		
+	#news nav a span:last-child {
+		margin: 1px 0 0 5px;
+		float: left;
+		}
+	
 /**
  * Community
  *

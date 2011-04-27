@@ -506,7 +506,6 @@ font-weight: bold;
 		background: #f4f4f4;
 		position: relative;
 		padding-top: 30px;
-		margin-top: 50px;
 		color: #666666;
 		height: auto;
 		width: 100%;
@@ -735,10 +734,6 @@ font-weight: bold;
  		margin-bottom: 10px;
  		}
  		
- 	#news article {
- 		min-height: 230px;
- 		}
- 		
  	#news #primary h4 {
  		font-size: 18px;
  		}
@@ -751,37 +746,95 @@ font-weight: bold;
  	#news #tertiary {
 		border-top: 1px dotted #AAAAAA;
 		padding-top: 20px;
- 		margin-top: 79px;
+ 		margin-top: 106px;
  		}
  		
-	.older {
-		font-size: 14px;
+ 	#news #tertiary article {
+ 		margin-bottom: 20px;
+ 		position: relative;
+ 		min-height: 230px;
  		}
  		
- 	.older h4 {
- 		font-size: 14px;
- 		}
- 	
- 	.older article {
- 		margin-bottom: 30px;
+ 	#news #tertiary article > div {
+ 		position: relative;
+ 		height: 120px;
+ 		width: 300px;
  		}
  		
- 	.older h4.project {
- 		-webkit-transition: background 0.2s ease-in-out;
- 		padding: 0 0 2px 4px;
- 		background: #F36235;
- 		margin-top: -2px;
- 		width: 216px;
+ 	#news #tertiary article > div div.overlay {
+ 		-webkit-transition: opacity 0.2s ease-in-out;
+ 		background: #FFFFFF;
+ 		position: absolute;
+ 		height: 100%;
+ 		width: 100%;
+ 		opacity: 0;
+ 		left: 0;
+ 		top: 0;
  		}
  		
- 	.older h4.project:hover {
- 		background: #B94929;
- 		}
- 	
- 	.older a h4.project {
- 		color: #FFFFFF;
+ 	/* Trigger image opacity on article hover. */
+ 	#news #tertiary article:hover > div div.overlay {
+ 		opacity: 0.2;
  		}
  		
+ 	/* Read Article link on bottom of article */
+ 	#news #tertiary article span.continue {
+ 		-webkit-transition: opacity 0.2s ease-in-out;
+ 		margin-top: 10px;
+ 		font-size: 12px;
+ 		float: right;
+ 		opacity: 0;
+ 		}
+ 		
+ 	#news #tertiary article:hover span.continue {
+ 		opacity: 1;
+ 		}
+ 		
+	/* Fallback "View More" styling for if infinite
+		 scroll doesn't work/JS is disabled */
+	#news nav {
+		background: #F2A919;
+		margin-top: 20px;
+		}
+<<<<<<< HEAD
+	
+	#news nav a {
+		color: #FFFFFF;
+		display: block;
+=======
+		
+	#news nav > span {
+		padding: 10px;
+		}
+	
+	#news nav a {
+		color: #FFFFFF;
+>>>>>>> ab31964e6c122cb9d29d96441e952d420a6dc6b8
+		}
+		
+	#news nav span#older {
+		-webkit-transition: background 0.2s ease-in-out;
+<<<<<<< HEAD
+		padding: 10px;
+=======
+		padding-left: 10px;
+>>>>>>> ab31964e6c122cb9d29d96441e952d420a6dc6b8
+		float: right;
+		}
+		
+	#news nav span#older:hover {
+		background: #D98B00;
+		}
+		
+	#news nav span#older span {
+		float: left;
+		}
+		
+	#news nav a span:last-child {
+		margin: 1px 0 0 5px;
+		float: left;
+		}
+	
 /**
  * Community
  *

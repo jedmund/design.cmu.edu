@@ -61,12 +61,12 @@
 	#sidekick {
 		background: #F36235;
 		margin-top: -30px;
-		width: 940px;
+		width: 938px;
 		}
 		
 	#hero {
 		margin-bottom: 60px;
-		height: 323px;
+		height: 322px;
 		}
 		
 	#sidekick {
@@ -106,7 +106,7 @@
 		
 	/* Hero Slideshow — Frontpage */
 	#hero .slideshow {
-		margin-left: 1px;
+		margin-left: 0px;
 		}
 		
 	/* Center the image in the background */
@@ -181,6 +181,11 @@
 		width: 220px;
 		float: left;
 		}
+	
+	/* Specific styling for content pages */	
+	#content .relativity {
+	 	margin-top: 0;
+	 	}
 		
 	.relativity h5 {
 		font-style: italic;
@@ -223,9 +228,11 @@
 	h1#logo	{
 		background: url('../img/logo.png');
 		text-indent: -9999px;
+		margin-left: 3px;
 		margin-top: 20px;
 		height: 55px;
 		width: 110px;
+		float: left;
 		}
  
   /* Intranet Logo */
@@ -588,7 +595,6 @@ font-weight: bold;
 		-webkit-transition: background 0.2s ease-in-out;
 		background: #F36235;
 		margin-right: 0px;
-		padding-right: 0px;
 		font-size: 10px;
 		color: #FFFFFF;
 		float: right;
@@ -686,15 +692,9 @@ font-weight: bold;
 /**
  * Content Page Misc.
  *
- */
-	a.video img {
-		-webkit-box-shadow: 0px 0px 3px #cccccc;
-		-moz-box-shadow: 0px 0px 3px #cccccc;
-		box-shadow: 0px 0px 3px #cccccc;
-		}
-		
+ */	
 	h2.inside {
-		margin-bottom: 0px;
+		margin-bottom: 8px;
 		margin-top: 10px;
 		}
 		
@@ -741,6 +741,7 @@ font-weight: bold;
  	#news #primary p {
  		line-height: 20px;
  		font-size: 16px;
+ 		width: 350px;
  		}
  		
  	#news #tertiary {
@@ -750,18 +751,25 @@ font-weight: bold;
  		}
  		
  	#news #tertiary article {
+ 		-webkit-transition: color 0.2s ease-in-out;
  		margin-bottom: 20px;
  		position: relative;
- 		min-height: 230px;
+ 		min-height: 250px; /* This is a hotfix. We should probably be using some height normalization trick */
+ 		color: #666666;
  		}
  		
- 	#news #tertiary article > div {
+ 	#news #tertiary article:hover {
+ 		color: #333333;
+ 		}
+ 		
+ 	#news #tertiary article a > div {
+ 		margin-bottom: 8px;
  		position: relative;
  		height: 120px;
  		width: 300px;
  		}
  		
- 	#news #tertiary article > div div.overlay {
+ 	#news #tertiary article a > div div.overlay {
  		-webkit-transition: opacity 0.2s ease-in-out;
  		background: #FFFFFF;
  		position: absolute;
@@ -773,7 +781,7 @@ font-weight: bold;
  		}
  		
  	/* Trigger image opacity on article hover. */
- 	#news #tertiary article:hover > div div.overlay {
+ 	#news #tertiary article:hover a > div div.overlay {
  		opacity: 0.2;
  		}
  		
@@ -796,29 +804,15 @@ font-weight: bold;
 		background: #F2A919;
 		margin-top: 20px;
 		}
-<<<<<<< HEAD
 	
 	#news nav a {
 		color: #FFFFFF;
 		display: block;
-=======
-		
-	#news nav > span {
-		padding: 10px;
-		}
-	
-	#news nav a {
-		color: #FFFFFF;
->>>>>>> ab31964e6c122cb9d29d96441e952d420a6dc6b8
 		}
 		
 	#news nav span#older {
 		-webkit-transition: background 0.2s ease-in-out;
-<<<<<<< HEAD
 		padding: 10px;
-=======
-		padding-left: 10px;
->>>>>>> ab31964e6c122cb9d29d96441e952d420a6dc6b8
 		float: right;
 		}
 		

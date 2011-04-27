@@ -194,9 +194,11 @@
 		}
  
   /* Intranet Logo */
-	h1.intranet {
+	h1#logo.intranet {
 		background: url('../img/intranet_logo.png');
+		margin-top: 20px;
 		width: 250px;
+		height: 55px;
 		}	
 		
 	h2 {
@@ -344,13 +346,7 @@
 	nav#global > ul > a:hover {
 		color: #FFFFFF;
 		}
-		
-	nav#global > ul img {
-		border: 2px solid white;
-		margin-right: 5px;
-		float: left;
-		}
-		
+				
 	nav#global > ul > li {
 		/* width: 70px; */ /* why is this commented? */
 		-webkit-transition: background 0.2s ease-in-out;
@@ -789,14 +785,22 @@ font-weight: bold;
  * Intranet
  * Edit Profile
  *
- */		
+ */	
+ 
+ 	header#intranet nav#global img{
+	 	border: 2px solid white;
+	 	position: relative;
+	 	float: left;
+		margin-top: 40px;
+		margin-left: 10px;
+	 	}
+	 	
+ 	header#intranet nav#global > ul > li > a > span#intranet_user{
+ 		padding-left: 5px;
+ 	}
+ 		
 	#profile {
 		margin-top: 60px;
-		}
-		
-	#profile img {
-		float:left;
-		margin-right: 10px;
 		}
 		
 	#profile div#username {

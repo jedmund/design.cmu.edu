@@ -28,11 +28,48 @@
 			function selectFilter(elem) {
 				$(elem).addClass('selected');
 				$(elem).append(removeBtn);
+				filter(elem);
 			}
 			
 			function unselectFilter(elem) {
 				$(elem).removeClass('selected');
 				$(elem).children().remove();
+			}
+			
+			function inArray(needle, haystack) {
+		    var length = haystack.length;
+		    for(var i = 0; i < length; i++) {
+		        if(haystack[i] == needle) return true;
+		    }
+		    return false;
+			}
+					
+			// Will work for one filter at a time.
+			//
+			// Separate the matches array into a multidimensional array
+			// where each key = a filter. Then, on unselect, remove the index
+			// whose key matches the data-id of `this`.
+			//
+			// Write a separate display function that traverses the `matches`
+			// array and applies or removes a style to all elements in the array
+			// on a key-by-key basis. Call this function at the end of selecting
+			// and unselecting.
+			function filter(elem) {
+				var filter = $(elem).attr('data-filter');
+				var matches = [];
+				
+				$('li.studio').each(function() {
+					if ($(this).attr('data-filter') != undefined) {
+						var temp = $(this).attr('data-filter');
+						var array = temp.split(",");
+						
+						if (inArray(filter, array)) {
+							matches.push(this);
+						}
+					}
+				});
+				
+				console.log(matches);
 			}
 			
 			$('document').ready(function() {
@@ -153,7 +190,7 @@
 					<div class="container_12">
 						<a href="pieces/the_coop.htm">
 							<figure class="grid_12" id="hero">
-								<img src="../assets/img/content/cooptoys.png">
+								<img src="../assets/img/content/cooptoys3.png">
 								<figcaption class="byline">
 										<p class="left">
 										Industrial Design senior Federico Rios creates a line of stylish, long-lasting ride-on toys for senior thesis.</p>
@@ -172,11 +209,11 @@
 								
 								
 								<a href="#">
-									<span class="option major">Communication Design</span>
+									<span class="option major" data-filter="cd">Communication Design</span>
 								</a>
 								
 								<a href="#">
-									<span class="option major">Industrial Design</span>
+									<span class="option major" data-filter="id">Industrial Design</span>
 								</a>
 							</section>
 							
@@ -184,15 +221,15 @@
 								<h6>Graduate Strands</h6>
 								
 								<a href="#">
-									<span class="option major">Comm. Planning and Info Design</span>
+									<span class="option major" data-filter="cpid">Comm. Planning and Info Design</span>
 								</a>
 								
 								<a href="#">
-									<span class="option major">Interaction Design</span>
+									<span class="option major" data-filter="ixd">Interaction Design</span>
 								</a>
 								
 								<a href="#">
-									<span class="option major">Masters of Product Development</span>
+									<span class="option major" data-filter="mpd">Masters of Product Development</span>
 								</a>
 							</section>
 							
@@ -200,23 +237,23 @@
 							<h6>Class Year</h6>
 								
 								<a href="#">
-									<span class="option year">Graduate</span>
+									<span class="option year" data-filter="grad">Graduate</span>
 								</a>
 
 								<a href="#">								
-									<span class="option year">Senior</span>
+									<span class="option year" data-filter="sr">Senior</span>
 								</a>
 								
 								<a href="#">								
-									<span class="option year">Junior</span>
+									<span class="option year" data-filter="jr">Junior</span>
 								</a>
 								
 								<a href="#">
-									<span class="option year">Sophomore</span>
+									<span class="option year" data-filter="soph">Sophomore</span>
 								</a>
 								
 								<a href="#">
-									<span class="option year">Freshman</span>
+									<span class="option year" data-filter="fres">Freshman</span>
 								</a>
 							</section>
 						</nav>
@@ -224,7 +261,7 @@
 						<div class="grid_9">
 							<h3>Senior Exhibition</h3>
 							<ul class="inline">
-								<li class="alpha grid_3 studio">
+								<li class="alpha grid_3 studio" data-filter="cd,id,sr">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Pieces</h4>
@@ -233,7 +270,7 @@
 									<img src="../assets/img/courses/others/pieces.png">
 								</li>
 								
-								<li class="grid_3 studio">
+								<li class="grid_3 studio" data-filter="id,sr">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Design Cause You Want To</h4>
@@ -242,7 +279,7 @@
 									<img src="../assets/img/courses/others/cause_you_want_to.png">
 								</li>
 								
-								<li class="grid_3 studio omega">
+								<li class="grid_3 studio omega" data-filter="cd,id,sr">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Design for Social Change</h4>
@@ -256,7 +293,7 @@
 						<div class="prefix_3 grid_9">
 							<h3>Junior Studios</h3>
 							<ul class="inline">
-								<li class="alpha grid_3 studio">
+								<li class="alpha grid_3 studio" data-filter="cd,jr">
 									<a href="advanced_typography">
 										<div class="overlay"></div>
 										<div class="info">
@@ -268,7 +305,7 @@
 									</a>
 								</li>
 																
-								<li class="grid_3 studio">
+								<li class="grid_3 studio" data-filter="id,jr">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Product Design</h4>
@@ -287,7 +324,7 @@
 						<div class="prefix_3 grid_9">
 							<h3>Sophomore Studios</h3>
 							<ul class="inline">
-								<li class="alpha grid_3 studio">
+								<li class="alpha grid_3 studio" data-filter="cd,soph">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Beginning Typography</h4>
@@ -297,7 +334,7 @@
 									<img src="../assets/img/courses/others/basic_type.png">
 								</li>
 								
-								<li class="grid_3 studio">
+								<li class="grid_3 studio" data-filter="id,soph">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Generation of Form</h4>
@@ -308,7 +345,7 @@
 									<img src="../assets/img/courses/others/gen_form.png">
 								</li>
 								
-								<li class="grid_3 studio omega">
+								<li class="grid_3 studio omega" data-filter="cd,soph">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Digital Photo Imaging</h4>
@@ -323,7 +360,7 @@
 						<div class="prefix_3 grid_9">
 							<h3>Freshman Studios</h3>
 							<ul class="inline">
-								<li class="alpha grid_3 studio">
+								<li class="alpha grid_3 studio" data-filter="fres">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Design Drawing I</h4>
@@ -334,7 +371,7 @@
 									<img src="../assets/img/courses/others/drawing.png">
 								</li>
 								
-								<li class="grid_3 studio">
+								<li class="grid_3 studio" data-filter="fres">
 									<div class="overlay"></div>
 									<div class="info">
 										<h4>Design Studio I</h4>

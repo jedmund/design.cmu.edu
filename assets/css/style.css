@@ -508,6 +508,7 @@
 		}
 		
 	nav#global ul.hover_nav li:hover {
+		/* 		color: #FFF; */
 		font-weight: bold;
 		}
 		
@@ -1025,6 +1026,11 @@
 		margin-top: 40px;
 		margin-left: 10px;
 	 	}
+	
+	header#intranet nav#global > ul > li:hover {
+		background-color: #f47d1c;
+	}
+	
 	 	
  	header#intranet nav#global > ul > li > a > span#intranet_user{
  		padding-left: 5px;

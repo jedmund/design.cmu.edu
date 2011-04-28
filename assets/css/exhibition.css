@@ -1,0 +1,153 @@
+/* Exhibition */
+	#exhibition ul li {
+		margin-bottom: 20px;
+		}
+		
+	nav#filter {
+		font-size: 12px;
+		}
+		
+	nav#filter section {
+		margin-bottom: 13px;
+		}
+
+	nav#filter h6 {
+		background: #DDDDDD;
+		font-weight: normal;
+		padding: 2px 0 6px 8px;
+		}
+		
+	nav#filter span {
+		-webkit-transition: all 0.2s ease-in-out;
+		padding: 4px 0 4px 8px;
+		width: 212px;
+		}
+
+	nav#filter a {
+		-webkit-transition: all 0.01s ease-in-out;
+		}		
+		
+	nav#filter a:hover span:not(.removeBtn) {
+		background: #F49308;
+		cursor: pointer;
+		color: #FFFFFF;
+		}
+		
+	nav#filter span.selected {
+		background: #F36235;
+		cursor: pointer;
+		color: #FFFFFF;
+		}
+		
+	.remove_btn {
+		width: auto !important;
+		margin-right: 10px;
+		line-height: 0.2;
+		font-size: 18px;
+		color: #B94929;
+		float: right;
+		}
+		
+	.studio {
+		position: relative;
+		height: 140px;
+		width: 220px;
+		}
+	
+	.studio .info {
+		-webkit-transition: all 0.2s ease-in-out;
+		position: absolute;
+		padding: 10px;
+		opacity: 0;
+		}
+		
+	.studio:hover .info {
+		opacity: 1;
+		}
+	
+	.studio .overlay {
+		-webkit-transition: all 0.2s ease-in-out;
+		background: #FFFFFF;
+		position: absolute;
+		height: 100%;
+		width: 100%;
+		opacity: 0;
+		}
+		
+	li.studio a {
+		color: #333333;
+		}
+		
+	.studio:hover .overlay {
+		cursor: pointer;
+		display: block;
+		opacity: 0.9;
+		}
+		
+	.professor {
+		float: left;
+		clear: both;
+		}
+		
+	figure {
+		float: left;
+		clear: both;
+		}
+		
+	span.major {
+		display: block;
+		}
+		
+	.info h4 {
+		float: left;
+		}
+		
+	span.major_tag {
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		-o-border-radius: 1px;
+		border-radius: 1px;
+		
+		padding: 1px 4px 3px 4px;
+		margin: 2px 0 0 5px;
+		background: #888888;
+		text-align: center;
+		font-size: 10px;
+		color: #FFFFFF;
+		float: left;
+		width: 20px;
+		}
+		
+	span.year {
+		display: block;
+		}
+		
+	span.right.year {
+		font-size: 12px;
+		}
+		
+	p.course_description:not(:last-child) {
+		margin-bottom: 20px;
+		}
+		
+	figcaption.professor {
+		font-size: 12px;
+		}
+		
+	* a {
+		color: #F36235;
+		}
+		
+	* a:hover {
+		color: #B94929;
+		}
+		
+	#projects {
+		margin-top: 30px;
+		clear: both;
+		}
+		
+	img.full_image {
+		border: 2px solid #F36235;
+		margin-bottom: 20px;
+		}

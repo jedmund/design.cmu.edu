@@ -151,3 +151,103 @@
 		border: 2px solid #F36235;
 		margin-bottom: 20px;
 		}
+		
+		/* Relativity Bar */
+	.related {
+		border-bottom: 1px solid #C6C6C6;
+		border-top: 1px solid #C6C6C6;
+		padding: 10px 10px 10px 10px;
+		margin: 10px 0 0 -8px;
+		background: #cccccc;
+		width: 208px;
+		float: left;
+		clear: both;
+		}
+		
+	.related figure:not(:last-child) {
+		margin-bottom: 10px;
+		}
+	
+	/* Blockquotes */
+	blockquote {
+		-webkit-transition: all 0.2s ease-in-out;
+		margin-bottom: 20px;
+		position: relative;
+		font-style: italic;
+		font-size: 24px;
+		color: #666666;
+		}
+		
+	blockquote:hover {
+		color: #333333;
+		}
+		
+	blockquote:hover span.mark {
+		top: -16px;
+		}
+		
+	blockquote span.mark {
+		-webkit-transition: all 0.2s ease-in-out;
+		position: absolute;
+		font-size: 72px;
+		color: #F26325;
+		left: -46px;
+		top: -18px;
+		z-index: -1;
+		}
+		
+	/* Slideshow */
+	div#exhibition div.slideshow {
+		margin-top: 50px; /* Hacking */
+		margin-bottom: 40px;
+		background: #666666;
+		height: 325px;
+		width: 100%;
+		float: left;
+		}
+		
+	div#exhibition div.slideshow div {
+		border-bottom: 1px solid #999999;
+		padding: 5px 5px 5px 0;
+		background: #F26236;
+		margin-bottom: -5px;
+		}
+		
+	div#exhibition div.slideshow h3 {
+		margin: -5px 0 0 10px;
+		border-bottom: 0;
+		font-size: 18px;
+		color: #FFFFFF;
+		}
+		
+	div#exhibition div.slideshow figure {
+		position: relative;
+		height: 277px;
+		width: 387px;
+		float: left;
+		clear: none;
+		}
+		
+	div#exhibition div.slideshow figure:hover div.overlay {
+		opacity: 0;
+		}
+		
+	div#exhibition div.slideshow figure div.overlay {
+		-webkit-transition: opacity 0.2s ease-in-out;
+		background: #000000;
+		position: absolute;
+		opacity: 0.8;
+		height: 100%;
+		width: 100%;
+		top: 6px;
+		left: 0;
+		}
+		
+	div#exhibition div.slideshow figure img {
+		border-right: 1px solid #F36325;
+		border-left: 1px solid #F36325;
+		margin: 6px 0;
+		height: 290px;
+		width: auto;
+		float: left;
+		}

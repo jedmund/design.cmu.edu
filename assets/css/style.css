@@ -1206,6 +1206,15 @@
 	section#myclasses ul a li{
 		float: left;
 		}
+		
+	section#myclasses a.button{
+		background: #F36235;
+		padding: 5px 10px 5px 10px;
+		color: white;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		}
  
 /**
  * Intranet

@@ -1052,15 +1052,21 @@
  	
  	
  	header#intranet nav#global > ul > li > a > span.username{
- 		padding-left: 5px;
+ 		padding-left: 10px;
  		margin-top: 25px;
  		font-weight: bold;
  	}
  	
  	header#intranet nav#global > ul > li > a > span.usertype{
- 		padding-left: 5px;
+ 		padding-left: 10px;
  		margin-top: -2px
  	}
+ 	
+ 	header#intranet nav#global > ul > li:hover ul.hover_nav {
+		-webkit-transition: opacity .2s ease, visibility .1s ease, top .225s ease;
+		-o-transition: opacity .2s ease, visibility .1s ease, top .225s ease;
+		transition: opacity .2s ease, visibility .1s ease, top .225s ease;
+		}
  	
  	div#title {
 		font-size: 32px;

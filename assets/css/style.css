@@ -92,10 +92,10 @@
 		-webkit-animation: red-byline 1s 1;
 		padding: 2px 0 6px 8px;
 		background: #F36235;
-		margin-top: -1px;
+		margin-top: -3px;
 		font-size: 12px;
 		color: #FFFFFF;
-		width: 932px;
+		width: 930px;
 		float: left;
 		}
 		
@@ -720,6 +720,10 @@
 		
 	li.studio a:hover {
 		color: #B94929 !important;
+		}
+		
+	li.studio a span.professor {
+		color: #333333;
 		}
 		
 /**
@@ -1527,7 +1531,7 @@
  		} 
  		
  	100% {
- 		margin-top: -1px;
+ 		margin-top: -3px;
  		}
  }
 

@@ -508,7 +508,6 @@
 		}
 		
 	nav#global ul.hover_nav li:hover {
-		/*  color: #FFFFFF; */
 		font-weight: bold;
 		}
 		
@@ -791,7 +790,8 @@
 		color: #333333;
 		}
 				
-	section#dict_definition p.sidenote {
+	section#dict_definition p.sidenote,
+	section#school_definition p.sidenote {
 		margin-top: 9px;
 		}
 		
@@ -811,6 +811,50 @@
 		
 	section#school_mission p:hover em {
 		color: #F36235;
+		}
+		
+	/* PAGE: Programs */
+	#programs {
+		margin: 30px 0 60px 0;
+		}
+		
+	#programs a {
+		position: relative;
+		float: left;
+		}
+		
+	#programs a:first-child div.overlay {
+		left: 0;
+		}
+		
+	#programs a div.overlay {
+		-webkit-transition: opacity 0.2s ease-in-out;
+		background: #FFFFFF;
+		position: absolute;
+		height: 400px;
+		width: 220px;
+		opacity: 0.3;
+		left: 10px;
+		top: 0;
+		}
+		
+	#programs a:hover div.overlay {
+		opacity: 0;
+		}
+		
+	#programs a:hover h4 {
+		color: #B94929;
+		}
+		
+	#programs ul li {
+		-webkit-transition: color 0.2s ease-in-out;
+		list-style: none;
+		font-size: 12px;
+		color: #999999;
+		}
+		
+	#programs ul li:hover {
+		color: #333333;
 		}
 		
 /**

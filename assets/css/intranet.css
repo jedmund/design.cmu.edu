@@ -235,10 +235,10 @@
 	section#project h5:first-child{
 		margin-bottom: 10px;
 		}
-	
+		
 	section#project hr{
 		width:100%;
-		margin: 20px 0px 20px 0px;
+		margin: 25px 0px 15px 0px;
 		float: none;
 		display: block;
 		border: 1px dotted #CCC;
@@ -252,10 +252,15 @@
 		padding: 15px;
 		}
 		
-	section#project form textarea{
+	section#project div#sidebar>div img{
+		margin-bottom: 5px;
+		}
+		
+	section#project div#textarea{
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
+		overflow: hidden;
 
 		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
 		padding:7px 5px 7px 5px;
@@ -264,8 +269,11 @@
 		margin-bottom: 15px;
 		height: 400px;
 		width: 100%;
-		resize: none;
-/* 		float: left; */
+/* 		resize: none; */
+		}
+	
+	section#project h4{
+		color: #333;
 		}
 	
 	section#project a.button{

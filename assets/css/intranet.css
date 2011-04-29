@@ -260,7 +260,7 @@
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
-		overflow: hidden;
+		overflow-y: scroll;
 
 		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
 		padding:7px 5px 7px 5px;

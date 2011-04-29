@@ -221,6 +221,11 @@
  		margin-bottom: 60px;
 	 	}
 	 	
+ 	section#project input:focus {
+	 	background-color: white;
+	 	color: #000;
+	 	}
+ 	
 	section#project input[type=text]{
 		float: none;
 		font-size: 32px;
@@ -329,8 +334,16 @@
 		}
 		
 	section#myprints span{
-		width: 175px;
+		width: 215px;
 		display: inline-block;
+		}
+		
+	section#myprints span.timestamp{
+		width:150px;
+		}
+	
+	section#myprints span.copies{
+		width:90px;
 		}
 		
 	section#myprints span.edit{
@@ -339,6 +352,14 @@
 	
 	section#myprints div.done{
 		color: #999;
+		}
+	
+	section#myprints div.done a{
+		color: #999;
+		}
+		
+	section#myprints div.done a:hover{
+		color: #333;
 		}
 	
 	section#myprints div.print_row span.edit{
@@ -357,12 +378,16 @@
 	section#profile img{
 		float: left;
 		margin-right: 10px;
-	}
-		
+		}
 			
 	section#profile form {
 		margin-top: 30px;
 		}
+		
+	section#profile input:focus {
+	 	background-color: white;
+	 	color: #000;
+	 	}
 			
 	section#profile form input {
 	  -webkit-border-radius: 2px;

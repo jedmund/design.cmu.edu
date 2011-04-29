@@ -1,14 +1,24 @@
 <!doctype html>
 <html>
 	<head>
-		<title>Pit Prototype</title>
+		<title>CMU Design Intranet</title>
 		<link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
 		<link href="../assets/css/960.css" rel="stylesheet" type="text/css">
 		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 		<link href="../assets/css/intranet.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/tipsy.css" rel="stylesheet" type="text/css">
 		
 		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript" src="../assets/js/jquery-1.5.min.js"></script> 
+		<script type="text/javascript" src="../assets/js/jquery.tipsy.js"></script> 
+		
+		<script>
+			$(document).ready(function() {
+				$('a.printer').tipsy();
+			})
+		</script>
+		
 	</head>
 	
 	<body>
@@ -27,8 +37,8 @@
 						<nav id="global">
 							<ul>
 								<li>
-									<a href="classes.htm">
-										<span>My classes</span>
+									<a href="projects.htm">
+										<span>My projects</span>
 									</a>
 								</li>
 								<li>
@@ -50,7 +60,7 @@
 											<a href="#">My Account</a>
 										</li>
 										<li>
-											<a href="#">Logout</a>
+											<a href="index2.htm">Logout</a>
 										</li>
 									</ul>
 								</li>
@@ -64,7 +74,7 @@
 			<div class="container_12">
 				<section id="myprints" class="grid_12">
 					<div id="title">Submit new print</div>
-					<img src="../assets/img/printers.jpg">
+					<a href="#" class="printer" title="Inkjet printer for photographs and final designs."><img src="../assets/img/printers1.jpg"></a><a href="#" class="printer" title="Fast, cheap laser prints for mockups and fliers."><img src="../assets/img/printers2.jpg"></a><a href="#" class="printer" title="Large format printer for posters."><img src="../assets/img/printers3.jpg"></a><a href="#" class="printer" title="Laser cutter for cutting or etching non toxic materials."><img src="../assets/img/printers4.jpg"></a><a href="#" class="printer" title="3D Printer for digital fabrication of physical prototypes."><img src="../assets/img/printers5.jpg"></a><br><br><br>
 					<br><br><div id="labels">
 						<span class="timestamp">
 							Time submitted
@@ -145,10 +155,10 @@
 					</div>
 					<div class="print_row done">
 						<span class="timestamp">
-							2 day ago
+							2 days ago
 						</span>
 						<span class="filename">
-							Steven.pdf
+							<a href="#">Steven.pdf</a>
 						</span>
 						<span class="printer">
 							HP ColorLaser
@@ -165,10 +175,10 @@
 					</div>
 					<div class="print_row done">
 						<span class="timestamp">
-							2 day ago
+							2 days ago
 						</span>
 						<span class="filename">
-							wednesday_mocks.pdf
+							<a href="#">wednesday_mocks.pdf</a>
 						</span>
 						<span class="printer">
 							Canon Pro 9000
@@ -185,10 +195,10 @@
 					</div>
 					<div class="print_row done">
 						<span class="timestamp">
-							3 day ago
+							3 days ago
 						</span>
 						<span class="filename">
-							web_team.pdf
+							<a href="#">web_team.pdf</a>
 						</span>
 						<span class="printer">
 							Canon Pro 9000
@@ -205,10 +215,10 @@
 					</div>
 					<div class="print_row done">
 						<span class="timestamp">
-							4 day ago
+							4 days ago
 						</span>
 						<span class="filename">
-							breakfast_smiley.pdf
+							<a href="#">breakfast_smiley.pdf</a>
 						</span>
 						<span class="printer">
 							HP Design Jet

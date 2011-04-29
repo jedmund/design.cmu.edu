@@ -29,7 +29,7 @@
 		margin-left: 10px;
 	 	}
 	
-	header#intranet nav#global > ul > li{
+	header#intranet nav#global > ul > li:last-child{
 		min-width: 80px;
 	}
 	
@@ -188,7 +188,10 @@
 		}
 	
 	section#myclasses div.class_description{
-		
+		}
+	
+	section#myclasses a{
+		color: #F36235;
 		}
 	
 	section#myclasses ul{
@@ -207,6 +210,73 @@
 		border-radius: 1px;
 		}
  
+ /**
+ * Intranet
+ * Project
+ *
+ */
+	
+	section#project{
+ 		margin-top: 60px;
+ 		margin-bottom: 60px;
+	 	}
+	 	
+	section#project input[type=text]{
+		float: none;
+		font-size: 32px;
+		margin-bottom: 30px;
+		border: 1px solid #999;
+		width: 100%;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		}
+		
+	section#project h5:first-child{
+		margin-bottom: 10px;
+		}
+	
+	section#project hr{
+		width:100%;
+		margin: 20px 0px 20px 0px;
+		float: none;
+		display: block;
+		border: 1px dotted #CCC;
+		border-style: none none dotted;
+		}
+	
+	section#project div#sidebar{
+		background-color: #f2f2f2;
+		}
+	section#project div#sidebar>div{
+		padding: 15px;
+		}
+		
+	section#project form textarea{
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+
+		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
+		padding:7px 5px 7px 5px;
+		border: 1px solid #999;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		height: 400px;
+		width: 100%;
+		resize: none;
+/* 		float: left; */
+		}
+	
+	section#project a.button{
+		background: #F36235;
+		padding: 5px 10px 5px 10px;
+		color: white;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		}
+	
 /**
  * Intranet
  * Edit Profile

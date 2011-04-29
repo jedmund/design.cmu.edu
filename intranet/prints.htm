@@ -1,0 +1,243 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Pit Prototype</title>
+		<link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/960.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/intranet.css" rel="stylesheet" type="text/css">
+		
+		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	</head>
+	
+	<body>
+		<div id="wrapper">
+			<header id="intranet">
+				<div class="container_12">
+					<div class="grid_2 suffix_2">
+						<!-- logo is still slightly too big-->
+						<a href="index.htm">
+							<h1 class="intranet" id="logo">Carnegie Mellon Design</h1>
+						</a>
+					</div>
+					
+					<div class="grid_8">
+						<!-- i can has spritesheet -->
+						<nav id="global">
+							<ul>
+								<li>
+									<a href="classes.htm">
+										<span>My classes</span>
+									</a>
+								</li>
+								<li>
+									<a href="prints.htm">
+										<span>My prints</span>
+									</a>
+								</li>
+								<li>
+									<a href="profile.htm">
+										<img src="../assets/img/content/davidyen.jpg" width="24px">
+										<span class="username">David Yen</span>
+										<span class="usertype">Student</span>
+									</a>
+									<ul class="hover_nav">
+										<li>
+											<a href="#">Profile</a>
+										</li>
+										<li>
+											<a href="#">My Account</a>
+										</li>
+										<li>
+											<a href="#">Logout</a>
+										</li>
+									</ul>
+								</li>
+								
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			
+			<div class="container_12">
+				<section id="myprints" class="grid_12">
+					<div id="title">Submit new print</div>
+					<img src="../assets/img/printers.jpg">
+					<br><br><div id="labels">
+						<span class="timestamp">
+							Time submitted
+						</span>
+						<span class="filename">
+							Filename
+						</span>
+						<span class="printer">
+							Printer
+						</span>
+						<span class="paper">
+							Paper size/type
+						</span>
+						<span class="copies">
+							Copies
+						</span>
+						<br class="clear">
+					</div>
+					<div class="print_row">
+						<span class="timestamp">
+							5 hours ago
+						</span>
+						<span class="filename">
+							<a href="#" class="intranet">Type4Poster_Final.pdf</a>
+						</span>
+						<span class="printer">
+							Canon Pro 9000
+						</span>
+						<span class="paper">
+							Tabloid, Matte
+						</span>
+						<span class="copies">
+							1
+						</span>
+						<span class="edit">
+							<a href="#" class="intranet">edit</a>
+						</span>
+					</div>
+					<div class="print_row">
+						<span class="timestamp">
+							9 hours ago
+						</span>
+						<span class="filename">
+							<a href="#" class="intranet">poster_test.pdf</a>
+						</span>
+						<span class="printer">
+							HP ColorLaser
+						</span>
+						<span class="paper">
+							Tabloid
+						</span>
+						<span class="copies">
+							2
+						</span>
+						<span class="edit">
+							<a href="#" class="intranet">edit</a>
+						</span>
+					</div>
+					<div class="print_row">
+						<span class="timestamp">
+							1 day ago
+						</span>
+						<span class="filename">
+							<a href="#" class="intranet">Thank_you_card.pdf</a>
+						</span>
+						<span class="printer">
+							Canon Pro 9000
+						</span>
+						<span class="paper">
+							Tabloid, Matte
+						</span>
+						<span class="copies">
+							1
+						</span>
+						<span class="edit">
+							<a href="#" class="intranet">edit</a>
+						</span>
+					</div>
+					<div class="print_row done">
+						<span class="timestamp">
+							2 day ago
+						</span>
+						<span class="filename">
+							Steven.pdf
+						</span>
+						<span class="printer">
+							HP ColorLaser
+						</span>
+						<span class="paper">
+							Tabloid
+						</span>
+						<span class="copies">
+							18
+						</span>
+						<span class="edit done">
+							&#x2713;
+						</span>
+					</div>
+					<div class="print_row done">
+						<span class="timestamp">
+							2 day ago
+						</span>
+						<span class="filename">
+							wednesday_mocks.pdf
+						</span>
+						<span class="printer">
+							Canon Pro 9000
+						</span>
+						<span class="paper">
+							Tabloid, Matte
+						</span>
+						<span class="copies">
+							1
+						</span>
+						<span class="edit done">
+							&#x2713;
+						</span>
+					</div>
+					<div class="print_row done">
+						<span class="timestamp">
+							3 day ago
+						</span>
+						<span class="filename">
+							web_team.pdf
+						</span>
+						<span class="printer">
+							Canon Pro 9000
+						</span>
+						<span class="paper">
+							Tabloid, Matte
+						</span>
+						<span class="copies">
+							1
+						</span>
+						<span class="edit done">
+							&#x2713;
+						</span>
+					</div>
+					<div class="print_row done">
+						<span class="timestamp">
+							4 day ago
+						</span>
+						<span class="filename">
+							breakfast_smiley.pdf
+						</span>
+						<span class="printer">
+							HP Design Jet
+						</span>
+						<span class="paper">
+							36x24, Glossy
+						</span>
+						<span class="copies">
+							1
+						</span>
+						<span class="edit done">
+							&#x2713;
+						</span>
+					</div>
+					<div class="print_row">
+					<a href="#" class="intranet">View older prints</a>
+					</div>
+				</section>
+				
+			</div>
+			<div id="push"></div>
+		</div>
+		
+		<footer>
+			<div class="container_12">
+				<div class="grid_4"></div>
+				<div class="grid_4"></div>
+				<div class="grid_4"></div>
+			</div>
+		</footer>
+	</body>
+</html>

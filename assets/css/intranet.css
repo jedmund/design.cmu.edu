@@ -88,25 +88,49 @@
 	section#homepage img.pic{
 		margin-right: 10px;
 		position: relative;
-		top: 2px;
-		width: 48px;
+		top: 8px;
+		width: 64px;
 		float: left;
 		}
-	
+		
 	section#homepage h3.intranet{
 		padding-bottom: 20px;
-		margin-bottom: 10px;
-		border-bottom: 1px solid #ccc;
+		margin-bottom: 15px;
+		border-bottom: 1px dotted #ccc;
 		}
 	
-	section#homepage div#mynews{
-		margin-top: 30px;
+	section#homepage div#mynews, section#homepage div#myevents{
+		margin-top: 60px;
 		}
 		
-	section#homepage div#myevents{
-		margin-top: 30px;
+	section#homepage div#mynews img{
+		float: left;
+		margin-right: 15px;
 		}
-
+	
+	section#homepage div#myevents div.date{
+		float: left;
+		margin-right: 15px;
+/* 		width: 35px; */
+		}
+		
+	section#homepage div#myevents div.date span.day{
+		font-size: 28px;
+/* 		font-weight: bold; */
+		display: block;
+		}
+	
+	section#homepage div#myevents div.date span.month{
+		position: relative;
+		left: 4px;
+		top: -5px;
+		text-align: center;
+		}
+	
+	section#homepage div#myevents span.details{
+		font-size: 12px;
+		}
+				
 /**
  * Intranet
  * Classes

@@ -479,7 +479,9 @@
 	nav#global ul.hover_nav > li,
 	nav#global ul.hover_nav > a > li {
 		padding-left: 10px;
-		line-height: 2;
+		line-height: 1;
+		padding-top: 6px;
+		padding-bottom: 6px;
 		}
 		
 	nav#global ul.hover_nav a:hover {

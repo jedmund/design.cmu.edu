@@ -1,0 +1,386 @@
+/* Intranet */
+
+	h1#logo.intranet {
+		background: url('../img/intranet_logo.png');
+		margin-top: 20px;
+		width: 250px;
+		height: 55px;
+		}
+	
+	h2.intranet {
+		font-size: 32px;
+		margin-bottom: 0px;
+		}
+	
+	h3.intranet{
+		font-size: 21px;
+		border: 0px;
+		margin-bottom: 0px;
+		}
+	
+	h4.intranet{
+		font-size:18px;
+		color: #000;
+		}
+	
+	h5.intranet{
+		font-size: 16px;
+		}
+		
+	header#intranet {
+		background-color: #ffc928;
+		height: 90px;
+		}
+	
+	header#intranet nav#global img{
+	 	border: 2px solid white;
+	 	position: relative;
+	 	float: left;
+		margin-top: 30px;
+		margin-left: 10px;
+	 	}
+	
+	header#intranet nav#global > ul > li{
+		border-left: 1px solid #ee8a09;
+		min-width: 100px;
+		}
+	
+	header#intranet nav#global > ul > li:last-child{
+		min-width: 100px;
+		}
+	
+	header#intranet nav#global > ul > li:hover {
+		background-color: #f9a322;
+		}
+ 	
+ 	header#intranet nav#global > ul > li:hover ul.hover_nav{
+	 	background-color: #f9a322;
+	 	}
+ 	
+ 	header#intranet nav#global > ul > li > a > span {
+ 		margin-top: 35px;
+	 	}
+ 	
+ 	header#intranet nav#global > ul > li > a > span.username{
+ 		padding-left: 10px;
+ 		margin-top: 25px;
+ 		font-weight: bold;
+	 	}
+ 	
+ 	header#intranet nav#global > ul > li > a > span.usertype{
+ 		padding-left: 10px;
+ 		margin-top: -2px
+	 	}
+	
+	a.intranet{
+		color: #F36235 !important;
+		}
+	section{
+		margin-top: 60px;
+ 		margin-bottom: 60px;
+		}
+	
+/**
+ * Intranet
+ * Home page
+ *
+ */
+ 
+	section#homepage img.pic{
+		margin-right: 15px;
+		position: relative;
+		top: 8px;
+		width: 64px;
+		float: left;
+		}
+		
+	section#homepage h3.intranet{
+		padding-bottom: 20px;
+		margin-bottom: 15px;
+		border-bottom: 1px dotted #ccc;
+		}
+	
+	section#homepage div#mynews, section#homepage div#myevents{
+		margin-top: 60px;
+		}
+	
+	section#homepage div#mynews h4{
+		margin-bottom: 0px;
+		}
+		
+	section#homepage div#mynews img{
+		float: left;
+		margin-right: 15px;
+		}
+	
+	section#homepage div#myevents div.date{
+		float: left;
+		margin-right: 15px;
+/* 		width: 35px; */
+		}
+		
+	section#homepage div#myevents div.date span.day{
+		font-size: 28px;
+/* 		font-weight: bold; */
+		display: block;
+		}
+	
+	section#homepage div#myevents div.date span.month{
+		position: relative;
+		left: 4px;
+		top: -5px;
+		text-align: center;
+		}
+	
+	section#homepage div#myevents span.details{
+		font-size: 12px;
+		}
+				
+/**
+ * Intranet
+ * Classes
+ *
+ */
+ 	
+ 	section#myclasses h4{
+ 		margin-bottom: 0px;
+ 		}
+ 
+	section#myclasses div.class_row{
+		width: 100%;
+		border-top: 1px dotted #CCC;
+		margin-top: 10px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		}
+	
+	section#myclasses div.class_description{
+		}
+	
+	section#myclasses a{
+		color: #F36235;
+		}
+	
+	section#myclasses ul{
+		list-style: none;
+		}
+	section#myclasses ul a li{
+		float: left;
+		}
+		
+	section#myclasses a.button{
+		background: #F36235;
+		padding: 5px 10px 5px 10px;
+		color: white;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		}
+ 
+ /**
+ * Intranet
+ * Project
+ *
+ */
+	 	
+ 	section#project input:focus {
+	 	background-color: white;
+	 	color: #000;
+	 	}
+ 	
+	section#project input[type=text]{
+		float: none;
+		font-size: 32px;
+		margin-bottom: 30px;
+		border: 1px solid #999;
+		width: 100%;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		padding: 5px 20px 5px 10px;
+		}
+		
+	section#project h5:first-child{
+		margin-bottom: 10px;
+		}
+		
+	section#project hr{
+		width:100%;
+		margin: 10px 0px 15px 0px;
+		float: none;
+		display: block;
+		border: 1px dotted #CCC;
+		border-style: none none dotted;
+		}
+	
+	section#project div#sidebar{
+		background-color: #f2f2f2;
+		}
+	section#project div#sidebar>div{
+		padding: 15px;
+		}
+		
+	section#project div#sidebar>div img{
+		margin-bottom: 5px;
+		}
+		
+	section#project div#textarea{
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		overflow-y: scroll;
+
+		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
+		padding:15px;
+		border: 1px solid #999;
+		margin-top: 10px;
+		margin-bottom: 15px;
+		height: 400px;
+		width: 100%;
+/* 		resize: none; */
+		}
+	
+	section#project h4{
+		color: #333;
+		}
+	
+	section#project a.button{
+		background: #F36235;
+		padding: 5px 10px 5px 10px;
+		color: white;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		}
+		
+/**
+ * Intranet
+ * Project
+ *
+ */
+	
+	section#myprints hr{
+		width:100%;
+		margin: 30px 0px 30px 0px;
+		float: none;
+		display: block;
+		color: #ccc;
+		background-color: #aaa;
+		height: 1px;
+		border: 0px;
+		}
+	
+	section#myprints h3{
+		font-size: 18px;
+		margin-bottom: 15px;
+		border: 0px;
+		}
+	
+	section#myprints div#labels{
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #EEE;
+		padding-left: 10px;
+		border-top: 1px solid #aaa;
+		}
+	
+	section#myprints div.print_row{
+		border-top: 1px dotted #ccc;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		padding-left: 10px;
+		}
+		
+	section#myprints span{
+		width: 215px;
+		display: inline-block;
+		}
+		
+	section#myprints span.timestamp{
+		width:150px;
+		}
+	
+	section#myprints span.copies{
+		width:90px;
+		}
+		
+	section#myprints span.edit{
+		width: 25px;
+		}
+	
+	section#myprints div.done{
+		color: #999;
+		}
+	
+	section#myprints div.done a{
+		color: #999;
+		}
+		
+	section#myprints div.done a:hover{
+		color: #333;
+		}
+	
+	section#myprints div.print_row span.edit{
+		color: #00AA00;
+		}
+/**
+ * Intranet
+ * Edit Profile
+ *
+ */	
+		
+	section#profile img{
+		float: left;
+		margin-right: 10px;
+		position: relative;
+		top: 5px;
+		}
+			
+	section#profile form {
+		margin-top: 30px;
+		}
+		
+	section#profile input:focus {
+	 	background-color: white;
+	 	color: #000;
+	 	}
+			
+	section#profile form input {
+	  -webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		
+		font: 12px "Lucida Grande","Tahoma", sans-serif;
+		padding:7px 5px 7px 5px;
+		border: 1px solid #999;
+		margin-bottom: 10px;
+		width: 350px;
+		float: left;
+		}
+	
+	section#profile form textarea {
+	  -webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+	  border-radius: 2px;
+
+		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
+		padding:7px 5px 7px 5px;
+		border: 1px solid #999;
+		margin-bottom: 15px;
+		height: 125px;
+	  width: 350px;
+		resize: none;
+		float: left;
+		}
+	
+	section#profile form label {
+		position: relative;
+		width: 150px;
+		float: left;
+		top: 6px;
+		}
+	
+	section#profile form a#add {
+		display: inline-table;
+		float: left;
+		}

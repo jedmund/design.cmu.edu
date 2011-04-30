@@ -131,7 +131,7 @@
 		}
 		
 	span#pager {
-		margin-top: 10px;
+		margin-top: 6px;
 		width: 51px;
 		float: right;
 		}
@@ -139,8 +139,8 @@
 	span#pager div {
 		-webkit-transition: background 0.2s ease-in-out;
 		background: #333333;
-		height: 20px;
-		width: 20px;
+		height: 22px;
+		width: 22px;
 		float: left;
 		}
 		
@@ -155,7 +155,7 @@
 		}
 		
 	div#pager_next {
-		-webkit-mask: url('../img/sprites.png') -20px 0 no-repeat;
+		-webkit-mask: url('../img/sprites.png') -22px 0 no-repeat;
 		}
 		
 	#byline h2.caption {

@@ -8,23 +8,12 @@
 		}
 	
 	h2.intranet {
-		font-size: 32px;
 		margin-bottom: 0px;
-		}
-	
-	h3.intranet{
-		font-size: 21px;
-		border: 0px;
-		margin-bottom: 0px;
-		}
-	
-	h4.intranet{
-		font-size:18px;
-		color: #000;
+		margin-top: 50px;
 		}
 	
 	h5.intranet{
-		font-size: 16px;
+		font-size: 18px;
 		}
 		
 	header#intranet {
@@ -70,48 +59,132 @@
  		padding-left: 10px;
  		margin-top: -2px
 	 	}
+ 	 	
+ 	div#title {
+		font-size: 32px;
+		}
 	
 	a.intranet{
 		color: #F36235 !important;
 		}
-	section{
+		
+	#top {
 		margin-top: 60px;
- 		margin-bottom: 60px;
-		}
-	
-/**
- * Intranet
- * Home page
- *
- */
- 
-	section#homepage img.pic{
-		margin-right: 10px;
-		position: relative;
-		top: 2px;
-		width: 48px;
-		float: left;
-		}
-	
-	section#homepage h3.intranet{
-		padding-bottom: 20px;
-		margin-bottom: 10px;
-		border-bottom: 1px solid #ccc;
-		}
-	
-	section#homepage div#mynews{
-		margin-top: 30px;
 		}
 		
-	section#homepage div#myevents{
-		margin-top: 30px;
+	#top h3 {
+		margin-bottom: 10px;
+		}
+		
+	#top ul { 
+		margin-top: -10px;
+		}
+		
+	#top ul li a {
+		color: #F36235;
+		width: 100%;
+		}
+		
+	#top ul li {
+		-webkit-transition: all 0.2s ease-in-out;
+		padding: 8px 5px 10px 5px;
+		list-style: none;
+		font-size: 12px;
+		}
+		
+	#top ul li:hover {
+		background: #ffdf7b;
+		}
+		
+	#top ul li:hover a {
+		color: #B94929;
+		}
+		
+	#top ul li:hover time {
+		color: #000000;
+		}
+		
+	time {
+		font-size: 12px;
+		color: #666666;
+		float: right;
+		}
+		
+	section#classes {
+		position: relative;
+		margin-top: 40px;
+		clear: both;
+		}
+		
+	section#classes span.period {
+		position: absolute;
+		font-size: 12px;
+		color: #666666;
+		float: right;
+		right: 0;
+		top: 2px;
+		}
+	
+	span.period a {
+		color: #F36235;
+		}
+		
+	span.period a:hover {
+		color: #B94929;
+		}
+		
+	span.period span.separator {
+		padding-right: 1px;
+		font-size: 8px;
 		}
 
+	section#classes ul li {
+		margin-right: 20px;
+		list-style: none;
+		float: left;
+		}
+		
+	section#classes ul li span {
+		-webkit-transition: color 0.3s ease-in-out;
+		}margin-bottom: 30px;
+		
+	section#classes ul a li:hover span.studio {
+		color: #B94929;
+		}
+		
+	section#classes ul a:nth-child(4n+4) li {
+		margin-right: 0;
+		}
+		
+	section#classes ul li img {
+		float: left;
+		}
+		
+	section#classes ul li span {
+		float: left;
+		clear: both;
+		}
+		
+	section#classes ul li span.studio {
+		margin: 6px 0 2px;
+		color: #F36235;
+		}
+		
+	section#classes ul li span.professor {
+		font-size: 12px;
+		color: #666666;
+		}
+		
 /**
  * Intranet
  * Classes
  *
  */
+ 
+ 	section#myclasses{
+ 		margin-top: 60px;
+ 		margin-bottom: 60px;
+ 	}
  
 	section#myclasses div.class_row{
 		width: 100%;
@@ -149,6 +222,11 @@
  * Project
  *
  */
+	
+	section#project{
+ 		margin-top: 60px;
+ 		margin-bottom: 60px;
+	 	}
 	 	
  	section#project input:focus {
 	 	background-color: white;
@@ -226,6 +304,11 @@
  *
  */
 	
+	section#myprints {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		}
+	
 	section#myprints hr{
 		width:100%;
 		margin: 30px 0px 30px 0px;
@@ -295,6 +378,10 @@
  * Edit Profile
  *
  */	
+ 		
+	section#profile {
+		margin-top: 60px;
+		}
 		
 	section#profile img{
 		float: left;

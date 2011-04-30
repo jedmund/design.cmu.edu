@@ -6,12 +6,12 @@ body{
 	
 div#login{
 	margin: 0 auto;
-	width: 565px;
+	width: 570px;
 	margin-top: 300px;
 	}
 	
 input[type=text], input[type=password]{
-	border: 0px;
+	border: 1px solid #f9a322;
 	background: #FFFFFF;
 	font-size: 18px;
 	outline: none;
@@ -19,7 +19,7 @@ input[type=text], input[type=password]{
 	width: 200px;
 	float: left;
 	display: inline;
-	margin-right: 15px;
+	margin-right: 10px;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
@@ -35,13 +35,14 @@ a.button{
 	display: inline;
 	padding: 7px 20px 7px 20px;
 	background-color: #F36235;
+	border: 1px solid #F36235;
 	color: white;
 	text-decoration: none;
 	-webkit-border-radius: 2px;
 	-moz-border-radius: 2px;
 	border-radius: 2px;
 	position: relative;
-	top: 10px;
+	top: 12px;
 	}
 	
 a.quiet{
@@ -50,7 +51,7 @@ a.quiet{
 	}
 	
 .center{
-	margin: 0 auto;
+/* 	margin: 0 auto; */
 	width: 375px;
 	margin-bottom: 10px;
 	}
@@ -58,7 +59,23 @@ a.quiet{
 .clear{
 	clear: both;
 	}
-	
+
+hr{
+	margin-top: 30px;
+	width:100%;
+	height:1px;
+	color:#f9a322;
+	border:0px;
+	background-color:#f9a322;
+	margin-bottom:10px;
+	}
+
+#cycler{
+	width: 480px;
+/* 	margin: 0 auto; */
+/* 	text-align: center; */
+	}
+
 #cycler div{
-	width: 550px;
+	width: 480px;
 	}

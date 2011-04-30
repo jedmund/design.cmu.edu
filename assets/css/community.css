@@ -42,3 +42,12 @@
 		list-style: none;
 		float: left;
 		}
+		
+	.site a {
+		-webkit-transition: color 0.2s ease-in-out;
+		color: #F36235;
+		}
+		
+	.site a:hover {
+		color: #B94929;
+		}

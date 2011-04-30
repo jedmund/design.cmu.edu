@@ -29,29 +29,36 @@
 		margin-left: 10px;
 	 	}
 	
+	header#intranet nav#global > ul > li{
+		border-left: 1px solid #ee8a09;
+		}
+	
 	header#intranet nav#global > ul > li:last-child{
 		min-width: 80px;
-	}
+		}
 	
 	header#intranet nav#global > ul > li:hover {
-		background-color: #f47d1c;
-	}
+		background-color: #f9a322;
+		}
+ 	
+ 	header#intranet nav#global > ul > li:hover ul.hover_nav{
+	 	background-color: #f9a322;
+	 	}
  	
  	header#intranet nav#global > ul > li > a > span {
  		margin-top: 35px;
- 	}
- 	
+	 	}
  	
  	header#intranet nav#global > ul > li > a > span.username{
  		padding-left: 10px;
  		margin-top: 25px;
  		font-weight: bold;
- 	}
+	 	}
  	
  	header#intranet nav#global > ul > li > a > span.usertype{
  		padding-left: 10px;
  		margin-top: -2px
- 	}
+	 	}
  	 	
  	div#title {
 		font-size: 32px;
@@ -324,6 +331,7 @@
 		padding-bottom: 10px;
 		background-color: #EEE;
 		padding-left: 10px;
+		border-top: 1px solid #aaa;
 		}
 	
 	section#myprints div.print_row{

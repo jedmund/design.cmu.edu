@@ -102,6 +102,10 @@
 	section#homepage div#mynews, section#homepage div#myevents{
 		margin-top: 60px;
 		}
+	
+	section#homepage div#mynews h4{
+		margin-bottom: 0px;
+		}
 		
 	section#homepage div#mynews img{
 		float: left;
@@ -323,6 +327,8 @@
 	section#profile img{
 		float: left;
 		margin-right: 10px;
+		position: relative;
+		top: 5px;
 		}
 			
 	section#profile form {

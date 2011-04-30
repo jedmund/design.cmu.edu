@@ -42,7 +42,7 @@
 	
 	header#intranet nav#global > ul > li{
 		border-left: 1px solid #ee8a09;
-		min-width: 100px;
+		min-width: 85px;
 		}
 	
 	header#intranet nav#global > ul > li:last-child{
@@ -179,16 +179,16 @@
  
  /**
  * Intranet
- * Project
+ * Myclass
  *
  */
 	 	
- 	section#project input:focus {
+ 	section#myclass input:focus {
 	 	background-color: white;
 	 	color: #000;
 	 	}
  	
-	section#project input[type=text]{
+	section#myclass input[type=text]{
 		float: none;
 		font-size: 32px;
 		margin-bottom: 30px;
@@ -200,31 +200,31 @@
 		padding: 5px 20px 5px 10px;
 		}
 		
-	section#project h5:first-child{
+	section#myclass h5:first-child{
 		margin-bottom: 10px;
 		}
 		
-	section#project hr{
+	section#myclass hr{
 		width:100%;
-		margin: 10px 0px 15px 0px;
+		margin: 10px 0px 10px 0px;
 		float: none;
 		display: block;
 		border: 1px dotted #CCC;
 		border-style: none none dotted;
 		}
 	
-	section#project div#sidebar{
+	section#myclass div#sidebar{
 		background-color: #f2f2f2;
 		}
-	section#project div#sidebar>div{
+	section#myclass div#sidebar>div{
 		padding: 15px;
 		}
 		
-	section#project div#sidebar>div img{
+	section#myclass div#sidebar>div img{
 		margin-bottom: 5px;
 		}
 		
-	section#project div#textarea{
+	section#myclass div#textarea{
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
@@ -240,11 +240,11 @@
 /* 		resize: none; */
 		}
 	
-	section#project h4{
+	section#myclass h4{
 		color: #333;
 		}
 	
-	section#project a.button{
+	section#myclass a.button{
 		background: #F36235;
 		padding: 5px 10px 5px 10px;
 		color: white;

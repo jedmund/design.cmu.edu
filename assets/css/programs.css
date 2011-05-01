@@ -1,0 +1,58 @@
+#course_track ul {
+	border-top: 1px solid #CCCCCC;
+	width: 220px;
+	float: left;
+	}
+	
+#course_track ul li {
+	-webkit-transition: all 0.2s ease-in-out;
+	padding: 3px 4px 5px 8px;
+	background: #EEEEEE;
+	list-style: none;
+	font-size: 12px;
+	}
+	
+#course_track ul li.core:hover {
+	background: #AAAAAA;
+	color: #FFFFFF;
+	}
+
+#course_track ul li.design:hover {
+	background: #AAAAAA;
+	color: #FFFFFF;
+	}
+
+#course_track ul li.elective:hover {
+	background: #AAAAAA;
+	color: #FFFFFF;
+	}
+
+#course_track h3 {
+	margin-bottom: 0;
+	border: 0;
+	}
+	
+#spring {
+	clear: both;
+	}
+	
+#fall ul {
+	margin-bottom: 10px;
+	}
+	
+/* Special Tipsy HTML */
+.tipsy-inner {
+	padding-bottom: 10px !important;
+	padding-right: 14px !important;
+	padding-top: 8px !important;
+	}
+
+.tipsy h4 {
+	text-align: left;
+	font-size: 12px;
+	color: #FFFFFF;
+	}
+	
+.tipsy p {
+	text-align: left;
+	}

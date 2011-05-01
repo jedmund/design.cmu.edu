@@ -61,13 +61,13 @@
 	 	}
  	
  	header#intranet nav#global > ul > li > a > span.username{
- 		padding-left: 10px;
+ 		padding-left: 8px;
  		margin-top: 25px;
  		font-weight: bold;
 	 	}
  	
  	header#intranet nav#global > ul > li > a > span.usertype{
- 		padding-left: 10px;
+ 		padding-left: 8px;
  		margin-top: -2px
 	 	}
 	

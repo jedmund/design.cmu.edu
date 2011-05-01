@@ -1024,7 +1024,7 @@
  		margin-top: 106px;
  		}
  		
- 	#news #tertiary article {
+ 	article {
  		-webkit-transition: color 0.2s ease-in-out;
  		margin-bottom: 20px;
  		position: relative;
@@ -1032,18 +1032,26 @@
  		color: #666666;
  		}
  		
- 	#news #tertiary article:hover {
+ 	article:hover {
  		color: #333333;
  		}
  		
- 	#news #tertiary article a > div {
+ 	article h4 {
+ 		-webkit-transition: color 0.2s ease-in-out;
+ 		}
+ 		
+ 	article h4:hover {
+ 		color: #B94929;
+ 		}
+ 		
+ 	article a > div {
  		margin-bottom: 8px;
  		position: relative;
  		height: 120px;
  		width: 300px;
  		}
  		
- 	#news #tertiary article a > div div.overlay {
+ 	article a > div div.overlay {
  		-webkit-transition: opacity 0.2s ease-in-out;
  		background: #FFFFFF;
  		position: absolute;
@@ -1055,12 +1063,12 @@
  		}
  		
  	/* Trigger image opacity on article hover. */
- 	#news #tertiary article:hover a > div div.overlay {
+ 	article:hover a > div div.overlay {
  		opacity: 0.2;
  		}
  		
  	/* Read Article link on bottom of article */
- 	#news #tertiary article span.continue {
+ 	article span.continue {
  		-webkit-transition: opacity 0.2s ease-in-out;
  		margin-top: 10px;
  		font-size: 12px;
@@ -1068,9 +1076,18 @@
  		opacity: 0;
  		}
  		
- 	#news #tertiary article:hover span.continue {
+ 	article:hover span.continue {
  		opacity: 1;
  		}
+ 		
+ 	article span.continue a {
+ 		-webkit-transition: color 0.2s ease-in-out;
+ 		color: #F36235;
+ 		}
+
+	article span.continue a:hover {
+		color: #B94929;
+		}
  		
 	/* Fallback "View More" styling for if infinite
 		 scroll doesn't work/JS is disabled */
@@ -1133,41 +1150,39 @@
 /**
  * Front page experiment
  *
- *
  */
  
- 	h2.experimental{
-	 	font-size: 28px;
+ 	h2.experimental {
 	 	margin-bottom: 20px;
+	 	font-size: 28px;
 	 	}
 	 	
- 	span#pager.experimental{
+ 	span#pager.experimental {
 	 	margin-top: 10px;
 	 	}
  
-	section#feature_strip{
+	section#feature_strip {
 		border-top: 1px dotted #ccc;
 		background-color: #eef2f2;
+		padding-top: 20px;
+		min-height: 330px;
 		width: 100%;
-		height: 360px;
-		padding-top: 30px;
 		clear: both;
 		}
 		
-	h3.experimental{
-		 border: 0px;
-		 font-size: 18px;
-		 height: auto;
-		 width: auto;
-		 padding: 0px;
-		 margin: 0px 0px 10px 0px;
+	h3.experimental {
+		margin: 0px 0px 10px 0px;
+		font-size: 18px;
+		padding: 0px;
+		height: auto;
+		width: auto;
+		border: 0px;
 		}
 	
-	section#feature_strip img{
+	section#feature_strip img {
 		margin-bottom: 10px;
 		}
 		
-	#tertiary.experimental{
-		margin-top: 0px;
-		margin-bottom: 30px;
+	.experimental#tertiary {
+		margin-top: 20px;
 		}

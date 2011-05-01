@@ -204,7 +204,11 @@
 		margin-bottom: 0px;
 /* 		line-height: 1; */
 		}
-		
+	
+	section#myclass h4{
+		margin-bottom: 10px;
+		}
+
 	section#myclass h5:first-child{
 		margin-bottom: 10px;
 		}
@@ -226,13 +230,21 @@
 		float: left;
 		position: relative;
 		top: -1px;
-		margin-right: 5px;
+		margin-right: 10px;
 		}
 		
 	section#myclass ul#students li{
-		clear: both;
-		padding-top: 5px;
-		padding-bottom: 5px;
+		float: left;
+		width: 150px;
+		padding-bottom: 10px;
+		padding-right: 5px;
+/* 		font-size: 12px; */
+		}
+	
+	section#myclass #projects{
+		margin-top: 30px;
+		border-top: 1px dotted #ccc;
+		padding-top: 30px;
 		}
 		
 /**

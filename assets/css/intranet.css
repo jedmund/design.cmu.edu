@@ -141,6 +141,10 @@
  *
  */
  
+ 	section#myclasses a h4.intranet{
+		color: #F36235;
+		}
+	
 	section#myclasses div.class_row{
 		width: 100%;
 		border-top: 1px dotted #CCC;
@@ -171,7 +175,115 @@
 		-moz-border-radius: 1px;
 		border-radius: 1px;
 		}
- 
+
+ /**
+ * Intranet
+ * Myclass
+ *
+ */
+	 	
+ 	section#myclass input:focus {
+	 	background-color: white;
+	 	color: #000;
+	 	}
+ 	
+	section#myclass input[type=text]{
+		float: none;
+		font-size: 32px;
+		margin-bottom: 30px;
+		border: 1px solid #999;
+		width: 100%;
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		padding: 5px 20px 5px 10px;
+		}
+	
+	section#myclass h2{
+		margin-bottom: 0px;
+		}
+	
+	section#myclass h4{
+		margin-bottom: 10px;
+		}
+	
+	section#myclass div#description a.edit{
+		visibility: hidden;
+		}
+	
+	section#myclass div#description:hover a.edit{
+		visibility: visible;
+		}
+
+	section#myclass h5:first-child{
+		margin-bottom: 10px;
+		}
+		
+	section#myclass hr{
+		width:100%;
+		margin: 10px 0px 30px 0px;
+		float: none;
+		display: block;
+		border: 1px dotted #CCC;
+		border-style: none none dotted;
+		}
+	
+	section#myclass ul#students{
+		list-style: none;
+		}
+	
+	section#myclass ul#students img{
+		float: left;
+		position: relative;
+		top: -1px;
+		margin-right: 10px;
+		}
+		
+	section#myclass ul#students li{
+		float: left;
+		width: 150px;
+		padding-bottom: 10px;
+		padding-right: 5px;
+		}
+	
+	section#myclass #projects{
+		margin-top: 30px;
+		border-top: 1px dotted #ccc;
+		padding-top: 30px;
+		}
+		
+	section#myclass #projects ul{
+		list-style: none;
+		}
+		
+	section#myclass #projects ul li{
+		float: left;
+		}
+	
+	section#myclass textarea{
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
+		padding:7px 5px 7px 5px;
+		border: 1px solid #999;
+		margin-bottom: 15px;
+		height: 180px;
+		width: 370px;
+		resize: none;
+		float: left;
+		display: block;
+		}
+		
+	section#myclass a.button{
+		background: #F36235;
+		padding: 5px 10px 5px 10px;
+		color: white;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		}
+
  /**
  * Intranet
  * Project
@@ -201,7 +313,7 @@
 		
 	section#project hr{
 		width:100%;
-		margin: 10px 0px 15px 0px;
+		margin: 10px 0px 40px 0px;
 		float: none;
 		display: block;
 		border: 1px dotted #CCC;
@@ -378,4 +490,16 @@
 	section#profile form a#add {
 		display: inline-table;
 		float: left;
+		}
+		
+	section#profile a.button{
+		margin-left: 150px;
+		background: #F36235;
+		padding: 5px 10px 5px 10px;
+		color: white;
+		-webkit-border-radius: 1px;
+		-moz-border-radius: 1px;
+		border-radius: 1px;
+		display: inline-table;
+		margin-top: 30px;
 		}

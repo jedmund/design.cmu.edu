@@ -284,11 +284,46 @@
 		-moz-border-radius: 1px;
 		border-radius: 1px;
 		}
+		
+ /**
+ * Intranet
+ * Project
+ *
+ */
+	 	
+ 	section#project h2{
+		margin-bottom: 0px;
+		}
 	
+	section#project h4{
+		margin-bottom: 10px;
+		}
+	
+	section#project hr{
+		width:100%;
+		margin: 10px 0px 30px 0px;
+		float: none;
+		display: block;
+		border: 1px dotted #CCC;
+		border-style: none none dotted;
+		}
+	
+	section#project #student_projects ul li span{
+		padding-top: 5px;
+		padding-bottom: 30px;
+		display: block;
+		}
+	
+	section#project #student_projects ul li span img{
+		margin-right: 5px;
+		float: left;
+		position: relative;
+		top:3px;
+		}
 	
 /**
  * Intranet
- * Project
+ * Prints
  *
  */
 	

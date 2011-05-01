@@ -298,27 +298,31 @@
  	
 	section#project input[type=text]{
 		float: none;
-		font-size: 32px;
+		font-size: 18px;
 		margin-bottom: 30px;
 		border: 1px solid #999;
 		width: 100%;
 		-webkit-border-radius: 2px;
 		-moz-border-radius: 2px;
 		border-radius: 2px;
-		padding: 5px 20px 5px 10px;
+		padding: 10px 20px 10px 10px;
 		}
-		
+				
 	section#project h5{
 		margin-bottom: 5px;
 		}
-		
+	
 	section#project hr{
 		width:100%;
-		margin: 10px 0px 40px 0px;
+		margin: 10px 0px 20px 0px;
 		float: none;
 		display: block;
 		border: 1px dotted #CCC;
 		border-style: none none dotted;
+		}
+		
+	section#project hr:first-child{
+		margin-bottom: 40px;
 		}
 	
 	section#project div#sidebar h3{
@@ -352,7 +356,15 @@
 		margin-bottom: 15px;
 		height: 400px;
 		width: 100%;
-/* 		resize: none; */
+		}
+	
+	section#project label{
+		margin-bottom: 5px;
+		display: block;
+		}
+	
+	section#project ::-webkit-input-placeholder  {
+		color: #ddd;
 		}
 	
 	section#project h4{

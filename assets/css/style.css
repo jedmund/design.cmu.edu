@@ -99,10 +99,7 @@
 		float: left;
 		}
 		
-	figcaption.byline span.arrow {
-		margin: 1px 0 0 5px;
-		float: left;
-		}
+	
 		
 	/* Hero Slideshow — Frontpage */
 	#hero .slideshow {
@@ -238,6 +235,40 @@
 	.relativity figure.video_wrapper:hover .video {
 		background: #F2A919;
 		cursor: pointer;
+		}
+		
+	/* Special styling for applying */
+	.relativity li.apply {
+		border-bottom: 1px solid #F36235;
+		background: #F2A919;
+		margin-top: -10px;
+		min-height: 90px;
+		color: #FFFFFF;
+		padding: 15px;
+		}
+		
+	.relativity li.apply a {
+		-webkit-transition: all 0.2s ease-in-out;
+		margin-top: 10px;
+		font-size: 14px;
+		color: #FFFFFF;
+		float: right;
+		}
+		
+	.relativity li.apply a:hover {
+		margin-right: -5px;
+		}
+		
+	.relativity li.apply + li {
+		padding-top: 10px;
+		}
+		
+	.relativity a span.exhibition {
+		color: #F2A919;
+		}
+		
+	.relativity a:hover span.exhibition {
+		color: #C98C14;
 		}
 		
 /**
@@ -389,6 +420,12 @@
 		
 	.none {
 		clear: none !important;
+		}
+	
+	/* To correct the position of &rarr; */
+	.arrow {
+		margin: 1px 0 0 5px;
+		float: left;
 		}
 		
 /**

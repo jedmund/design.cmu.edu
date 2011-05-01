@@ -20,6 +20,8 @@
 	 	}
 	 	
 	section.major ul li img {
+		height: 60px;
+		width: auto;
 	 	float: left;
 	 	}
 	 	

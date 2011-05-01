@@ -1137,7 +1137,7 @@
  */
  
  	h2.experimental{
-	 	font-size: 28px;
+	 	font-size: 30px;
 	 	margin-bottom: 20px;
 	 	}
 	 	
@@ -1156,11 +1156,16 @@
 		
 	h3.experimental{
 		 border: 0px;
-		 font-size: 18px;
+		 font-size: 21px;
 		 height: auto;
 		 width: auto;
 		 padding: 0px;
 		 margin: 0px 0px 10px 0px;
+		}
+	
+	#news_experimental img{
+/* 		float: left; */
+/* 		margin-right: 10px; */
 		}
 	
 	section#feature_strip img{
@@ -1170,4 +1175,25 @@
 	#tertiary.experimental{
 		margin-top: 0px;
 		margin-bottom: 30px;
+		}
+	
+	div.date{
+		float: left;
+		margin-right: 15px;
+		}
+		
+	div.date span.day{
+		font-size: 28px;
+		display: block;
+		}
+	
+	div.date span.month{
+		position: relative;
+		left: 4px;
+		top: -5px;
+		text-align: center;
+		}
+	
+	span.details{
+		font-size: 12px;
 		}

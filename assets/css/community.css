@@ -26,19 +26,6 @@
  		border-bottom: none;
  		margin-bottom: 0;
  		}
- 	
-  section.major ul li {
-  	margin: 0 10px 10px 0;
-	 	list-style: none;
-	 	font-size: 12px;
-	 	float: left;
-	 	}
-	 	
-	section.major ul li img {
-		height: 60px;
-		width: auto;
-	 	float: left;
-	 	}
 	 	
   section.major ul li figcaption {
 	 	margin-left: 10px;
@@ -120,6 +107,38 @@
 		color: #B94929;
 		}
 		
+/* Undergraduates */
+  section.major ul li {
+  	margin: 0 10px 10px 0;
+  	position: relative;
+	 	list-style: none;
+	 	font-size: 12px;
+	 	float: left;
+	 	}
+	 	
+	section.major ul li img {
+		height: 60px;
+		width: auto;
+	 	float: left;
+	 	}
+
+	section.major ul li div.overlay {
+		-webkit-transition: opacity 0.2s ease-in-out;
+		background: #FFFFFF;
+		position: absolute;
+		height: 60px;
+		width: 60px;
+		opacity: 0;
+		}
+
+	section.major ul li:hover div.overlay {
+		opacity: 0.4;
+		}
+	
+	section.major ul li:hover span.name a {
+		color: #F36235;
+		}
+		
 /* Inside Profiles */
 	span.bio {
 		margin: 10px 0 20px 0;
@@ -137,8 +156,13 @@
 		}
 		
 	span.bio a {
+		-webkit-transition: color 0.2s ease-in-out;
 		font-size: 12px;
 		color: #F36235;
 		float: left;
 		clear: both;
+		}
+		
+	span.bio a:hover {
+		color: #B94929;
 		}

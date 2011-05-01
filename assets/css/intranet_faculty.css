@@ -283,6 +283,9 @@
 		-webkit-border-radius: 1px;
 		-moz-border-radius: 1px;
 		border-radius: 1px;
+		margin-top: 10px;
+		float: right;
+		display: inline-table;
 		}
 		
  /**

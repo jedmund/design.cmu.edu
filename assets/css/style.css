@@ -1155,6 +1155,7 @@
  	h2.experimental {
 	 	margin-bottom: 20px;
 	 	font-size: 28px;
+	 	font-size: 30px;
 	 	}
 	 	
  	span#pager.experimental {
@@ -1180,9 +1181,32 @@
 		}
 	
 	section#feature_strip img {
-		margin-bottom: 10px;
+/* 		float: left; */
+/* 		margin-right: 10px; */
+			margin-bottom: 10px;
 		}
 		
 	.experimental#tertiary {
 		margin-top: 20px;
+		}
+	
+	div.date {
+		margin-right: 15px;
+		float: left;
+		}
+		
+	div.date span.day {
+		font-size: 28px;
+		display: block;
+		}
+	
+	div.date span.month {
+		position: relative;
+		text-align: center;
+		left: 4px;
+		top: -5px;
+		}
+	
+	span.details {
+		font-size: 12px;
 		}

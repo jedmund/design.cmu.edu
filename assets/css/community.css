@@ -2,6 +2,21 @@
  * Community
  *
  */
+ 
+/* Community Top */
+	.map {
+		-webkit-mask: url('../img/content/world_map.png') no-repeat;		
+		-webkit-transition: background 0.4s ease-in-out;
+		background: #CCCCCC;
+		margin: 80px 0 20px 0;
+		height: 320px;
+		width: 700px;
+		}
+		
+	.map:hover {
+		background: #F36235;
+		}
+		
 	section.major {
 		margin-top: 20px;
 	 	float: left;
@@ -103,4 +118,27 @@
 		
 	.site a:hover {
 		color: #B94929;
+		}
+		
+/* Inside Profiles */
+	span.bio {
+		margin: 10px 0 20px 0;
+		width: 100%;
+		float: left;
+		}
+		
+	span.bio h2 {
+		line-height: 1.2;
+		}
+		
+	span.bio span.byline {
+		font-size: 12px;
+		float: left;
+		}
+		
+	span.bio a {
+		font-size: 12px;
+		color: #F36235;
+		float: left;
+		clear: both;
 		}

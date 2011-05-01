@@ -283,6 +283,26 @@
 		float: left;
 		}
 
+	/* Special styling for studio representation */
+	.relativity li.studio {
+		margin-bottom: 10px;
+		float: left;
+		clear: both;
+		}
+	
+	.relativity li.studio img {
+		height: auto;
+		width: 50px;
+		float: left;
+		}
+		
+	.relativity li.studio figcaption {
+		margin-top: -5px;
+		padding-left: 0;
+		margin-left: 0;
+		width: 100px;
+		float: left;
+		}
 		
 	/* Special styling for applying */
 	.relativity li.apply {

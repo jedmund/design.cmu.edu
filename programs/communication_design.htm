@@ -5,13 +5,16 @@
 		<link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
 		<link href="../assets/css/960.css" rel="stylesheet" type="text/css">
 		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/programs.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/tipsy.css" rel="stylesheet" type="text/css">
 		
 		<script type="text/javascript" src="../assets/js/jquery-1.5.min.js"></script> 
 		<script type="text/javascript" src="../assets/js/jquery.cycle.all.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery.tipsy.js"></script>
 		
-		<script>
+		<script type="text/javascript">
 			$(document).ready(function() {
-				
+				$('#course_track ul li').tipsy({fade: true, html: true, gravity: 'e', title: 'data-tooltip'});
 			});
 		</script>
 		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
@@ -145,22 +148,8 @@
 							<p class="content">Students graduate with a BFA in Communication Design, and many are working in companies as varied as Siegel+Gale, Lippincott, Apple, Google, Microsoft, and Johnson & Johnson.</p>
 							<p class="content">The required communication design studio courses introduce principles of communication with type and image in both static and dynamic forms. Students take a sequence of typography studios as well as color and digital imaging classes.</p>
 						</section>
-						
-						<section>
-							<h2 class="inside">Course Track</h2>
-						</section>
-
-						<section>
-							<h2 class="inside">Alumni and Careers</h2>
-						</section>
-						
-						<section>
-							<h2 class="inside">Current Exhibition in CD</h2>
-						</section>
-
-
 					</div>
-					
+										
 					<div class="grid_3">
 						<section class="relativity_wrapper">
 							<ul class="relativity">
@@ -191,6 +180,84 @@
 							</ul>
 						</section>
 					</div>
+
+					<div class="prefix_3 grid_9" id="course_track">
+						<h2 class="inside">Course Track</h2>
+						<section id="fall">
+							<section class="alpha grid_3">
+								<h3>Fall: Second Year</h3>
+								<ul>
+									<li class="core" data-tooltip="<h4>Beginning Typography</h4><p>Students explore the fundamental principles of typography, where type is regarded as an image that serves a variety of communicative purposes.</p>">Beginning Typography</li>
+									<li class="design" data-tooltip="<h4>Digital Photographic Imaging</h4><p>Students will explore conventional and digital means of image making.</p>">Digital Photographic Imaging</li>
+									<li class="design" data-tooltip="<h4>Design History</h4><p>An overview of design history from 1850 to 1950, the critical period for the formation and development of design and the design professions.</p>">Design History</li>
+									<li class="design" data-tooltip="<h4>How People Work</h4><p>Gives students an opportunity to experience and understand the human centered research and design process through a self-defined project.</p>">How People Work</li>
+									<li class="elective" data-tooltip="<h4>Academic Electives</h4><p>Every semester, students must take a certain amount of classes outside the School of Design to broaden their knowledge about the world.</p>">Academic Electives</li>
+								</ul>
+							</section>
+							
+							<section class="grid_3">
+								<h3>Fall: Third Year</h3>
+								<ul>
+									<li class="core" data-tooltip="<h4>Advanced Typography</h4><p>Students learn to conceptualize and visualize more complex bodies of information for a variety of communicative purposes.</p>">Advanced Typography</li>
+									<li class="elective" data-tooltip="<h4>Design Electives</h4><p>Students must take elective design classes to explore the field of design and its many applications.</p>">Design Electives</li>
+									<li class="elective" data-tooltip="<h4>Academic Electives</h4><p>Every semester, students must take a certain amount of classes outside the School of Design to broaden their knowledge about the world.</p>">Academic Electives</li>
+								</ul>
+							</section>
+							
+							<section class="grid_3 omega">
+								<h3>Fall: Fourth Year</h3>
+								<ul>
+									<li class="core" data-tooltip="<h4>Senior Thesis: Individual Projects</h4><p>Students define individual projects with faculty advisors in areas of interest and create individual products.</p>">Senior Thesis: Individual Projects</li>
+									<li class="elective" data-tooltip="<h4>Design Electives</h4><p>Students must take elective design classes to explore the field of design and its many applications.</p>">Design Electives</li>
+									<li class="elective" data-tooltip="<h4>Academic Electives</h4><p>Every semester, students must take a certain amount of classes outside the School of Design to broaden their knowledge about the world.</p>">Academic Electives</li>
+								</ul>
+							</section>
+						</section>
+						
+						<section id="spring">
+							<section class="alpha grid_3">
+								<h3>Spring: Second Year</h3>
+								<ul>
+									<li class="core" data-tooltip="<h4>Intermediate Typography</h4><p>Students learn how to achieve a harmonious and effective interplay of typography and imagery to express meaning.</p>">Intermediate Typography</li>
+									<li class="design" data-tooltip="<h4>Color and Communication</h4><p>Beginning with a perceptual understanding of color, this course will explore the many ways that color communicates.</p>">Color and Communication</li>
+									<li class="design" data-tooltip="<h4>Pre-Print Production</h4><p>A lecture/lab exploration of the processes and materials of the printing industry as they support and condition the work of the communication designer.</p>">Pre-Print Production</li>
+									<li class="elective" data-tooltip="<h4>Design Electives</h4><p>Students must take elective design classes to explore the field of design and its many applications.</p>">Design Electives</li>
+									<li class="elective" data-tooltip="<h4>Academic Electives</h4><p>Every semester, students must take a certain amount of classes outside the School of Design to broaden their knowledge about the world.</p>">Academic Electives</li>
+								</ul>
+							</section>
+							
+							<section class="grid_3">
+								<h3>Spring: Third Year</h3>
+								<ul>
+									<li class="core" data-tooltip="<h4>Typography IV</h4><p>This course deals with the basic principle that communication designers employ when they represent complex information, making it visible and accessible.</p>">Typography IV</li>
+									<li class="elective" data-tooltip="<h4>Design Electives</h4><p>Students must take elective design classes to explore the field of design and its many applications.</p>">Design Electives</li>
+									<li class="elective" data-tooltip="<h4>Academic Electives</h4><p>Every semester, students must take a certain amount of classes outside the School of Design to broaden their knowledge about the world.</p>">Academic Electives</li>
+								</ul>
+							</section>
+							
+							<section class="grid_3 omega">
+								<h3>Spring: Fourth Year</h3>
+								<ul >
+									<li class="core" data-tooltip="<h4>Sponsored Senior Project</h4><p>Students work in groups to solve problems of different local non-profit organizations to get experience working with clients.</p>">Sponsored Senior Project</li>
+									<li class="elective" data-tooltip="<h4>Design Electives</h4><p>Students must take elective design classes to explore the field of design and its many applications.</p>">Design Electives</li>
+									<li class="elective" data-tooltip="<h4>Academic Electives</h4><p>Every semester, students must take a certain amount of classes outside the School of Design to broaden their knowledge about the world.</p>">Academic Electives</li>
+								</ul>
+							</section>
+						</section>
+					</div>
+					<div class="prefix_3 grid_9">
+						<section>
+							<h2 class="inside">Alumni and Careers</h2>
+						</section>
+					</div>
+					<nav class="grid_12" id="bottom">
+					<a href="../exhibition">
+						<span id="older">
+							<span>See the current exhibition in CD</span>
+						  <span>&rarr;</span>
+						</span>
+					</a>
+				</nav>
 				</div>
 			</div><!-- End Content -->
 			<div id="push"></div>

@@ -42,7 +42,7 @@
 	
 	header#intranet nav#global > ul > li{
 		border-left: 1px solid #ee8a09;
-		min-width: 100px;
+		min-width: 85px;
 		}
 	
 	header#intranet nav#global > ul > li:last-child{
@@ -62,13 +62,13 @@
 	 	}
  	
  	header#intranet nav#global > ul > li > a > span.username{
- 		padding-left: 10px;
+ 		padding-left: 8px;
  		margin-top: 25px;
  		font-weight: bold;
 	 	}
  	
  	header#intranet nav#global > ul > li > a > span.usertype{
- 		padding-left: 10px;
+ 		padding-left: 8px;
  		margin-top: -2px
 	 	}
 	
@@ -179,16 +179,16 @@
  
  /**
  * Intranet
- * Project
+ * Myclass
  *
  */
 	 	
- 	section#project input:focus {
+ 	section#myclass input:focus {
 	 	background-color: white;
 	 	color: #000;
 	 	}
  	
-	section#project input[type=text]{
+	section#myclass input[type=text]{
 		float: none;
 		font-size: 32px;
 		margin-bottom: 30px;
@@ -199,58 +199,40 @@
 		border-radius: 2px;
 		padding: 5px 20px 5px 10px;
 		}
+	
+	section#myclass h2{
+		margin-bottom: 0px;
+/* 		line-height: 1; */
+		}
 		
-	section#project h5:first-child{
+	section#myclass h5:first-child{
 		margin-bottom: 10px;
 		}
 		
-	section#project hr{
+	section#myclass hr{
 		width:100%;
-		margin: 10px 0px 15px 0px;
+		margin: 10px 0px 30px 0px;
 		float: none;
 		display: block;
 		border: 1px dotted #CCC;
 		border-style: none none dotted;
 		}
 	
-	section#project div#sidebar{
-		background-color: #f2f2f2;
-		}
-	section#project div#sidebar>div{
-		padding: 15px;
-		}
-		
-	section#project div#sidebar>div img{
-		margin-bottom: 5px;
-		}
-		
-	section#project div#textarea{
-		-webkit-border-radius: 2px;
-		-moz-border-radius: 2px;
-		border-radius: 2px;
-		overflow-y: scroll;
-
-		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
-		padding:15px;
-		border: 1px solid #999;
-		margin-top: 10px;
-		margin-bottom: 15px;
-		height: 400px;
-		width: 100%;
-/* 		resize: none; */
+	section#myclass ul#students{
+		list-style: none;
 		}
 	
-	section#project h4{
-		color: #333;
+	section#myclass ul#students img{
+		float: left;
+		position: relative;
+		top: -1px;
+		margin-right: 5px;
 		}
-	
-	section#project a.button{
-		background: #F36235;
-		padding: 5px 10px 5px 10px;
-		color: white;
-		-webkit-border-radius: 1px;
-		-moz-border-radius: 1px;
-		border-radius: 1px;
+		
+	section#myclass ul#students li{
+		clear: both;
+		padding-top: 5px;
+		padding-bottom: 5px;
 		}
 		
 /**

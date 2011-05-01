@@ -39,7 +39,58 @@
 		
 	#faculty ul li {
 		margin-bottom: 20px;
+		position: relative;
 		list-style: none;
+		float: left;
+		}
+		
+	#associate ul li div.overlay {
+		-webkit-transition: opacity 0.2s ease-in-out;
+		background: #FFFFFF;
+		position: absolute;
+		height: 220px;
+		width: 220px;
+		opacity: 0;
+		}
+		
+	#faculty h4 {
+		-webkit-transition: color 0.2s ease-in-out;
+		margin-bottom: 0;
+		}
+		
+	#faculty p.title {
+		font-size: 12px;
+		}
+	
+	#faculty ul li:hover div.overlay {
+		opacity: 0.2;
+		}
+		
+	#faculty ul li:hover h4 {
+		color: #B94929;
+		}
+		
+	#associate {
+		float: left;
+		}
+		
+	#associate img {
+		width: 220px;
+		height: auto;
+		}
+		
+	#adjunct {
+		margin: 40px 0;
+		float: left;
+		}
+		
+	#adjunct img {
+		float: left;
+		}
+		
+	#adjunct figcaption {
+		margin-left: 10px;
+		width: 120px !important;
 		float: left;
 		}
 		

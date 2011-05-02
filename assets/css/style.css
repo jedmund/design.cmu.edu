@@ -229,7 +229,7 @@
 		-webkit-mask: url('../img/video.png') no-repeat;
 		-webkit-transition: background 0.2s ease-in-out;
 		background-position: center;
-		background: #666666;
+		background: #000;
 		position: absolute;
 		height: 75px;
 		width: 75px;
@@ -917,6 +917,27 @@
 		
 	#push.frontpage{
 		height: 2em;
+		}
+		
+	figure.frontpage{
+		position: relative;
+		}
+	
+	.video.frontpage {
+		-webkit-mask: url('../img/video.png') no-repeat;
+		-webkit-transition: background 0.2s ease-in-out;
+		background-position: center;
+		background: #000;
+		position: absolute;
+		height: 75px;
+		width: 75px;
+		left: 110px;
+		top: 53px;
+		}
+		
+	figure.frontpage.video_wrapper:hover .video {
+		background: #F2A919;
+		cursor: pointer;
 		}
 		
 /**

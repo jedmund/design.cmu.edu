@@ -13,6 +13,7 @@
  */
 
 	html {
+		overflow-x: hidden;
 		height: 100%;
 		}
 
@@ -865,57 +866,57 @@
  *
  */
 
-	section#feature_strip{
-		border-top: 1px dotted #ccc;
-		background-color: #eef2f2;
-		width: 100%;
-		min-height: 340px;
-		padding-top: 20px;
-		padding-bottom: 20px;
+	section#feature_strip {
+		border-top: 1px dotted #CCCCCC;
+		background-color: #EEF2F2;
+		padding-bottom: 10px;
 		margin-bottom: 30px;
+		padding-top: 20px;
+		min-height: 340px;
+		width: 100%;
 		clear: both;
 		}
 		
-	h3.frontpage{
-		 border: 0px;
-		 font-size: 21px;
-		 height: auto;
-		 width: auto;
-		 padding: 0px;
-		 margin: 0px 0px 10px 0px;
+	h3.frontpage {
+		margin: 0px 0px 10px 0px;
+		font-size: 21px;
+		padding: 0px;
+		height: auto;
+		border: 0px;
+		width: auto;
 		}
 	
-	#news img{
-		float: left;
+	#news img {
 		margin-right: 20px;
+		float: left;
 		}
 	
-	section#feature_strip img{
+	section#feature_strip img {
 		margin-bottom: 10px;
 		}
 			
-	div.date{
-		float: left;
+	div.date {
 		margin-right: 15px;
+		float: left;
 		}
 		
-	div.date span.day{
+	div.date span.day {
 		font-size: 28px;
 		display: block;
 		}
 	
-	div.date span.month{
+	div.date span.month {
+		text-align: center;
 		position: relative;
 		left: 4px;
 		top: -5px;
-		text-align: center;
 		}
 	
-	span.details{
+	span.details {
 		font-size: 12px;
 		}
 		
-	#push.frontpage{
+	#push.frontpage {
 		height: 2em;
 		}
 		
@@ -1036,6 +1037,7 @@
 	nav#bottom {
 		background: #F2A919;
 		margin-top: 20px;
+		height: 40px;
 		}
 	
 	nav#bottom a {
@@ -1043,17 +1045,37 @@
 		display: block;
 		}
 		
-	nav#bottom span#older {
+	nav#bottom span {
 		-webkit-transition: background 0.2s ease-in-out;
-		padding: 10px;
+		padding: 5px;
+		}
+		
+	nav#bottom span#older {
 		float: right;
 		}
 		
-	nav#bottom span#older:hover {
+	nav#bottom span#newer {
+		margin-left: 0px;
+		float: left;
+		}
+		
+	nav#bottom span.grid {
+		-webkit-mask: url('../img/content/grid.png') no-repeat;
+		background: #FFFFFF;
+		margin: 8px 0 0 8px;
+		height: 10px;
+		width: 6px;
+		}
+		
+	nav#bottom span.grid:hover {
+		background: #FFFFFF !important;
+		}
+		
+	nav#bottom span:hover {
 		background: #D98B00;
 		}
 		
-	nav#bottom span#older span {
+	nav#bottom span span {
 		float: left;
 		}
 		
@@ -1086,6 +1108,53 @@
 		
 	ul.dates li {
 		border-bottom: 1px dotted #CCC;
+		}
+		
+/* Bio Widget */
+	span.bio {
+		margin: 10px 0 20px 0;
+		position: relative;
+		width: 100%;
+		float: left;
+		}
+		
+	span.bio h2 {
+		line-height: 1.2;
+		}
+		
+	span.bio img {
+		margin: 5px 20px 0 0;
+		height: auto;
+		width: 80px;
+		float: left;
+		}
+		
+	span.bio span.byline {
+		margin-top: 3px;
+		font-size: 12px;
+		display: block;
+		}
+		
+	span.bio a {
+		-webkit-transition: color 0.2s ease-in-out;
+		margin-top: 3px;
+		width: 160px !important;
+		font-size: 12px;
+		color: #F36235;
+		display: block;
+		}
+		
+	span.bio a:hover {
+		color: #B94929;
+		}
+		
+	span.bio p.short_bio {
+		font-style: italic;
+		margin-top: 10px;
+		font-size: 14px;
+		color: #CCCCCC;
+		float: left;
+		clear: both;
 		}
 
 /* Hacks */

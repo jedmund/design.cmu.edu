@@ -1164,8 +1164,8 @@
 		}
 	
 	#news_experimental img{
-/* 		float: left; */
-/* 		margin-right: 10px; */
+		float: left;
+		margin-right: 20px;
 		}
 	
 	section#feature_strip img{
@@ -1199,7 +1199,7 @@
 		}
 		
 	#push.experimental{
-		height: 4em;
+		height: 1.5em;
 		}
 		
 	article.experimental{

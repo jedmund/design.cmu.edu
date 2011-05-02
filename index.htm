@@ -18,6 +18,7 @@
 				speed: 500,
 				next:'#pager_next',
 				prev:'#pager_prev',
+				pause: 1,
 				after: function() {
 					$('#byline .caption').text(this.alt);
 				}
@@ -144,8 +145,9 @@
 				<div class="container_12">
 					<figure class="grid_12" id="hero">
 						<div class="slideshow">
-							<img src="assets/img/content/confluence.jpg" alt="Leaders innovators in design attend Confluence.">
-							<img src="assets/img/content/plowitz.jpg" alt="Undergraduate's immersion into design's sketching culture.">
+							<img src="assets/img/content/confluence.jpg" alt="Confluence: Annual CMU Job Fair Begins March 24th.">
+							<img src="assets/img/content/plowitz.jpg" alt="ID Students Prepare for Furniture Final Show.">
+							<img src="assets/img/content/fitwits.jpg" alt="Kids' Nutrition Program Aims to Bring Change.">
 						</div>
 					</figure>
 					
@@ -166,29 +168,32 @@
 				<section id="feature_strip">
 					<div class="container_12">
 						<div class="grid_12">
-							<h3 class="frontpage">Features stories</h3>
+							<h3 class="frontpage">Featured content</h3>
 							<ul>
 								<a href="#">
 									<li class="grid_4 alpha">
-										<img src="assets/img/news/01_big.jpg">
-										<h4>Kinetic Visualizers</h4>
-										In this project, students developed kinetic visualizers that recorded movement and created "art."
+										<img src="assets/img/news/03_big.jpg">
+										<h4>The Future of eBooks</h4>
+										Guest author, senior Justin Edmund, analyzes the future of eBooks, the publishing industry, and the emerging tablet market.
 									</li>
 								</a>
 								<a href="#">
 									<li class="grid_4">
+										<img src="assets/img/news/01_big.jpg">
+										<h4>What is Design?</h4>
+										An animated crash course for our friends in other industries. Design is taking emerging importance, how can you get involved?
+									</li>
+								</a>
+								<figure class="video_wrapper frontpage grid_4 omega">
+									<a href="#">
+										<div class="video frontpage"></div>
 										<img src="assets/img/news/02_big.jpg">
-										<h4>Nassim Jafarinaimi defends PhD</h4>
-										Next Friday (4/1), Jafarinaimi will defend her thesis titled, "An Inquiry into the Form of Social Interaction in Contemporary Products"
-									</li>
-								</a>
-								<a href="#">
-									<li class="grid_4 omega">
-										<img src="assets/img/news/03_big.jpg">
-										<h4>The Future of eBooks</h4>
-										All critiques are open to the public unless otherwise noted.
-									</li>
-								</a>
+									</a>
+									<h4>
+										<a href="#">A Day in the Life</a>
+									</h4>
+									Take a glimpse into the daily creative process, happening everyday at design school.
+								</figure>
 							</ul>
 						</div>
 					</div>
@@ -200,11 +205,10 @@
 									<article class="alpha grid_7">
 										<a href="#">
 											<div>
-												<img src="http://placehold.it/160x120/efefef/efefef">
-<!-- 												<img src="assets/img/news/04.png"> -->
+												<img src="assets/img/news/cheryl.jpg">
 											</div>
 											<h4>
-												<span>Confluence Brings 40+ Companies</span>
+												<span>Cheryl Heller Speaks on Design Communication</span>
 											</h4>
 										</a>
 										<p>Among the leading companies are Frog Design, Apple, Google, Facebook, R/GA, and many more of the top brands in innovation. Recruiters
@@ -213,23 +217,21 @@
 									<article class="alpha grid_7">
 										<a href="#">
 											<div>
-												<img src="http://placehold.it/160x120/efefef/efefef">
-<!-- 												<img src="assets/img/news/04.png"> -->
+												<img src="assets/img/news/fallingwater.jpg">
 											</div>
 											<h4>
-												<span>Dean's List for Spring 2011</span>
+												<span>IDSA and AIGA Student Chapters Visit Falling Water</span>
 											</h4>
 										</a>
-										<p>Congratulations to our outstanding students who made the CFA Dean's List. The criteria for the dean's list. Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+										<p>Local chapters to our outstanding students who made the CFA Dean's List. The criteria for the dean's list. Tron sit amet consectetur. Duis aute irure dolor in reprehenderit in Frank Lloyd Wright's masterpiece.</p>
 									</article>
 									<article class="alpha grid_7">
 										<a href="#">
 											<div>
-												<img src="http://placehold.it/160x120/efefef/efefef">
-<!-- 												<img src="assets/img/news/04.png"> -->
+												<img src="assets/img/news/thesis.jpg">
 											</div>
 											<h4>
-												<span>School of Design tops global rankings</span>
+												<span>Graduate Thesis Poster Session on April 14</span>
 											</h4>
 										</a>
 										<p>Business Week, Design Intelligence, U.S. News and World Report, and College Crunch all give the School of Design high rankings. Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
@@ -237,8 +239,7 @@
 									<article class="alpha grid_7">
 										<a href="#">
 											<div>
-												<img src="http://placehold.it/160x120/efefef/efefef">
-<!-- 												<img src="assets/img/news/04.png"> -->
+												<img src="assets/img/news/terry.jpg">
 											</div>
 											<h4>
 												<span>Terry Irwin discusses her strategic vision</span>
@@ -252,17 +253,17 @@
 								<div class="grid_4 omega">
 									<h3 class="frontpage">Upcoming Events</h3>
 									<div class="date"><span class="day">21</span><span class="month">APR</span></div>
-									<a href="#" class="intranet">John Thackera Lecture</a><br>
+									<a href="#" class="orange">John Thackera Lecture</a><br>
 									<span class="details">"We know what new technology can do, but what is it for?"
 									</span><br class="clear"><br>
 									
 									<div class="date"><span class="day">26</span><span class="month">APR</span></div>
-									<a href="#" class="intranet">Portfolio review</a><br>
+									<a href="#" class="orange">Portfolio review</a><br>
 									<span class="details">Design faculty gather to critique student portfolios for the Spring job search.
 									</span><br class="clear"><br>
 									
 									<div class="date"><span class="day">11</span><span class="month">MAY</span></div>
-									<a href="#" class="intranet">Design Family BBQ</a><br>
+									<a href="#" class="orange">Design Family BBQ</a><br>
 									<span class="details">Design family and friends gather to celebrate the graduation of the Senior class of 2012.
 									</span><br class="clear"><br>
 									<br>
@@ -271,18 +272,18 @@
 										<a href="#">
 											<div>
 												<div class="overlay"></div>
-												<img src="assets/img/news/01.png">
+												<img src="assets/img/news/kinetic.jpg">
 											</div>
-											<h4>Kinetic Visualizer</h4>
+											<a href="#" class="orange">Kinetic Visualizer</a>
 										</a>
 									</article>
 									<article class="alpha grid_4">
 										<a href="#">
 											<div>
 												<div class="overlay"></div>
-												<img src="assets/img/news/04.png">
+												<img src="assets/img/news/rogue.jpg">
 											</div>
-											<h4>Phantom eReader app</h4>
+											<a href="#" class="orange">Rogue Eau De Parfum</a>
 										</a>
 									</article>
 										

@@ -7,3 +7,8 @@
 		margin: 48px 3px 0 0;
 		float: right;
 		}
+		
+	/* Side Navigation */
+	#side_nav ul li:hover {
+		background: #888888;
+		}

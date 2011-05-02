@@ -1028,7 +1028,7 @@
 	dd ol li:hover {
 		color: #333333;
 		}
-				
+	
 	section#dict_definition p.sidenote,
 	section#school_definition p.sidenote {
 		margin-top: 9px;
@@ -1060,7 +1060,35 @@
 	article span.continue a:hover {
 		color: #B94929;
 		}
- 		
+		
+ 	/* Blockquotes */
+	blockquote {
+		-webkit-transition: all 0.2s ease-in-out;
+		margin-bottom: 20px;
+		position: relative;
+		font-style: italic;
+		font-size: 24px;
+		color: #666666;
+		}
+		
+	blockquote:hover {
+		color: #333333;
+		}
+		
+	blockquote:hover span.mark {
+		top: -16px;
+		}
+		
+	blockquote span.mark {
+		-webkit-transition: all 0.2s ease-in-out;
+		position: absolute;
+		font-size: 72px;
+		color: #F26325;
+		left: -46px;
+		top: -18px;
+		z-index: -1;
+		}
+		
 	/* Fallback "View More" styling for if infinite
 		 scroll doesn't work/JS is disabled */
 	nav#bottom {

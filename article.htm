@@ -14,14 +14,11 @@
 			$('#hero .slideshow').cycle({
 				fx: 'scrollHorz',
 				speed: '10',
-				timeout:6000,
+				timeout:0,
 				speed: 500,
 				next:'#pager_next',
 				prev:'#pager_prev',
-				pause: 1,
-				after: function() {
-					$('#byline .caption').text(this.alt);
-				}
+				pause: 1
 			});
 		});
 		</script>
@@ -143,43 +140,40 @@
 				</header>
 				
 				<div class="container_12">
-					<figure class="grid_12" id="hero">
+					<figure class="grid_12" id="hero" style="margin-bottom:10px;">
 						<div class="slideshow">
 							<img src="assets/img/content/fitwits.jpg" alt="Kids' Nutrition Program Aims to Bring Change.">
 							<img src="assets/img/content/fitwits.jpg" alt="Kids' Nutrition Program Aims to Bring Change.">
 						</div>
 					</figure>
 					
-					<div class="grid_12" id="byline">
-						<a href="#">
-							<h2 class="caption"></h2>
-						</a>
-						
-						<span id="pager">
-							<div id="pager_prev"></div>
-							<div id="pager_next"></div>
-						</span>
-					</div>
-							
-					
 				</div>
 				
 				<div class="container_12">
 					<div class="grid_12">
-							<div class="grid_3 alpha">
-								<img src="assets/img/faculty/sharon.jpg">
+							<div class="grid_4 alpha">
+								<span class="bio">
+									<img src="assets/img/faculty/sharon.jpg">
+									<h2 class="inline">Sharon West</h2>
+									<span class="byline">Author</span>
+									<a class="alpha grid_3" href="http://sharon-west.com/">www.sharon-west.com</a>
+								</span>
+								<img src="assets/img/likebutton.jpg">
 							</div>
-							<div class="grid_6 suffix_3 omega">
-							<p class="content">More kids are learning how to eat healthy thanks to Fitwits &mdash; a program created by Carnegie Mellon's School of Design and UPMC's St. Margaret Family Health Centers. Initially designed to get children talking about nutrition and exercise, a new leg of the program is getting parents in on the act.</p>
-<blockquote class="grid_8 suffix_1">
-							<span class="mark">&#8220;</span>
-							<p>The new phase of Fitwits &mdash; known as Fitwits Zones &mdash; uses multiple strategies to help families on a daily basis.</p>
-						</blockquote>
-
-<p class="content">"Families living in lower socio-economic environments are at a higher risk for obesity-related complications later in life. Many do not have access to programs that address early preventative obesity and nutrition education," explained Fitwits co-creator Kristin Hughes, associate professor in Carnegie Mellon's School of Design. "By working closely with community members, we ensure a cultural fit and relevant messages of interest." Fitwits Zone is an activity area created in schools and community centers to engage children, teachers, parents and families in conversations about healthy lifestyles. The plan is to activate it with a yearlong competition on five levels: individual, classroom, grades, school and families.</p>
-
-<p class="content">"We hope to motivate children, teachers and parents throughout the school year with challenges and activities. For example, children will receive a wristband with tokens added as the child meets each new challenge in an area of health education, nutrition, exercise or activities," Hughes said.</p>
-
+							<div class="grid_8 omega">
+							<h2 class="caption">Kids' Nutrition Program Aims to Bring Change.</h2>
+								<div class="alpha omega grid_6">
+								<p class="content">More kids are learning how to eat healthy thanks to Fitwits &mdash; a program created by Carnegie Mellon's School of Design and UPMC's St. Margaret Family Health Centers. Initially designed to get children talking about nutrition and exercise, a new leg of the program is getting parents in on the act.</p>
+	<blockquote class="grid_8 suffix_1">
+								<span class="mark">&#8220;</span>
+								<p>The new phase of Fitwits &mdash; known as Fitwits Zones &mdash; uses multiple strategies to help families on a daily basis.</p>
+							</blockquote>
+	
+	<p class="content">"Families living in lower socio-economic environments are at a higher risk for obesity-related complications later in life. Many do not have access to programs that address early preventative obesity and nutrition education," explained Fitwits co-creator Kristin Hughes, associate professor in Carnegie Mellon's School of Design. "By working closely with community members, we ensure a cultural fit and relevant messages of interest." Fitwits Zone is an activity area created in schools and community centers to engage children, teachers, parents and families in conversations about healthy lifestyles. The plan is to activate it with a yearlong competition on five levels: individual, classroom, grades, school and families.</p>
+	
+	<p class="content">"We hope to motivate children, teachers and parents throughout the school year with challenges and activities. For example, children will receive a wristband with tokens added as the child meets each new challenge in an area of health education, nutrition, exercise or activities," Hughes said.</p>
+	
+								</div>
 							</div>
 								
 								

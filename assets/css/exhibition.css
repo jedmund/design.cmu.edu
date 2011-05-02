@@ -269,10 +269,106 @@
  		}
  }
  
-/**
+/** 
+ * Top-level Slideshow
+ *
+ */
+ 	figcaption.byline.center {
+ 		-webkit-transition: background 0.2s ease-in-out;
+ 		position: absolute;
+ 		padding-top: 6px;
+ 		z-index: 100;
+ 		bottom: 0;
+ 		}
+ 		
+ 	figcaption.byline.center p {
+ 		width: 889px;
+ 		float: left;
+ 		}
+ 		
+ 	.hero_slideshow {
+ 		overflow: hidden;
+ 		}
+ 		
+ 	.hero_slideshow .inner {
+ 		position: static !important;
+ 		}
+ 		
+ 	#hero img {
+ 		margin-top: -150px;
+ 		float: left;
+ 		}
+ 		
+ 	.active_area {
+ 		-webkit-transition: background 0.2s ease-in-out;
+ 		position: absolute;
+ 		height: 30px;
+ 		width: 100%;
+ 		z-index: 101;
+ 		bottom: 0;
+ 		}
+ 		
+ 	.active_area:hover {
+ 		background: #B94929;
+ 		}
+ 		
+ 	.active_area p {
+ 		text-align: center;
+ 		padding-top: 5px;
+ 		font-size: 12px;
+ 		color: #FFFFFF;
+ 		}
+ 		
+ 	/* Slideshow Buttons */
+ 	.cycle_btn {
+ 		-webkit-transition: background 0.2s ease-in-out;
+ 		height: 18px;
+ 		width: 18px;
+ 		opacity: 0;
+ 		}
+ 		
+ 	.cycle_btn:first-child {
+ 		padding: 5px 6px 5px 6px;
+ 		margin: -5px 0 -5px -6px;
+ 		float: left;
+ 		}
+ 		
+ 	.cycle_btn:last-child {
+		padding: 5px 12px 5px 6px;
+ 		margin: -5px -4px -5px 0;
+ 		float: right;
+ 		}
+ 		
+ 	.cycle_btn:hover {
+ 		background-color: #B94929;
+ 		}
+ 		
+ 	#cycle_left {
+ 		-webkit-mask: url('../img/left_arrow_trans.png') no-repeat;
+ 		background: #FFFFFF;
+ 		height: 100%;
+ 		width: 100%;
+ 		}
+ 		
+ 	#cycle_right {
+ 		-webkit-mask: url('../img/right_arrow_trans.png') no-repeat;
+ 		background: #FFFFFF;
+ 		height: 100%;
+ 		width: 100%;
+ 		}
+
+ 	/* We specifically call out the hero on the index, and 
+ 	   not on inside pages because we cannot animate properties
+ 	   with the !important declaration. */	
+ 	#hero.hero_index img {
+ 		margin-top: 0px;
+ 		float: none;
+ 		}
+ 
+ /**
  * Hacks
  *
  */
  #hero {
- 	margin-bottom: 10px;
+ 	margin-bottom: 40px;
  	}

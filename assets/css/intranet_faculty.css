@@ -333,6 +333,13 @@
 		top:3px;
 		}
 	
+	section#project ul.team_project span{
+		padding-top: 0px;
+		margin-bottom: 0px;
+		margin-top: 0px;
+		padding-bottom: 0px !important;
+		}
+	
 /**
  * Intranet
  * Prints

@@ -80,13 +80,13 @@
 		color: #FFFFFF;
 		float: left;
 		}
-		
-	a:hover #hero .byline p {
-		margin-left: 5px;
-		}
-	
-	a.orange{
+			
+	a.orange {
 		color: #F36235;
+		}
+		
+	a.orange:hover {
+		color: #B94929;
 		}
 	
 	#hotfix {
@@ -591,9 +591,9 @@
 		
 	nav#global > ul > li > a {
 		position: absolute;
+		z-index: 104;
 		height: 80px;
 		width: 100%;
-		z-index: 4;
 		left: 0;
 		top: 0;
 		}
@@ -615,8 +615,8 @@
 		visibility: hidden;
 		padding-top: 5px;
 		font-size: 12px;
+		z-index: 105;
 		width: 100%;
-		z-index: 5;
 		opacity: 0;
 		left: 0;
 		top: 0;
@@ -949,6 +949,18 @@
 		cursor: pointer;
 		}
 		
+	article h4 {
+		-webkit-transition: color 0.2s ease-in-out;
+		}
+		
+	article h4:hover {
+		color: #B94929;
+		}
+		
+	aside.project {
+		margin-bottom: 30px;
+		}
+		
 /**
  * Content Pages
  *
@@ -1215,6 +1227,6 @@
 		}
 
 /* Hacks */
-	.bumper{
+	.bumper {
 		margin-top: 30px;
 		}

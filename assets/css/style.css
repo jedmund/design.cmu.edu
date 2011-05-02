@@ -163,7 +163,7 @@
 		-webkit-mask: url('../img/sprites.png') -22px 0 no-repeat;
 		}
 		
-	#byline h2.caption {
+	h2.caption {
 		font-size: 30px;
 	 	margin-bottom: 20px;
 		margin-top: 0px;

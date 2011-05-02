@@ -22,35 +22,9 @@
 		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 		
 		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-		<script type="text/javascript">
-			var majors = [];
-			var years = [];
-			var removeBtn = '<span class="remove_btn">&times;</span>';
-			function selectFilter(elem) {
-				$(elem).addClass('selected');
-				$(elem).append(removeBtn);
-			}
-			
-			function unselectFilter(elem) {
-				$(elem).removeClass('selected');
-				$(elem).children().remove();
-			}
-			
-			$('document').ready(function() {
-				$('#filter a').click(function(e) {
-					e.preventDefault();
-				});
-				
-				$('#filter .option').click(function() {
-					if ($(this).hasClass('selected')) {
-						unselectFilter(this);
-					} else {
-						selectFilter(this);
-					}
-				});
-			});
-		</script>
-	</head>
+		<script type="text/javascript" src="../../assets/js/jquery.cycle.all.min.js"></script>
+		<script type="text/javascript" src="../../assets/js/exhibition.js"></script>
+		</head>
 	
 	<body>
 			<div id="wrapper">
@@ -152,100 +126,105 @@
 				
 				<div id="exhibition">
 					<div class="container_12">
-						<figure class="grid_12" id="sidekick" >
-							<img src="../../assets/img/content/adv_type.png">
-							<figcaption class="byline">
-								<p class="left">See Victor Ng, Ah Ra Cho, and Hanah Ho's solution to Aline Skirts</p>
-								<span class="arrow">&rarr;</span>
+						<figure class="grid_12 hero_slideshow" id="hero">
+							<div class="inner">
+								<img src="../../assets/img/courses/advanced_typography/aline01.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline02.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline03.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline04.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline05.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline06.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline07.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline08.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline09.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline10.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline11.jpeg">
+								<img src="../../assets/img/courses/advanced_typography/aline12.jpeg">
+							</div>
+							<div class="active_area">
+								<p>View slideshow</p>
+							</div>
+							<figcaption class="byline center">
+								<div class="cycle_btn">
+									<div id="cycle_left"></div>
+								</div>
+								
+								<div class="cycle_btn">
+									<div id="cycle_right"></div>
+								</div>
 							</figcaption>
 						</figure>
 					</div>
 															
-					<section class="container_12">
-						<div class="grid_12" id="hotfix">
-							<h3>
-								<span class="left">Advanced Typography</span>
-								<span class="right year">Fall 2010</span>	
+					<div class="container_12">
+						<div class="grid_12">
+							<h3 class="project_title">
+							<span class="breadcrumb">
+									<a href="index.htm">Advanced Typography</a>
+									<span> / </span>
+									<a href="aline_skirts.htm">Aline Skirts</a>
+									<span> / </span>
+									<a href="aline_skirts_01.htm">Cho, Ho, and Ng</a>
+								</span>
 							</h3>
 						</div>
 						
-						<figure class="grid_3">
-							<a href="../../community/hughes.htm">
-								<img src="../../assets/img/faculty/hughes.png" width="220" height="220">
-							</a>
-							<figcaption class="professor">
-								<a href="../../community/hughes.htm">Professor Kristin Hughes</a>
-							</figcaption>
-						</figure>
+						<div class="grid_4">
+							<span class="bio">
+								<img src="../../assets/img/undergraduates/ng.png">
+								<h2 class="inline">Victor Ng</h2>
+								<span class="byline">BFA in Communication Design, Junior</span>
+								<a class="alpha grid_3" href="http://victorng.net/">www.victorng.net</a>
+							</span>
 						
-						<div class="grid_6 omega">
-							<p class="course_description">This course develops advanced skills in typography and communication design, including the study of type and motion. Students learn to conceptualize and visualize more complex bodies of information for a variety of communicative purposes.</p>
+							<span class="bio">
+								<img src="../../assets/img/undergraduates/ho.png">
+								<h2 class="inline">Hanah Lee Ho</h2>
+								<span class="byline">BFA in Communication Design, Junior</span>
+								<a class="alpha grid_3" href="http://hanahho.com/">www.hanahho.com</a>
+							</span>
 							
-							<p class="course_description">Advanced Typography should encourage students to develop a deeper understanding of the expressive potential of type and image and to develop critical and creative thinking skills with which to assess the effectiveness of their own work and that of their peers.</p>
+							<span class="bio">
+								<img src="http://placehold.it/100x100/efefef/efefef">
+								<h2 class="inline">Ah Ra Cho</h2>
+								<span class="byline">BFA in Communication Design, Junior</span>
+							</span>
 						</div>
-					</section>
-					
-					<section class="container_12">
-						<div class="grid_12" id="projects">
-							<h3>Projects</h3>
-							<ul>
-								<li class="grid_9 alpha">
-									<a href="#">
-										<img class="grid_3 alpha" src="../../assets/img/courses/advanced_typography/thumbs/01.png">
-									</a>
-									<div class="grid_6 omega">
-										<h4>
-											<a href="#">Museum of Modern Art</a>
-										</h4>
-											<p>Sed ut elit id leo dictum aliquet. Morbi ullamcorper, justo vitae mattis pharetra, turpis turpis auctor velit, eu venenatis mauris lacus sollicitudin lorem. Sed ac rutrum lorem. Nulla et erat odio.</p>
-									</div>
-								</li>
-								
-								<li class="grid_9 alpha">
-									<a href="#">
-										<img class="grid_3 alpha" src="../../assets/img/courses/advanced_typography/thumbs/02.png">
-									</a>
-									<div class="grid_6 omega">
-										<h4>
-											<a href="#">Punto y Raya Animation Festival</a>
-										</h4>
-											<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum quis massa orci. Quisque est massa, ultrices ac aliquam bibendum, molestie id tellus. Vestibulum in mi tortor, sed feugiat lorem. Etiam adipiscing semper lorem, ac aliquam urna luctus at.</p>
-									</div>
-								</li>
-								
-								<li class="grid_9 alpha">
-									<a href="#">
-										<img class="grid_3 alpha" src="../../assets/img/courses/advanced_typography/thumbs/03.png">
-									</a>
-									<div class="grid_6 omega">
-										<h4>
-											<a href="#">The 6th Extinction</a>
-										</h4>
-										<p>In a joint project with <a href="#">The 6th Extinction Documentary</a> project, students were asked to tackle the problem of trying to create empathy for endangered animals.</p>
-									</div>
-								</li>
-								
-								<li class="grid_9 alpha">
-									<a href="aline_skirts.htm">
-										<img class="grid_3 alpha" src="../../assets/img/courses/advanced_typography/thumbs/04.png">
-									</a>
-									<div class="grid_6 omega">
-										<h4>
-											<a href="aline_skirts.htm">Aline Skirts</a>
-										</h4>
-										<p>A-Line skirts, a brand under Kelly Lane Design, are skirts made from refurbished fabrics. The customer can customize the fabric choices for her skirt which is also reversible.</p>
-									</div>
-								</li>
-							</ul>
-						</div>
-					</section>
-				</div>
-			</div>
-			<div id="push"></div>
-		</div>
+						
+						<div class="prefix_1 grid_6">
+							<p class="content">Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa.</p>
 
+							<p class="content">Curabitur sodales ligula in libero. Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh. Aenean quam. In scelerisque sem at dolor. Maecenas mattis. Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+														
+							<p class="content">Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nam nec ante. Sed lacinia, urna non tincidunt mattis, tortor neque adipiscing diam, a cursus ipsum ante quis turpis. Nulla facilisi. Ut fringilla. Suspendisse potenti. Nunc feugiat mi a tellus consequat imperdiet.</p>
+						</div>
+					</div>
+					
+					<div class="container_12">
+					<!-- Bottom bar -->
+					<nav class="grid_12" id="bottom">
+						<a href="aline_skirts.htm">
+							<span id="newer">
+								<span class="grid"></span>
+								<span>Show all solutions</span>
+							</span>
+						</a>
+						
+						<a href="#">
+							<span id="older">
+								<span>View the next project</span>
+							  <span>&rarr;</span>
+							</span>
+						</a>
+					</nav>
+					</div>
+				</div><!-- End Content -->
+				<div id="push"></div>
+		</div> <!-- End Content Wrapper -->
+		
 		<footer>
 			<div class="container_12">			
+				
 				<div class="grid_3" id="contact_us">
 					<h5>Contact Us</h5>
 					<span>info@design.cmu.edu</span>
@@ -256,6 +235,7 @@
 						<li><a href="http://linkedin.com"><img src="../../assets/img/content/social_linkedin.jpg"></a></li>
 						<li><a href="http://vimeo.com"><img src="../../assets/img/content/social_vimeo.jpg"></a></li>
 					</ul>
+					
 				</div>
 				
 				<div class="grid_5 suffix_1" id="recent_tweets">
@@ -273,6 +253,8 @@
 						<span class="tweets_timestamp">April 21</span><br><br>
 					</span>
 				</div>
+
+				
 				
 				<div class="grid_3" id="intranet_login">
 					<h5>Intranet</h5>
@@ -284,6 +266,7 @@
 						<input type="submit" value="Login">
 					</form>
 				</div>
+				
 			</div>
 		</footer>
 	</body>

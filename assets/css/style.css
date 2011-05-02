@@ -38,8 +38,7 @@
 		}
 		
 	#news {
-		margin-top: 10px;
-		float: left;
+/* 		float: left; */
 		}
 		
 	footer, #push {
@@ -128,7 +127,7 @@
 		}
 		
 	span#pager {
-		margin-top: 6px;
+		margin-top: 12px;
 		width: 51px;
 		float: right;
 		}
@@ -156,6 +155,8 @@
 		}
 		
 	#byline h2.caption {
+		font-size: 30px;
+	 	margin-bottom: 20px;
 		margin-top: 0px;
 		color: #333;
 		}
@@ -428,9 +429,13 @@
 
 	article,
 	aside {
-		margin-bottom: 20px;
+		margin-bottom: 10px;
 		clear: both;
 		float: left;		
+		}
+
+	#news article{
+		margin-bottom: 20px;
 		}
 
 	aside img {
@@ -849,6 +854,66 @@
 	li.studio a span.professor {
 		color: #333333;
 		}
+
+/**
+ * Front page
+ *
+ *
+ */
+
+	section#feature_strip{
+		border-top: 1px dotted #ccc;
+		background-color: #eef2f2;
+		width: 100%;
+		min-height: 340px;
+		padding-top: 20px;
+		padding-bottom: 20px;
+		margin-bottom: 30px;
+		clear: both;
+		}
+		
+	h3.frontpage{
+		 border: 0px;
+		 font-size: 21px;
+		 height: auto;
+		 width: auto;
+		 padding: 0px;
+		 margin: 0px 0px 10px 0px;
+		}
+	
+	#news img{
+		float: left;
+		margin-right: 20px;
+		}
+	
+	section#feature_strip img{
+		margin-bottom: 10px;
+		}
+			
+	div.date{
+		float: left;
+		margin-right: 15px;
+		}
+		
+	div.date span.day{
+		font-size: 28px;
+		display: block;
+		}
+	
+	div.date span.month{
+		position: relative;
+		left: 4px;
+		top: -5px;
+		text-align: center;
+		}
+	
+	span.details{
+		font-size: 12px;
+		}
+		
+	#push.frontpage{
+		height: 2em;
+		}
 		
 /**
  * Content Pages
@@ -953,124 +1018,6 @@
 		color: #F36235;
 		}
 		
-	/* PAGE: Programs */
-	#programs {
-		margin: 30px 0 60px 0;
-		float: left;
-		clear: both;
-		}
-		
-	#programs a {
-		position: relative;
-		float: left;
-		}
-		
-	#programs a:first-child div.overlay {
-		left: 0;
-		}
-		
-	#programs a div.overlay {
-		-webkit-transition: opacity 0.2s ease-in-out;
-		background: #FFFFFF;
-		position: absolute;
-		height: 400px;
-		width: 220px;
-		opacity: 0.3;
-		left: 10px;
-		top: 0;
-		}
-		
-	#programs a:hover div.overlay {
-		opacity: 0;
-		}
-		
-	#programs a:hover h4 {
-		color: #B94929;
-		}
-		
-	#programs ul li {
-		-webkit-transition: color 0.2s ease-in-out;
-		list-style: none;
-		font-size: 12px;
-		color: #999999;
-		}
-		
-	#programs ul li:hover {
-		color: #333333;
-		}
-		
-/**
- * News
- *
- *
- */
- 	#news p {
- 		margin-bottom: 10px;
- 		}
- 		
- 	#news #primary h4 {
- 		font-size: 18px;
- 		}
- 		
- 	#news #primary p {
- 		line-height: 20px;
- 		font-size: 16px;
- 		width: 350px;
- 		}
- 		
- 	#news #tertiary {
-		border-top: 1px dotted #AAAAAA;
-		padding-top: 20px;
- 		margin-top: 106px;
- 		}
- 		
- 	#news #tertiary article {
- 		-webkit-transition: color 0.2s ease-in-out;
- 		margin-bottom: 20px;
- 		position: relative;
- 		min-height: 250px; /* This is a hotfix. We should probably be using some height normalization trick */
- 		color: #666666;
- 		}
- 		
- 	#news #tertiary article:hover {
- 		color: #333333;
- 		}
- 		
- 	#news #tertiary article a > div {
- 		margin-bottom: 8px;
- 		position: relative;
- 		height: 120px;
- 		width: 300px;
- 		}
- 		
- 	#news #tertiary article a > div div.overlay {
- 		-webkit-transition: opacity 0.2s ease-in-out;
- 		background: #FFFFFF;
- 		position: absolute;
- 		height: 100%;
- 		width: 100%;
- 		opacity: 0;
- 		left: 0;
- 		top: 0;
- 		}
- 		
- 	/* Trigger image opacity on article hover. */
- 	#news #tertiary article:hover a > div div.overlay {
- 		opacity: 0.2;
- 		}
- 		
- 	/* Read Article link on bottom of article */
- 	#news #tertiary article span.continue {
- 		-webkit-transition: opacity 0.2s ease-in-out;
- 		margin-top: 10px;
- 		font-size: 12px;
- 		float: right;
- 		opacity: 0;
- 		}
- 		
- 	#news #tertiary article:hover span.continue {
- 		opacity: 1;
- 		}
  		
 	/* Fallback "View More" styling for if infinite
 		 scroll doesn't work/JS is disabled */
@@ -1129,79 +1076,3 @@
 		border-bottom: 1px dotted #CCC;
 		}
 
-
-/**
- * Front page experiment
- *
- *
- */
- 
- 	h2.experimental{
-	 	font-size: 30px;
-	 	margin-bottom: 20px;
-	 	}
-	 	
- 	span#pager.experimental{
-	 	margin-top: 10px;
-	 	}
- 
-	section#feature_strip{
-		border-top: 1px dotted #ccc;
-		background-color: #eef2f2;
-		width: 100%;
-		height: 360px;
-		padding-top: 30px;
-		clear: both;
-		}
-		
-	h3.experimental{
-		 border: 0px;
-		 font-size: 21px;
-		 height: auto;
-		 width: auto;
-		 padding: 0px;
-		 margin: 0px 0px 10px 0px;
-		}
-	
-	#news_experimental img{
-		float: left;
-		margin-right: 20px;
-		}
-	
-	section#feature_strip img{
-		margin-bottom: 10px;
-		}
-		
-	#tertiary.experimental{
-		margin-top: 0px;
-		margin-bottom: 30px;
-		}
-	
-	div.date{
-		float: left;
-		margin-right: 15px;
-		}
-		
-	div.date span.day{
-		font-size: 28px;
-		display: block;
-		}
-	
-	div.date span.month{
-		position: relative;
-		left: 4px;
-		top: -5px;
-		text-align: center;
-		}
-	
-	span.details{
-		font-size: 12px;
-		}
-		
-	#push.experimental{
-		height: 1.5em;
-		}
-		
-	article.experimental{
-		margin-bottom: 10px;
-		}

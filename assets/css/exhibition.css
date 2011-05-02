@@ -340,6 +340,30 @@
  		margin-top: 0px;
  		float: none;
  		}
+ 		
+ /* Level Two Project Page */
+ 	.project {
+ 		min-height: 220px;
+ 		float: left;
+ 		}
+ 		
+	.project .students {
+		font-size: 12px;
+		margin-top: 5px;
+		float: left;
+		clear: both;
+		}
+		
+	.project .students .student {
+		margin-bottom: 5px;
+		float: left;
+		clear: both;
+		}
+	
+	.project .students .student img {
+		margin-right: 5px;
+		}
+ 
  
  /**
  * Hacks

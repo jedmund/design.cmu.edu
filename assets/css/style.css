@@ -1131,7 +1131,7 @@
 	nav#bottom span.grid {
 		-webkit-mask: url('../img/content/grid.png') no-repeat;
 		background: #FFFFFF;
-		margin: 8px 0 0 8px;
+		margin: 7px 0 0 8px;
 		height: 10px;
 		width: 6px;
 		}

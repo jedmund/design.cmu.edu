@@ -60,6 +60,7 @@ $('document').ready(function() {
 				height: heroHeight,
 			}, 700, function(e) {
 				expanded = true;
+				
 				/* Change the CSS for the active area */
 				$('.active_area').css({
 					marginLeft: '34px',
@@ -83,6 +84,12 @@ $('document').ready(function() {
 				height: '322px'
 			}, 700, function(e) {
 				expanded = false;
+				
+				/* Change the CSS for the active area */
+				$('.active_area').css({
+					marginLeft: '0',
+					width: '938px'
+				});
 				
 				/* Fade out nav buttons */
 				$('.cycle_btn').animate({

@@ -1179,11 +1179,14 @@
 		width: auto;
 		border: 0px;
 		}
+		
+	#news_experimental img {
+		float: left;
+		margin-right: 20px;
+		}
 	
 	section#feature_strip img {
-/* 		float: left; */
-/* 		margin-right: 10px; */
-			margin-bottom: 10px;
+		margin-bottom: 10px;
 		}
 		
 	.experimental#tertiary {
@@ -1212,7 +1215,7 @@
 		}
 		
 	#push.experimental{
-		height: 4em;
+		height: 1.5em;
 		}
 		
 	article.experimental{

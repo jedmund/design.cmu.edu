@@ -139,37 +139,4 @@
 		color: #F36235;
 		}
 		
-/* Inside Profiles */
-	span.bio {
-		margin: 10px 0 20px 0;
-		position: relative;
-		width: 100%;
-		float: left;
-		}
-		
-	span.bio h2 {
-		line-height: 1.2;
-		}
-		
-	span.bio img {
-		margin: 5px 20px 0 0;
-		height: auto;
-		width: 80px;
-		float: left;
-		}
-		
-	span.bio span.byline {
-		font-size: 12px;
-		float: left;
-		}
-		
-	span.bio a {
-		-webkit-transition: color 0.2s ease-in-out;
-		font-size: 12px;
-		color: #F36235;
-		float: left;
-		}
-		
-	span.bio a:hover {
-		color: #B94929;
-		}
+/* Bio Widget: See style.css */

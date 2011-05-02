@@ -82,7 +82,11 @@
 	a:hover #hero .byline p {
 		margin-left: 5px;
 		}
-		
+	
+	a.orange{
+		color: #F36235;
+		}
+	
 	#hotfix {
 		margin-top: 30px;
 		}
@@ -1084,3 +1088,7 @@
 		border-bottom: 1px dotted #CCC;
 		}
 
+/* Hacks */
+	.bumper{
+		margin-top: 30px;
+		}

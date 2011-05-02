@@ -1016,8 +1016,16 @@
 		
 	section#school_mission p:hover em {
 		color: #F36235;
+		}	
+ 		
+ 	article span.continue a {
+ 		-webkit-transition: color 0.2s ease-in-out;
+ 		color: #F36235;
+ 		}
+
+	article span.continue a:hover {
+		color: #B94929;
 		}
-		
  		
 	/* Fallback "View More" styling for if infinite
 		 scroll doesn't work/JS is disabled */

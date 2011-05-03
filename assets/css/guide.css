@@ -35,11 +35,11 @@
 		
 	/* Interaction Standards */
 	#interaction > div {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		float: left;
 		clear: both;
 		}
-		
+				
 	#interaction em {
 		font-style: normal;
 		font-weight: bold;
@@ -54,4 +54,8 @@
 		
 	#interaction p {
 		margin-bottom: 10px;
+		}
+		
+	#interaction p code {
+		font-size: 13px;
 		}

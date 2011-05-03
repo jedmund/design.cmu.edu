@@ -5,6 +5,10 @@
 	a:hover {
 		color: #333333 !important;
 		}
+		
+	h4 {
+		color: #333333;
+		}
 	
 	header,
 	#sidekick {
@@ -35,11 +39,11 @@
 		
 	/* Interaction Standards */
 	#interaction > div {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
 		float: left;
 		clear: both;
 		}
-		
+				
 	#interaction em {
 		font-style: normal;
 		font-weight: bold;
@@ -56,6 +60,61 @@
 		margin-bottom: 10px;
 		}
 		
+	#interaction p code {
+		font-size: 13px;
+		}
+
+	/* Colors */
+	.color {
+		margin-right: 20px;
+		height: 60px; 
+		width: 60px; 
+		float: left;
+		}
+		
+	.cmu-darkred {
+		background-color: #B94929;
+		}
+	
+	.cmu-red {
+		background-color: #F36235; 
+		}
+		
+	.cmu-darkorange {
+		background-color: #E57235;
+		}
+		
+	.cmu-orange {
+		background-color: #F47D1C;
+		}
+		
+	.cmu-yellow {
+		background-color: #F2A919;
+		}
+		
+	.cmu-white {
+		background-color: #FFFFFF; 
+		border: 1px solid #CCCCCC;
+		width: 58px;
+		}
+		
+	.cmu-lightgray {
+		border: 1px dotted #CCCCCC;
+		background-color: #EEF2F2;
+		width: 58px;
+		}
+		
+	.cmu-mediumgray {
+		background-color: #CCCCCC;
+		}
+		
+	.cmu-darkgray {
+		background-color: #666666;
+		}
+		
+	.cmu-black {
+		background-color: #000000;
+
 	/* Side Architecture */
 	ul#site_architecture{
 		margin-left: 0px;

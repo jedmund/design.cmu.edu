@@ -117,18 +117,21 @@
 		}
 
 	/* Side Architecture */
+	
 	ul#site_architecture {
+		margin-left: 0px;
 		list-style: none;
 		color: #F36235;
 		}
 		
 	ul#site_architecture>li{
-		margin-left: 20px;
+		float: left;
+		width: 220px;
+		height: 650px;
+/* 		margin-left: 20px; */
 		}
 	
 	ul#site_architecture>li>ul{
-		/* float: left; */
-		/* width: 100px; */
 		color: red;
 		list-style: none;
 		}

@@ -15,7 +15,7 @@
 				$('a.edit').click(function(){
 					$(this).parent().html("<textarea>"+$(this).parent().children().eq(0).text()+"</textarea><br class='clear'><a href='#' id='save' class='button'>Save changes</a>");
 					$('a#save').click(function(){
-						$(this).parent().html($(this).parent().children().eq(0).text());
+						$(this).parent().text($(this).parent().children().eq(0).text()).addClass('quiet');
 					});
 					return false;
 				});
@@ -93,9 +93,10 @@
 					</div>
 					<div class="grid_3">
 						Project description<br>
-							<span class="quiet">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.<br>
+							<div id="description">
+							<span class="quiet">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.<br>
 							<br>
-							Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span>
+							Dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</span> <a href="#" class="quiet intranet edit">edit</a></div>
 					</div>
 					<div class="grid_9" id="student_projects">
 						<ul>

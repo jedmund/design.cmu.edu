@@ -320,6 +320,30 @@
 		border-style: none none dotted;
 		}
 	
+	section#project div#description a.edit{
+		visibility: hidden;
+		}
+	
+	section#project div#description:hover a.edit{
+		visibility: visible;
+		}
+		
+	section#project textarea{
+		-webkit-border-radius: 2px;
+		-moz-border-radius: 2px;
+		border-radius: 2px;
+		font: 12px/1.5 "Lucida Grande","Tahoma", sans-serif;
+		padding:7px 5px 7px 5px;
+		border: 1px solid #999;
+		margin-bottom: 15px;
+		height: 180px;
+		width: 210px;
+		overflow: hidden;
+		resize: none;
+		float: left;
+		display: block;
+		}
+	
 	section#project #student_projects ul li span{
 		padding-top: 5px;
 		padding-bottom: 30px;

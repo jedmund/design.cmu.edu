@@ -6,13 +6,15 @@
 		<link href="../assets/css/960.css" rel="stylesheet" type="text/css">
 		<link href="../assets/css/style.css" rel="stylesheet" type="text/css">
 		<link href="../assets/css/guide.css" rel="stylesheet" type="text/css">
+		<link href="../assets/css/tipsy.css" rel="stylesheet" type="text/css">
 		
 		<script type="text/javascript" src="../assets/js/jquery-1.5.min.js"></script> 
 		<script type="text/javascript" src="../assets/js/jquery.cycle.all.min.js"></script>
+		<script type="text/javascript" src="../assets/js/jquery.tipsy.js"></script>
 		
-		<script>
+		<script type="text/javascript">
 			$(document).ready(function() {
-				
+				$('.color').tipsy({fade: true, html: true, gravity: 's', title: 'data-tooltip'});
 			});
 		</script>
 		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
@@ -168,15 +170,22 @@
 					<section class="prefix_3 grid_10">
 						<h2 class="inside">Visual Standards</h2>
 						<div class="colors">
-							<div class="color cmu-darkred"></div>
-							<div class="color cmu-red"></div>
-							<div class="color cmu-darkorange"></div>
-							<div class="color cmu-orange"></div>
-							<div class="color cmu-yellow"></div>
-							<div class="color cmu-white"></div>
-							<div class="color cmu-lightgray"></div>
-							<div class="color cmu-mediumgray"></div>
-							<div class="color cmu-darkgray"></div>
+							<div class="color cmu-darkred" data-tooltip="<div>#B94929</div><div>rgb(185, 73, 41)"></div>
+							<div class="color cmu-red" data-tooltip="<div>#F36235</div><div>rgb(243, 98, 53)</div>"></div>
+							<div class="color cmu-darkorange" data-tooltip="<div>#E57235</div><div>rgb(229, 114, 53)</div>"></div>
+							<div class="color cmu-orange" data-tooltip="<div>#F47D1C</div><div>rgb(244, 125, 28)</div>"></div>
+							<div class="color cmu-yellow" data-tooltip="<div>#F2A919</div><div>rgb(242, 169, 25)</div>"></div>
+							<div class="color cmu-white" data-tooltip="<div>#FFFFFF</div><div>rgb(255, 255, 255)</div>"></div>
+							<div class="color cmu-lightgray" data-tooltip="<div>#EEF2F2</div><div>rgb(238, 242, 242)</div>"></div>
+							<div class="color cmu-mediumgray" data-tooltip="<div>#CCCCCC</div><div>rgb(204, 204, 204)</div>"></div>
+							<div class="color cmu-darkgray" data-tooltip="<div>#666666</div><div>rgb(102, 102, 102)</div>"></div>
+						</div>
+						
+						<div class="type">
+							<h2>This is an H2 style.</h2>
+							<h3>This is an H3 style.</h3>
+							<h4>This is an H4 style.</h4>
+							<h5>This is an H5 style.</h5>	
 						</div>
 					</section>
 					
@@ -185,7 +194,7 @@
 					</section>
 					
 					<section class="grid_12">
-						<h2 class="inside">Functioning Pages</h2>
+						<h2 class="inside prefix_3">Functioning Pages</h2>
 						<ul id="site_architecture">
 						
 							<li>

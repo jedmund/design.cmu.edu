@@ -114,11 +114,12 @@
 		
 	.cmu-black {
 		background-color: #000000;
+		}
 
 	/* Side Architecture */
-	ul#site_architecture{
+	ul#site_architecture {
 		list-style: none;
-		color: orange;
+		color: #F36235;
 		}
 		
 	ul#site_architecture>li{
@@ -148,6 +149,7 @@
 		color: black;
 		list-style: none;
 		}
+		
 	ul#site_architecture>li>ul>li>ul>li>ul>li{
 		margin-left: 20px;
 		}

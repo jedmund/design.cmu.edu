@@ -32,3 +32,26 @@
 		font-size: 12px;
 		float: left;
 		}
+		
+	/* Interaction Standards */
+	#interaction > div {
+		margin-bottom: 20px;
+		float: left;
+		clear: both;
+		}
+		
+	#interaction em {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		}
+		
+	#interaction img {
+		height: auto;
+		width: 220px;
+		float: left;
+		}
+		
+	#interaction p {
+		margin-bottom: 10px;
+		}

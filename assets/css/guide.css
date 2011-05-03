@@ -33,7 +33,28 @@
 		float: left;
 		}
 		
+	/* Interaction Standards */
+	#interaction > div {
+		margin-bottom: 20px;
+		float: left;
+		clear: both;
+		}
 		
+	#interaction em {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 13px;
+		}
+		
+	#interaction img {
+		height: auto;
+		width: 220px;
+		float: left;
+		}
+		
+	#interaction p {
+		margin-bottom: 10px;
+		}
 		
 	/* Side Architecture */
 	ul#site_architecture{
@@ -46,10 +67,8 @@
 		}
 	
 	ul#site_architecture>li>ul{
-		/*
-float: left;
-		width: 100px;
-*/
+		/* float: left; */
+		/* width: 100px; */
 		color: red;
 		list-style: none;
 		}

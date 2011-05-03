@@ -32,3 +32,44 @@
 		font-size: 12px;
 		float: left;
 		}
+		
+		
+		
+	/* Side Architecture */
+	ul#site_architecture{
+		list-style: none;
+		color: orange;
+		}
+		
+	ul#site_architecture>li{
+		margin-left: 20px;
+		}
+	
+	ul#site_architecture>li>ul{
+		/*
+float: left;
+		width: 100px;
+*/
+		color: red;
+		list-style: none;
+		}
+	
+	ul#site_architecture>li>ul>li{
+		margin-left: 20px;
+		}
+	
+	ul#site_architecture>li>ul>li>ul{
+		color: maroon;
+		list-style: none;
+		}
+	ul#site_architecture>li>ul>li>ul>li{
+		margin-left: 20px;
+		}
+	
+	ul#site_architecture>li>ul>li>ul>li>ul{
+		color: black;
+		list-style: none;
+		}
+	ul#site_architecture>li>ul>li>ul>li>ul>li{
+		margin-left: 20px;
+		}

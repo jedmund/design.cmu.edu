@@ -117,7 +117,8 @@
 		}
 
 	/* Side Architecture */
-	ul#site_architecture{
+	
+	ul#site_architecture {
 		margin-left: 0px;
 		list-style: none;
 /* 		color: orange; */
@@ -152,6 +153,7 @@
 /* 		color: black; */
 		list-style: none;
 		}
+		
 	ul#site_architecture>li>ul>li>ul>li>ul>li{
 		margin-left: 20px;
 		}

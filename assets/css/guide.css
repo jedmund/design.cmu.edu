@@ -114,6 +114,7 @@
 		
 	.cmu-black {
 		background-color: #000000;
+		}
 
 	/* Side Architecture */
 	ul#site_architecture{
@@ -125,7 +126,7 @@
 	ul#site_architecture>li{
 		float: left;
 		width: 220px;
-		height: 900px;
+		height: 650px;
 /* 		margin-left: 20px; */
 		}
 	

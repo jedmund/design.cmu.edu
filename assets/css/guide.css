@@ -120,18 +120,19 @@
 	ul#site_architecture{
 		margin-left: 0px;
 		list-style: none;
-		color: orange;
+/* 		color: orange; */
 		}
 		
 	ul#site_architecture>li{
 		float: left;
-		width: 220px;
+		width: 156px;
 		height: 650px;
 /* 		margin-left: 20px; */
 		}
 	
 	ul#site_architecture>li>ul{
-		color: red;
+/* 		color: red; */
+		font-size: 12px;
 		list-style: none;
 		}
 	
@@ -140,7 +141,7 @@
 		}
 	
 	ul#site_architecture>li>ul>li>ul{
-		color: maroon;
+/* 		color: maroon; */
 		list-style: none;
 		}
 	ul#site_architecture>li>ul>li>ul>li{
@@ -148,7 +149,7 @@
 		}
 	
 	ul#site_architecture>li>ul>li>ul>li>ul{
-		color: black;
+/* 		color: black; */
 		list-style: none;
 		}
 	ul#site_architecture>li>ul>li>ul>li>ul>li{

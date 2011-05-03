@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html id="top">
 	<head>
 		<title>Pit Prototype</title>
 		<link href="../assets/css/reset.css" rel="stylesheet" type="text/css">
@@ -15,6 +15,7 @@
 		<script type="text/javascript">
 			$(document).ready(function() {
 				$('.color').tipsy({fade: true, html: true, gravity: 's', title: 'data-tooltip'});
+				$.localScroll({duration: 	750});
 			});
 		</script>
 		<script type="text/javascript" src="http://use.typekit.com/luo3wan.js"></script>
@@ -49,11 +50,11 @@
 					<!-- Side Navigation -->
 					<div id="side_nav" class="grid_3">
 						<ul>
-							<a href="#">
+							<a href="#top">
 								<li>Overview</li>
 							</a>
 							
-							<a href="#">
+							<a href="#insights">
 								<li>Key Insights</li>
 							</a>
 							
@@ -61,19 +62,19 @@
 								<li>Brand notes</li>
 							</a>
 														
-							<a href="#">
+							<a href="#functionality">
 								<li>Exhibition and Intranet</li>
 							</a>
 							
-							<a href="#">
+							<a href="#interaction">
 								<li>Interaction Standards</li>
 							</a>
 							
-							<a href="#">
+							<a href="#visual">
 								<li>Visual Standards</li>
 							</a>
 							
-							<a href="#">
+							<a href="#architecture">
 								<li>Functional Pages</li>
 							</a>
 						</ul>
@@ -85,7 +86,7 @@
 						<p class="content">The intent of this page is to highlight insights that we learned over the course of a semester researching the school and its constituencies, as well as document the various interaction and visual standards that we established and our thought processes behind them.</p>
 					</section>
 					
-					<section class="prefix_3 grid_9">
+					<section class="prefix_3 grid_9" id="insights">
 						<h2 class="inside">Key Insights</h2>
 						<ul id="takeaways">
 							<li class="alpha grid_3">
@@ -190,7 +191,7 @@
 						</div>
 					</section>
 					
-					<section class="prefix_3 grid_10">
+					<section class="prefix_3 grid_10" id="visual">
 						<h2 class="inside">Visual Standards</h2>
 						<div class="colors">
 							<div class="color cmu-darkred" data-tooltip="<div>#B94929</div><div>rgb(185, 73, 41)"></div>

@@ -126,6 +126,15 @@
 		padding: 0;
 		border: 0;
 		}
+		
+	/* Functionality */
+	#functionality img {
+		margin-bottom: 20px;
+		}
+	
+	#functionality p {
+		margin-bottom: 10px;
+		}
 
 	/* Side Architecture */
 	

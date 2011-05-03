@@ -138,7 +138,7 @@
 
 	/* Site Architecture */
 	ul#site_architecture {	
-		border-top: 1px solid #666666;
+		border-top: 1px solid #ccc;
 		margin-top: 40px;
 		padding-top: 10px;
 		margin-left: 0px;
@@ -163,6 +163,7 @@
 	ul#site_architecture>li{
 		border-left: 1px dotted #f2f2f2;
 		padding-left: 5px;
+		padding-top: 0px;
 		float: left;
 		width: 180px;
 		height: 600px;

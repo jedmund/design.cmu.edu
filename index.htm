@@ -6,8 +6,10 @@
 		<link href="assets/css/reset.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/960.css" rel="stylesheet" type="text/css">
 		<link href="assets/css/style.css" rel="stylesheet" type="text/css">
-		
-		<script type="text/javascript" src="assets/js/jquery-1.5.min.js"></script> 
+		<link href="assets/css/fancybox.css" rel="stylesheet" type="text/css">
+				
+		<script type="text/javascript" src="assets/js/jquery-1.5.min.js"></script>
+		<script type="text/javascript" src="assets/js/jquery.fancybox-1.3.4.pack.js"></script>
 		<script type="text/javascript" src="assets/js/jquery.cycle.all.min.js"></script>
 		<script type="text/javascript">
 		$(document).ready(function() {
@@ -22,6 +24,19 @@
 				after: function() {
 					$('#byline .caption').text(this.alt);
 				}
+			});
+	
+			/* Using custom settings */
+			
+			$("a.iframe").fancybox({
+				'hideOnContentClick': false,
+				'transitionIn'	:	'elastic',
+				'transitionOut'	:	'elastic',
+				'speedOut'			:	100, 
+				'speedIn'				:	100,
+				'height'				: 430, 
+				'width'					: 760,
+				'overlayShow'		:	false
 			});
 		});
 		</script>
@@ -110,13 +125,6 @@
 										<a href="exhibition">
 											<span>Exhibition</span>
 										</a>
-										<ul class="hover_nav">
-											<li>Senior</li>
-											<li>Junior </li>
-											<li>Sophomore</li>
-											<li>Freshmen</li>
-											<li>Electives</li>
-										</ul>
 									</li>
 									
 									<li>
@@ -144,7 +152,7 @@
 				
 				<div class="container_12">
 					<figure class="grid_12" id="hero">
-						<a href="article.htm"><div class="slideshow">
+						<a href="articles/fitwits.htm"><div class="slideshow">
 							<img src="assets/img/content/plowitz.jpg" alt="ID Students Prepare for Furniture Final Show.">
 							<img src="assets/img/content/confluence.jpg" alt="Confluence: Annual CMU Job Fair Begins March 24th.">
 							<img src="assets/img/content/fitwits.jpg" alt="Kids' Nutrition Program Aims to Bring Change.">
@@ -161,8 +169,6 @@
 							<div id="pager_next"></div>
 						</span>
 					</div>
-							
-					
 				</div>
 				
 				<section id="feature_strip">
@@ -170,23 +176,23 @@
 						<div class="grid_12">
 							<h3 class="frontpage">Featured content</h3>
 							<ul>
-								<a href="#">
+								<a href="articles/ebooks.htm">
 									<li class="grid_4 alpha">
 										<img src="assets/img/news/03_big.jpg">
 										<h4>
-											<a href="#">The Future of eBooks</a>
+											<a href="articles/ebooks.htm">The Future of eBooks</a>
 										</h4>
 										Guest author, senior Justin Edmund, analyzes the future of eBooks, the publishing industry, and the emerging tablet market.
 									</li>
 								</a>
 								
 								<figure class="video_wrapper frontpage grid_4 ">
-									<a href="#">
+									<a class="iframe" href="http://player.vimeo.com/video/23144814?title=0&amp;byline=0&amp;portrait=0">
 										<div class="video frontpage"></div>
 										<img src="assets/img/news/02_big.jpg">
 									</a>
 									<h4>
-										<a href="#">A Day in the Life</a>
+										<a class="iframe" href="http://player.vimeo.com/video/23144814?title=0&amp;byline=0&amp;portrait=0">A Day in the Life</a>
 									</h4>
 									Take a glimpse into the daily creative process, happening everyday at design school.
 								</figure>
@@ -308,10 +314,21 @@
 					<span>info@design.cmu.edu</span>
 					<span>(412) 268-2828</span>
 					<ul id="social">
-						<li><a href="http://facebook.com"><img src="assets/img/content/social_facebook.jpg"></a></li>
-						<li><a href="http://twitter.com"><img src="assets/img/content/social_twitter.jpg"></a></li>
-						<li><a href="http://linkedin.com"><img src="assets/img/content/social_linkedin.jpg"></a></li>
-						<li><a href="http://vimeo.com"><img src="assets/img/content/social_vimeo.jpg"></a></li>
+						<a href="https://www.facebook.com/CMUDesign">
+							<li class="social facebook"></li>
+						</a>
+						
+						<a href="http://twitter.com/cmudesign">
+							<li class="social twitter"></li>
+						</a>
+						
+						<a href="http://linkedin.com">
+							<li class="social linkedin"></li>
+						</a>
+						
+						<a href="http://vimeo.com">
+							<li class="social vimeo"></li>
+						</a>
 					</ul>
 				</div>
 				

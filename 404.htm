@@ -14,11 +14,14 @@
 			$('#hero .slideshow').cycle({
 				fx: 'scrollHorz',
 				speed: '10',
-				timeout:0,
+				timeout:6000,
 				speed: 500,
 				next:'#pager_next',
 				prev:'#pager_prev',
-				pause: 1
+				pause: 1,
+				after: function() {
+					$('#byline .caption').text(this.alt);
+				}
 			});
 		});
 		</script>
@@ -107,13 +110,6 @@
 										<a href="exhibition">
 											<span>Exhibition</span>
 										</a>
-										<ul class="hover_nav">
-											<li>Senior</li>
-											<li>Junior </li>
-											<li>Sophomore</li>
-											<li>Freshmen</li>
-											<li>Electives</li>
-										</ul>
 									</li>
 									
 									<li>
@@ -140,59 +136,84 @@
 				</header>
 				
 				<div class="container_12">
-					<figure class="grid_12" id="hero" style="margin-bottom:10px;">
-						<div class="slideshow">
-							<img src="assets/img/content/fitwits.jpg" alt="Kids' Nutrition Program Aims to Bring Change.">
-							<img src="assets/img/content/fitwits.jpg" alt="Kids' Nutrition Program Aims to Bring Change.">
-						</div>
+					<figure class="grid_12" id="sidekick">
+						<img src="assets/img/content/mm_sidekick2.png" alt="File not found">
 					</figure>
+					
+					<div class="grid_12" id="byline" style="margin-top: 0px;">
+						<h2 class="caption">404: File not found</h2>
+					</div>
+							
 					
 				</div>
 				
+				<section id="feature_strip">
+					<div class="container_12">
+						<div class="grid_12">
+							<h3 class="frontpage">You might be interested in...</h3>
+							<ul>
+								<a href="articles/ebooks.htm">
+									<li class="grid_4 alpha">
+										<img src="assets/img/news/03_big.jpg">
+										<h4>
+											<a href="articles/ebooks.htm">The Future of eBooks</a>
+										</h4>
+										Guest author, senior Justin Edmund, analyzes the future of eBooks, the publishing industry, and the emerging tablet market.
+									</li>
+								</a>
+								
+								<figure class="video_wrapper frontpage grid_4 ">
+									<a href="#">
+										<div class="video frontpage"></div>
+										<img src="assets/img/news/02_big.jpg">
+									</a>
+									<h4>
+										<a href="#">A Day in the Life</a>
+									</h4>
+									Take a glimpse into the daily creative process, happening everyday at design school.
+								</figure>
+								<a href="#">
+									<li class="grid_4 omega">
+										<img src="assets/img/news/01_big.jpg">
+										<h4>
+											<a href="#">What is Design?</a>
+										</h4>
+										An animated crash course for our friends in other industries. Design is taking emerging importance, how can you get involved?
+									</li>
+								</a>
+							</ul>
+						</div>
+					</div>
+				</section>
 				<div class="container_12">
-					<div class="grid_12">
-							<div class="grid_4 alpha">
-								<span class="bio">
-									<img src="assets/img/faculty/sharon.jpg">
-									<h2 class="inline">Sharon West</h2>
-									<span class="byline">Author</span>
-									<a class="alpha grid_3" href="http://sharon-west.com/">www.sharon-west.com</a>
-								</span>
-								<img src="assets/img/likebutton.jpg">
-							</div>
-							<div class="grid_8 omega">
-							<h2 class="caption">Kids' Nutrition Program Aims to Bring Change.</h2>
-								<div class="alpha omega grid_6">
-								<p class="content">More kids are learning how to eat healthy thanks to Fitwits &mdash; a program created by Carnegie Mellon's School of Design and UPMC's St. Margaret Family Health Centers. Initially designed to get children talking about nutrition and exercise, a new leg of the program is getting parents in on the act.</p>
-	<blockquote class="grid_8 suffix_1">
-								<span class="mark">&#8220;</span>
-								<p>The new phase of Fitwits &mdash; known as Fitwits Zones &mdash; uses multiple strategies to help families on a daily basis.</p>
-							</blockquote>
-	
-	<p class="content">"Families living in lower socio-economic environments are at a higher risk for obesity-related complications later in life. Many do not have access to programs that address early preventative obesity and nutrition education," explained Fitwits co-creator Kristin Hughes, associate professor in Carnegie Mellon's School of Design. "By working closely with community members, we ensure a cultural fit and relevant messages of interest." Fitwits Zone is an activity area created in schools and community centers to engage children, teachers, parents and families in conversations about healthy lifestyles. The plan is to activate it with a yearlong competition on five levels: individual, classroom, grades, school and families.</p>
-	
-	<p class="content">"We hope to motivate children, teachers and parents throughout the school year with challenges and activities. For example, children will receive a wristband with tokens added as the child meets each new challenge in an area of health education, nutrition, exercise or activities," Hughes said.</p>
-	
-								</div>
-							</div>
-								
-								
-					</div> <!-- End news -->
-				</div><br class="clear">
-				
+					<div class="grid_12 experimental" id="tertiary">
+					</div><br class="clear">
+				</div>
 				<div id="push" class="frontpage"></div>
-				
-		<footer class="bumper">
+		</div><!-- end content wrapper -->
+		
+		<footer>
 			<div class="container_12">			
 				<div class="grid_3" id="contact_us">
 					<h5>Contact Us</h5>
 					<span>info@design.cmu.edu</span>
 					<span>(412) 268-2828</span>
 					<ul id="social">
-						<li><a href="http://facebook.com"><img src="assets/img/content/social_facebook.jpg"></a></li>
-						<li><a href="http://twitter.com"><img src="assets/img/content/social_twitter.jpg"></a></li>
-						<li><a href="http://linkedin.com"><img src="assets/img/content/social_linkedin.jpg"></a></li>
-						<li><a href="http://vimeo.com"><img src="assets/img/content/social_vimeo.jpg"></a></li>
+						<a href="https://www.facebook.com/CMUDesign">
+							<li class="social facebook"></li>
+						</a>
+						
+						<a href="http://twitter.com/cmudesign">
+							<li class="social twitter"></li>
+						</a>
+						
+						<a href="http://linkedin.com">
+							<li class="social linkedin"></li>
+						</a>
+						
+						<a href="http://vimeo.com">
+							<li class="social vimeo"></li>
+						</a>
 					</ul>
 				</div>
 				

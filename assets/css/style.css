@@ -243,7 +243,7 @@
 		}
 		
 	.relativity figure.video_wrapper:hover .video {
-		background: #F2A919;
+		background: #F36235;
 		cursor: pointer;
 		}
 		
@@ -945,7 +945,7 @@
 		}
 		
 	figure.frontpage.video_wrapper:hover .video {
-		background: #F2A919;
+		background: #F36235;
 		cursor: pointer;
 		}
 		
@@ -1225,6 +1225,31 @@
 		float: left;
 		clear: both;
 		}
+
+/* Social */
+	.social {
+		margin-right: 5px;
+		height: 34px;
+		width: 30px;
+		float: left;
+		}
+		
+	.facebook {
+		background: url('../img/social.png') 0 0 no-repeat;
+		}
+		
+	.twitter {
+		background: url('../img/social.png') -34px 0 no-repeat;
+		}
+		
+	.linkedin {
+		background: url('../img/social.png') -69px 0 no-repeat;
+		}
+		
+	.vimeo {
+		background: url('../img/social.png') -104px 0 no-repeat;
+		}
+	
 
 /* Hacks */
 	.bumper {

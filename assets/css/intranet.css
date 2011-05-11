@@ -380,6 +380,18 @@
 		border-radius: 1px;
 		}
 		
+	section#project span#indicator{
+		color: #00AA00;
+		font-size: 28px;
+		position: relative;
+		top:5px;
+		margin-right: 3px;
+		}
+		
+	section#project span#savetext{
+		color: #666;
+		}
+		
 /**
  * Intranet
  * Project

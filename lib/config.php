@@ -14,6 +14,7 @@
 // Get the parts of the web server path.
 $parts = explode(DIRECTORY_SEPARATOR, getcwd());
 $junk  = array_shift($parts);
+$junk  = (count($parts) > 4) ? array_pop($parts) : "";
 
 // Put together the stringiified path with directory separators.
 $path = '/' . implode('/', $parts);

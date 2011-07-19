@@ -1,145 +1,150 @@
+{# Set up the install directory variable so that we get valid links
+   regardless of how the prototype is configured. #}
+{% if install_dir != '' %}
+  {% set dir = install_dir ~ "/" %}
+{% endif %}
 <header>
 	<div class="container_12">
 		<div class="grid_2">
-			<a href="/school_of_design">
+			<a href="/{{dir}}">
 				<h1 id="logo">Carnegie Mellon Design</h1>
 			</a>
 		</div>
-								
+		
 		<div class="grid_10">
 			<!-- i can has spritesheet -->
 			<nav id="global">
 				<ul>
-					<li>
-						<a href="/school_of_design/school/">
+					<li {% if section == 'school' %}class="selected"{% endif %}>
+						<a href="/{{dir}}school/">
 							<span>School</span>
 						</a>
 						<ul class="hover_nav">
 							<li>
-								<a href="/school_of_design/school/">What is Design?</a>
+								<a href="/{{dir}}school/">What is Design?</a>
 							</li>
 							<li>
-								<a href="/school_of_design/school/">Design at CMU</a>
+								<a href="/{{dir}}school/">Design at CMU</a>
 							</li>
 							<li>
-								<a href="/school_of_design/school/">Design Institute</a>
+								<a href="/{{dir}}school/">Design Institute</a>
 							</li>
 							<li>
-								<a href="/school_of_design/school/">Features</a>
+								<a href="/{{dir}}school/">Features</a>
 							</li>
 							<li>
-								<a href="/school_of_design/school/">Environment</a>
+								<a href="/{{dir}}school/">Environment</a>
 							</li>
 							<li>
-								<a href="/school_of_design/school/">Contact</a>
+								<a href="/{{dir}}school/">Contact</a>
 							</li>
 						</ul>
 					</li>
 					
 					
-					<li>
-						<a href="programs">
+					<li {% if section == 'programs' %}class="selected"{% endif %}>
+						<a href="/{{dir}}programs">
 							<span>Programs</span>
 						</a>
 						<ul class="hover_nav">
 							<li>
-						    <a href="programs">Pre-College</a>
+						    <a href="/{{dir}}programs">Pre-College</a>
 						  </li>
 							<li>
-						    <a href="programs/undergraduate">Undergraduate</a>
+						    <a href="/{{dir}}programs/undergraduate">Undergraduate</a>
 						  </li>
 							<li>
-						    <a href="programs">Graduate</a>
+						    <a href="/{{dir}}programs">Graduate</a>
 						  </li>
 							<li>
-						    <a href="programs">PhD</a>
+						    <a href="/{{dir}}programs">PhD</a>
 						  </li>
 							<li>
-						    <a href="programs">Continuing Ed</a>
+						    <a href="/{{dir}}programs">Continuing Ed</a>
 						  </li>
 						</ul>
 					</li>
 					
-					<li>
-						<a href="people">
+					<li {% if section == 'people' %}class="selected"{% endif %}>
+						<a href="/{{dir}}people">
 							<span>People</span>
 						</a>
 						<ul class="hover_nav">
 							<li>
-								<a href="people/undergrads.htm">Undergraduate</a>
+								<a href="/{{dir}}people/undergrads.htm">Undergraduate</a>
 							</li>
 							<li>
-						    <a href="people">Graduate</a>
+						    <a href="/{{dir}}people">Graduate</a>
 						  </li>
 							<li>
-						    <a href="people">PhD</a>
+						    <a href="/{{dir}}people">PhD</a>
 						  </li>
 							<li>
-								<a href="people/faculty.htm">Faculty</a>
+								<a href="/{{dir}}people/faculty.htm">Faculty</a>
 							</li>
 							<li>
-						    <a href="people">Staff</a>
+						    <a href="/{{dir}}people">Staff</a>
 						  </li>
 							<li>
-						    <a href="people">Alumni</a>
+						    <a href="/{{dir}}people">Alumni</a>
 						  </li>
 						</ul>
 					</li>
 					
-					<li>
-						<a href="projects">
+					<li {% if section == 'projects' %}class="selected"{% endif %}>
+						<a href="/{{dir}}projects">
 							<span>Projects</span>
 						</a>
 					</li>
 					
-					<li>
-						<a href="admissions">
-							<span>Admissions</span>
+					<li {% if section == 'apply' %}class="selected"{% endif %}>
+						<a href="/{{dir}}apply">
+							<span>Apply</span>
 						</a>
 						<ul class="hover_nav">
 							<li>
-						    <a href="admissions">Applying</a>
+						    <a href="/{{dir}}admissions">Admissions</a>
 						  </li>
 							<li>
-						    <a href="admissions">Visiting</a>
+						    <a href="/{{dir}}admissions">Visiting</a>
 						  </li>
 							<li>
-						    <a href="admissions">Financial Aid</a>
+						    <a href="/{{dir}}admissions">Financial Aid</a>
 						  </li>
 							<li>
-						    <a href="admissions">FAQ</a>
+						    <a href="/{{dir}}admissions">FAQ</a>
 						  </li>
 						</ul>
 					</li>
 					
-					<li>
-						<a href="community">
+					<li {% if section == 'community' %}class="selected"{% endif %}>
+						<a href="/{{dir}}community">
 							<span>Community</span>
 						</a>
 						<ul class="hover_nav">
 							<li>
-						    <a href="community">Alumni</a>
+						    <a href="/{{dir}}community">Alumni</a>
 						  </li>
 							<li>
-						    <a href="community">Collaborations</a>
+						    <a href="/{{dir}}community">Collaborations</a>
 						  </li>
 							<li>
-						    <a href="community">Fitwits</a>
+						    <a href="/{{dir}}community">Fitwits</a>
 						  </li>
 							<li>
-						    <a href="community">Design Institute</a>
+						    <a href="/{{dir}}community">Design Institute</a>
 						  </li>
 							<li>
-						    <a href="community">Events</a>
+						    <a href="/{{dir}}community">Events</a>
 						  </li>
 							<li>
-						    <a href="community">Opportunities</a>
+						    <a href="/{{dir}}community">Opportunities</a>
 						  </li>
 							<li>
-						    <a href="community">Student Groups</a>
+						    <a href="/{{dir}}community">Student Groups</a>
 						  </li>
 							<li>
-						    <a href="community">Support</a>
+						    <a href="/{{dir}}community">Support</a>
 						  </li>
 						</ul>
 					</li>

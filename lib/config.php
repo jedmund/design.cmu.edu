@@ -26,6 +26,13 @@ defined('DS') ? null :
 defined('PUBLIC_PATH') ? null :
   define('PUBLIC_PATH', $path);
   
+// Test if the prototype is installed in a directory.
+$parts = explode('/', $_SERVER['REQUEST_URI']);
+$install_dir = (!empty($parts[1])) ? $parts[1] : "";
+
+// Other libraries
+require_once('functions.php');
+
 // Include Twig
 require_once(PUBLIC_PATH.DS.'lib'.DS.'Twig'.DS.'Autoloader.php');
 Twig_Autoloader::register();
@@ -33,5 +40,8 @@ Twig_Autoloader::register();
 // Load Twig
 $loader = new Twig_Loader_Filesystem(PUBLIC_PATH.DS.'assets'.DS.'html');
 $twig   = new Twig_Environment($loader);
+
+$vars = array();
+$vars['install_dir'] = $install_dir;
 
 ?>

@@ -1,0 +1,11 @@
+<div id="side_nav" class="grid_3">
+	<ul>
+    {% for item in sidenav %}
+      <a href="{{ item.link }}">
+	     <li {% if item.selected != "" %} class="selected"{% endif %}>
+	       {{ item.name }}
+	     </li>
+	   </a>
+    {% endfor %}
+	</ul>
+</div>

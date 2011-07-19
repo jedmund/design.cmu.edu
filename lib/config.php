@@ -31,7 +31,7 @@ require_once(PUBLIC_PATH.DS.'lib'.DS.'Twig'.DS.'Autoloader.php');
 Twig_Autoloader::register();
 
 // Load Twig
-$loader = new Twig_Loader_Filesystem(PUBLIC_PATH.DS.'templates');
+$loader = new Twig_Loader_Filesystem(PUBLIC_PATH.DS.'assets'.DS.'html');
 $twig   = new Twig_Environment($loader);
 
 ?>

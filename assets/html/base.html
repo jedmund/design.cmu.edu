@@ -44,10 +44,12 @@
       {% block content %}{% endblock %}
       
       <!-- Pushfix: pushes footer to the bottom of the page, regardless of
-           page height. -->
-       
-      <br class="clear">
-			<div id="push" class="frontpage"></div>
+           page height. This can be disabled on a specific page by adding
+           an empty block to that template. -->
+      {% block pushfix %}
+        <br class="clear">
+  			<div id="push" class="frontpage"></div>
+  		{% endblock %}
     </div> <!-- end of content wrapper -->
     
     {% include 'footer.html' %}		

@@ -1,0 +1,19 @@
+<nav class="grid_12" id="bottom">
+	{% if page_no > 1 %}
+  	<a href="#">
+  		<span id="newer">
+  		  <span>&larr;</span>
+  			<span>{{ sidenav[page_no-2].context }}</span>
+  		</span>
+  	</a>
+  {% endif %}
+  
+  {% if page_no < sidenav|length %}
+  	<a href="#">
+  		<span id="older">
+  			<span>{{ sidenav[page_no].context }}</span>
+  		  <span>&rarr;</span>
+  		</span>
+  	</a>
+	{% endif %}
+</nav>

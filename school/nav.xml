@@ -1,0 +1,31 @@
+<sidenav>
+  <item>
+    <name>What is Design?</name>
+    <context>Learn about what design is.</context>
+    <link>#</link>
+  </item>
+  
+  <item>
+    <name>About the School</name>
+    <context>Learn more about our school.</context>
+    <link>#</link>
+  </item>
+  
+  <item>
+    <name>Our Environment</name>
+    <context>Learn more about Pittsburgh and CMU.</context>
+    <link>#</link>
+  </item>
+  
+  <item>
+    <name>Featured Content</name>
+    <context>Enjoy our favorite content.</context>
+    <link>#</link>
+  </item>
+
+  <item>
+    <name>Contact Us</name>
+    <context>Get in touch with us!</context>
+    <link>#</link>
+  </item>
+</sidenav>
